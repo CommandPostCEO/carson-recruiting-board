@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carson Currie – Recruiting War Board</title>
+<style>
+  :root {
+    --t1: #FF3B30; --t1-bg: rgba(255,59,48,0.12); --t1-border: rgba(255,59,48,0.35);
+    --t2: #FF9500; --t2-bg: rgba(255,149,0,0.12); --t2-border: rgba(255,149,0,0.35);
+    --t3: #007AFF; --t3-bg: rgba(0,122,255,0.12); --t3-border: rgba(0,122,255,0.35);
+    --t4: #34C759; --t4-bg: rgba(52,199,89,0.12); --t4-border: rgba(52,199,89,0.35);
+    color-scheme: light dark;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', sans-serif; background: #f2f2f7; color: #1d1d1f; min-height: 100%; padding-bottom: 40px; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #000; color: #f5f5f7; }
+    .hero { background: #111 !important; }
+    .stat-card { background: rgba(44,44,46,0.8) !important; border-color: rgba(255,255,255,0.1) !important; }
+    .filter-bar { background: rgba(28,28,30,0.9) !important; border-color: rgba(255,255,255,0.08) !important; }
+    .school-card { background: rgba(44,44,46,0.7) !important; border-color: rgba(255,255,255,0.08) !important; }
+    .school-card:hover { background: rgba(58,58,60,0.9) !important; }
+    .coach-label { color: #98989d !important; }
+    .notes-box { background: rgba(58,58,60,0.6) !important; border-color: rgba(255,255,255,0.08) !important; }
+    select, input { background: rgba(44,44,46,0.9) !important; color: #f5f5f7 !important; border-color: rgba(255,255,255,0.15) !important; }
+    .progress-track { background: rgba(255,255,255,0.1) !important; }
+    .tier-section-label { color: #98989d !important; }
+    .modal-content { background: #1c1c1e !important; color: #f5f5f7 !important; }
+    .modal-content h2 { color: #f5f5f7 !important; }
+    .modal-field label { color: #98989d !important; }
+    .modal-field input, .modal-field select, .modal-field textarea { background: rgba(58,58,60,0.8) !important; color: #f5f5f7 !important; border-color: rgba(255,255,255,0.15) !important; }
+    .export-btn { background: rgba(52,199,89,0.2) !important; color: #30D158 !important; border-color: rgba(52,199,89,0.4) !important; }
+    .export-btn:hover { background: rgba(52,199,89,0.35) !important; }
+    .toast { background: rgba(44,44,46,0.97) !important; color: #f5f5f7 !important; }
+  }
+  .hero { background: #1a1a1a; padding: 32px 28px 28px; position: relative; overflow: hidden; }
+  .hero::before { content: '🏈'; position: absolute; right: 28px; top: 50%; transform: translateY(-50%); font-size: 96px; opacity: 0.07; pointer-events: none; }
+  .hero-name { font-size: 28px; font-weight: 800; color: #fff; letter-spacing: -0.5px; line-height: 1.1; }
+  .hero-name span { color: #f4a536; }
+  .hero-meta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+  .hero-pill { display: inline-flex; align-items: center; gap: 5px; background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.18); border-radius: 20px; padding: 4px 12px; font-size: 12px; font-weight: 500; color: rgba(255,255,255,0.9); }
+  .hero-pill .icon { font-size: 13px; }
+  .hero-links { display: flex; gap: 10px; margin-top: 14px; flex-wrap: wrap; }
+  .hero-link { display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 20px; font-size: 12px; font-weight: 600; text-decoration: none; cursor: pointer; border: none; transition: all 0.2s; }
+  .hero-link.hudl { background: #e5451f; color: #fff; }
+  .hero-link.twitter { background: #1DA1F2; color: #fff; }
+  .hero-link.ncaa { background: #005EB8; color: #fff; }
+  .hero-link:hover { opacity: 0.85; transform: translateY(-1px); }
+  .hero-sub { font-size: 11px; color: rgba(255,255,255,0.5); margin-top: 8px; }
+  .stats-row { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; padding: 16px 20px; background: rgba(255,255,255,0.7); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid rgba(0,0,0,0.07); }
+  .stat-card { background: rgba(255,255,255,0.85); border: 1px solid rgba(0,0,0,0.07); border-radius: 14px; padding: 12px 14px; box-shadow: 0 1px 6px rgba(0,0,0,0.06); text-align: center; }
+  .stat-num { font-size: 26px; font-weight: 800; line-height: 1; }
+  .stat-label { font-size: 10px; font-weight: 500; color: #86868b; margin-top: 2px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .filter-bar { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; padding: 12px 20px; background: rgba(255,255,255,0.85); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid rgba(0,0,0,0.07); position: sticky; top: 0; z-index: 50; }
+  .filter-bar input, .filter-bar select { height: 34px; border-radius: 10px; border: 1px solid rgba(0,0,0,0.1); background: #fff; padding: 0 12px; font-size: 13px; outline: none; font-family: inherit; color: #1d1d1f; transition: border-color 0.2s; }
+  .filter-bar input { flex: 1; min-width: 180px; }
+  .filter-bar input:focus, .filter-bar select:focus { border-color: #007AFF; }
+  .filter-label { font-size: 12px; font-weight: 600; color: #86868b; white-space: nowrap; }
+  /* ── Export Button ── */
+  .export-btn {
+    display: inline-flex; align-items: center; gap: 6px;
+    height: 34px; padding: 0 16px; border-radius: 10px;
+    font-size: 13px; font-weight: 600; font-family: inherit;
+    background: rgba(52,199,89,0.12); color: #1d8a3a;
+    border: 1px solid rgba(52,199,89,0.35);
+    cursor: pointer; transition: all 0.2s; white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .export-btn:hover { background: rgba(52,199,89,0.22); transform: translateY(-1px); box-shadow: 0 3px 10px rgba(52,199,89,0.2); }
+  .export-btn:active { transform: translateY(0); }
+  /* ── Toast notification ── */
+  .toast {
+    position: fixed; bottom: 28px; left: 50%; transform: translateX(-50%) translateY(20px);
+    background: rgba(255,255,255,0.97); color: #1d1d1f;
+    border: 1px solid rgba(0,0,0,0.1); border-radius: 14px;
+    padding: 12px 20px; font-size: 13px; font-weight: 500;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    display: flex; align-items: center; gap: 8px;
+    opacity: 0; transition: all 0.35s cubic-bezier(0.34,1.56,0.64,1);
+    z-index: 9999; pointer-events: none;
+  }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+  .board-body { padding: 16px 20px; }
+  .tier-section { margin-bottom: 28px; }
+  .tier-section-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+  .tier-dot { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0; }
+  .tier-section-label { font-size: 13px; font-weight: 700; color: #1d1d1f; text-transform: uppercase; letter-spacing: 0.6px; }
+  .tier-count-badge { font-size: 11px; font-weight: 600; border-radius: 10px; padding: 2px 8px; margin-left: auto; }
+  .school-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 12px; }
+  .school-card { background: rgba(255,255,255,0.82); border-radius: 16px; padding: 16px; border: 1.5px solid rgba(0,0,0,0.07); box-shadow: 0 2px 10px rgba(0,0,0,0.05); cursor: pointer; transition: all 0.2s; position: relative; overflow: hidden; }
+  .school-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.11); background: rgba(255,255,255,0.95); }
+  .card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; }
+  .card-school-name { font-size: 16px; font-weight: 700; line-height: 1.2; }
+  .card-tier-badge { font-size: 10px; font-weight: 700; border-radius: 8px; padding: 3px 9px; white-space: nowrap; flex-shrink: 0; text-transform: uppercase; letter-spacing: 0.4px; }
+  .card-coaches { margin-top: 10px; display: flex; gap: 12px; flex-wrap: wrap; }
+  .coach-block { flex: 1; min-width: 120px; }
+  .coach-label { font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: #86868b; }
+  .coach-name { font-size: 13px; font-weight: 500; margin-top: 1px; }
+  .coach-contact { display: flex; gap: 6px; margin-top: 4px; flex-wrap: wrap; }
+  .contact-btn { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 500; padding: 2px 8px; border-radius: 8px; border: none; cursor: pointer; text-decoration: none; transition: opacity 0.15s; }
+  .contact-btn:hover { opacity: 0.75; }
+  .contact-btn.email { background: rgba(0,122,255,0.12); color: #007AFF; }
+  .contact-btn.twitter { background: rgba(29,161,242,0.12); color: #1DA1F2; }
+  .card-divider { height: 1px; background: rgba(0,0,0,0.06); margin: 10px 0; }
+  .card-status-row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+  .status-chip { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 500; padding: 3px 9px; border-radius: 10px; border: 1px solid transparent; }
+  .notes-box { margin-top: 9px; padding: 8px 10px; border-radius: 10px; background: rgba(0,0,0,0.03); border: 1px solid rgba(0,0,0,0.06); font-size: 12px; color: #555; font-style: italic; line-height: 1.4; }
+  .progress-wrap { margin-top: 10px; }
+  .progress-label-row { display: flex; justify-content: space-between; font-size: 10px; color: #86868b; margin-bottom: 3px; }
+  .progress-track { height: 4px; border-radius: 4px; background: rgba(0,0,0,0.07); overflow: hidden; }
+  .progress-fill { height: 100%; border-radius: 4px; transition: width 0.6s ease; }
+  .interest-hot   { background: rgba(255,59,48,0.1);   color: #FF3B30; border-color: rgba(255,59,48,0.2); }
+  .interest-warm  { background: rgba(255,149,0,0.1);   color: #FF9500; border-color: rgba(255,149,0,0.2); }
+  .interest-cool  { background: rgba(0,122,255,0.1);   color: #007AFF; border-color: rgba(0,122,255,0.2); }
+  .interest-cold  { background: rgba(142,142,147,0.1); color: #8E8E93; border-color: rgba(142,142,147,0.2); }
+  .film-yes { background: rgba(52,199,89,0.1);   color: #34C759; border-color: rgba(52,199,89,0.2); }
+  .film-no  { background: rgba(142,142,147,0.1); color: #8E8E93; border-color: rgba(142,142,147,0.2); }
+  .tier1 .card-tier-badge { background: var(--t1-bg); color: var(--t1); border: 1px solid var(--t1-border); }
+  .tier1 .tier-dot, .tier1 .progress-fill { background: var(--t1); }
+  .tier1 .tier-count-badge { background: var(--t1-bg); color: var(--t1); }
+  .tier2 .card-tier-badge { background: var(--t2-bg); color: var(--t2); border: 1px solid var(--t2-border); }
+  .tier2 .tier-dot, .tier2 .progress-fill { background: var(--t2); }
+  .tier2 .tier-count-badge { background: var(--t2-bg); color: var(--t2); }
+  .tier3 .card-tier-badge { background: var(--t3-bg); color: var(--t3); border: 1px solid var(--t3-border); }
+  .tier3 .tier-dot, .tier3 .progress-fill { background: var(--t3); }
+  .tier3 .tier-count-badge { background: var(--t3-bg); color: var(--t3); }
+  .tier4 .card-tier-badge { background: var(--t4-bg); color: var(--t4); border: 1px solid var(--t4-border); }
+  .tier4 .tier-dot, .tier4 .progress-fill { background: var(--t4); }
+  .tier4 .tier-count-badge { background: var(--t4-bg); color: var(--t4); }
+  .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.45); z-index: 200; align-items: center; justify-content: center; backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); }
+  .modal-overlay.active { display: flex; }
+  .modal-content { background: #fff; border-radius: 20px; padding: 24px; width: min(520px, 95vw); max-height: 85vh; overflow-y: auto; box-shadow: 0 20px 60px rgba(0,0,0,0.22); animation: modalIn 0.25s cubic-bezier(0.34,1.56,0.64,1); }
+  @keyframes modalIn { from { transform: scale(0.88) translateY(20px); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+  .modal-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px; }
+  .modal-content h2 { font-size: 20px; font-weight: 700; color: #1d1d1f; }
+  .modal-close { width: 28px; height: 28px; border-radius: 50%; background: rgba(0,0,0,0.07); border: none; cursor: pointer; font-size: 16px; display: flex; align-items: center; justify-content: center; transition: background 0.2s; }
+  .modal-close:hover { background: rgba(0,0,0,0.13); }
+  .modal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .modal-field { display: flex; flex-direction: column; gap: 5px; }
+  .modal-field.full { grid-column: 1 / -1; }
+  .modal-field label { font-size: 11px; font-weight: 600; color: #86868b; text-transform: uppercase; letter-spacing: 0.5px; }
+  .modal-field input, .modal-field select, .modal-field textarea { padding: 9px 12px; border-radius: 10px; border: 1px solid rgba(0,0,0,0.12); font-size: 13px; font-family: inherit; outline: none; background: #fff; color: #1d1d1f; transition: border-color 0.2s; }
+  .modal-field input:focus, .modal-field select:focus, .modal-field textarea:focus { border-color: #007AFF; }
+  .modal-field textarea { resize: vertical; min-height: 64px; }
+  .modal-actions { display: flex; gap: 10px; margin-top: 20px; justify-content: flex-end; }
+  .btn { padding: 9px 20px; border-radius: 12px; font-size: 13px; font-weight: 600; border: none; cursor: pointer; font-family: inherit; transition: all 0.2s; }
+  .btn-primary { background: #007AFF; color: #fff; } .btn-primary:hover { background: #0066d6; }
+  .btn-cancel { background: rgba(0,0,0,0.07); color: #1d1d1f; } .btn-cancel:hover { background: rgba(0,0,0,0.12); }
+  .camp-badge { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 500; padding: 3px 8px; border-radius: 8px; background: rgba(255,149,0,0.1); color: #FF9500; border: 1px solid rgba(255,149,0,0.2); }
+  .conn-badge { background: rgba(255,214,10,0.13); color: #9A6E00; border-color: rgba(255,214,10,0.4); }
+  @media (prefers-color-scheme: dark) { .conn-badge { background: rgba(255,214,10,0.15) !important; color: #FFD60A !important; border-color: rgba(255,214,10,0.3) !important; } }
+  .roster-badge { font-weight: 600; }
+  .roster-open  { background: rgba(52,199,89,0.1);   color: #34C759; border-color: rgba(52,199,89,0.25); }
+  .roster-low   { background: rgba(255,204,0,0.13);  color: #9A6E00; border-color: rgba(255,204,0,0.3); }
+  .roster-tight { background: rgba(255,149,0,0.12);  color: #FF9500; border-color: rgba(255,149,0,0.3); }
+  .roster-full  { background: rgba(255,59,48,0.1);   color: #FF3B30; border-color: rgba(255,59,48,0.25); }
+  .roster-unknown { background: rgba(142,142,147,0.1); color: #8E8E93; border-color: rgba(142,142,147,0.2); }
+  @media (prefers-color-scheme: dark) { .roster-low { color: #FFD60A !important; } }
+  .visit-badge { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 500; padding: 3px 8px; border-radius: 8px; background: rgba(175,82,222,0.1); color: #AF52DE; border: 1px solid rgba(175,82,222,0.2); }
+  .empty-state { text-align: center; padding: 48px 20px; color: #86868b; font-size: 14px; }
+  @media print { .filter-bar, .modal-overlay { display: none !important; } .school-card { break-inside: avoid; } }
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="hero-name">Carson Ford <span>Currie</span></div>
+  <div class="hero-meta">
+    <span class="hero-pill"><span class="icon">🏫</span> Lake Travis High School</span>
+    <span class="hero-pill"><span class="icon">📅</span> Class of 2027</span>
+    <span class="hero-pill"><span class="icon">📏</span> 6'2" / 185 lbs</span>
+    <span class="hero-pill"><span class="icon">🏷️</span> WR / DB</span>
+    <span class="hero-pill"><span class="icon">📚</span> GPA: 3.5</span>
+    <span class="hero-pill"><span class="icon">🎖️</span> Son of a US Marine</span>
+  </div>
+  <div class="hero-links">
+    <a class="hero-link hudl" href="https://t.co/C0XJ9XzqEC" target="_blank">🎥 WR Film (JR)</a>
+    <a class="hero-link hudl" href="https://t.co/xlzyChskTb" target="_blank">🎥 DB Film (SO)</a>
+    <a class="hero-link hudl" href="https://t.co/Tq9j5HxUNF" target="_blank">🎥 Camp Film</a>
+    <a class="hero-link twitter" href="https://twitter.com/CarsonCurrie" target="_blank">𝕏 @CarsonCurrie</a>
+    <a class="hero-link ncaa" href="#" target="_blank">🎓 NCAA ID: 2301762837</a>
+  </div>
+  <div class="hero-sub">Recruiting War Board — Last updated <span id="lastUpdated"></span></div>
+</div>
+<div class="stats-row">
+  <div class="stat-card"><div class="stat-num" id="totalSchools" style="color:#1d1d1f">0</div><div class="stat-label">Total Schools</div></div>
+  <div class="stat-card"><div class="stat-num" id="filmSentCount" style="color:#34C759">0</div><div class="stat-label">Film Sent</div></div>
+  <div class="stat-card"><div class="stat-num" id="contactedCount" style="color:#007AFF">0</div><div class="stat-label">Contacted</div></div>
+  <div class="stat-card"><div class="stat-num" id="campCount" style="color:#FF9500">0</div><div class="stat-label">Camps Planned</div></div>
+  <div class="stat-card"><div class="stat-num" id="visitCount" style="color:#AF52DE">0</div><div class="stat-label">Visits Planned</div></div>
+</div>
+<div class="filter-bar">
+  <span class="filter-label">Filter:</span>
+  <input id="searchInput" type="text" placeholder="🔍  Search school, coach, notes…">
+  <select id="tierFilter">
+    <option value="">All Tiers</option>
+    <option value="Tier 1">🔴 Tier 1 – Dream</option>
+    <option value="Tier 2">🟠 Tier 2 – Reach</option>
+    <option value="Tier 3">🔵 Tier 3 – Target</option>
+    <option value="Tier 4">🟢 Tier 4 – Early Opportunity</option>
+  </select>
+  <select id="filmFilter">
+    <option value="">Film: All</option>
+    <option value="Y">Film Sent ✓</option>
+    <option value="N">Film Not Sent</option>
+  </select>
+  <select id="interestFilter">
+    <option value="">Interest: All</option>
+    <option value="Hot">🔥 Hot</option>
+    <option value="Warm">🌤️ Warm</option>
+    <option value="Cool">❄️ Cool</option>
+  </select>
+  <button class="export-btn" onclick="saveAndExport()">💾 Save &amp; Export</button>
+  <p style="margin-left:auto; font-size:11px; color:#86868b">Click any card to edit · <span style="cursor:pointer;text-decoration:underline" onclick="window.print()">🖨️ Print</span></p>
+</div>
+<div class="board-body" id="boardBody"></div>
+
+<!-- Toast notification -->
+<div class="toast" id="exportToast">✅ index.html downloaded to your Desktop!</div>
+
+<div class="modal-overlay" id="editModal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2 id="modalTitle">Edit School</h2>
+      <button class="modal-close" onclick="closeModal()">✕</button>
+    </div>
+    <div class="modal-grid">
+      <div class="modal-field"><label>Interest Level</label><select id="m_interest"><option value="">— Not Set —</option><option value="Hot">🔥 Hot</option><option value="Warm">🌤️ Warm</option><option value="Cool">❄️ Cool</option><option value="Cold">🧊 Cold</option></select></div>
+      <div class="modal-field"><label>Film Sent?</label><select id="m_film"><option value="">— Not Set —</option><option value="Y">✅ Yes</option><option value="N">❌ No</option></select></div>
+      <div class="modal-field"><label>Film Sent By</label><input type="text" id="m_filmBy" placeholder="e.g. Dad, Coach Smith"></div>
+      <div class="modal-field"><label>Coach Contacted?</label><select id="m_contacted"><option value="">— Not Set —</option><option value="Y">✅ Yes</option><option value="N">❌ No</option></select></div>
+      <div class="modal-field"><label>Camp Date</label><input type="text" id="m_camp" placeholder="e.g. June 14, 2025"></div>
+      <div class="modal-field"><label>Visit Plan</label><input type="text" id="m_visit" placeholder="e.g. Official – Sept 2025"></div>
+      <div class="modal-field"><label>Last Contact Date</label><input type="text" id="m_lastContact" placeholder="e.g. May 1, 2025"></div>
+      <div class="modal-field"><label>Next Action</label><input type="text" id="m_nextAction" placeholder="e.g. Email WR coach"></div>
+      <div class="modal-field full"><label>🔗 Connection / Relationship Source</label><input type="text" id="m_connection" placeholder="e.g. Yogi Roth, Kenny Vaccaro, Lake Travis pipeline, Family alumni"></div>
+      <div class="modal-field"><label>📋 WR Spots Remaining (2027)</label><input type="number" id="m_wrSpots" min="0" max="10" placeholder="e.g. 2"></div>
+      <div class="modal-field full"><label>Notes</label><textarea id="m_notes" placeholder="Connection, context, insider info…"></textarea></div>
+    </div>
+    <div class="modal-actions">
+      <button class="btn btn-cancel" onclick="closeModal()">Cancel</button>
+      <button class="btn btn-primary" onclick="saveModal()">💾 Save</button>
+    </div>
+  </div>
+</div>
+<script>
+"use strict";
+const rawData = [
+  ["Alabama","Tier 1 – Dream","Derrick Nix",null,"@DerrickDnix","Ryan Grubb",null,null,null,null,null,null,null,null,null,null,"Attended camp last 3 years"],
+  ["Ohio State","Tier 1 – Dream","Cortez Hankton","hankton.3@osu.edu","@Coach_Hankton","Matt Guerrieri",null,"@MattGuerrieri",null,null,null,null,null,null,null,null,"Attended camp last 3 years"],
+  ["Auburn","Tier 1 – Dream","Kodi Burns",null,"@KodiBurns","Joel Gordon",null,null,null,null,null,null,null,null,null,null,"Former LT Grad, Caleb Burton attended"],
+  ["Michigan","Tier 1 – Dream","Marques Hagans",null,"@coachmhagans","Jason Beck",null,"@Coach_Beck7",null,null,null,null,null,null,null,null,"Grandparents are alumns and live in the area"],
+  ["USC","Tier 1 – Dream","Dennis Simmons",null,"@CoachSimmonsSC","Luke Huard",null,"@CoachLukeHuard",null,null,null,null,null,null,null,null,"Lake McRee is LT alumn"],
+  ["Georgia","Tier 1 – Dream","James Coley",null,"@CoachColey","Mike Bobo",null,"@CoachMikeBobo",null,null,null,null,null,null,null,null,null],
+  ["Texas","Tier 2 – Reach","Chris Jackson",null,"@ciege81","Kyle Flood",null,"@KJJFlood",null,null,null,null,null,null,null,null,"Vaccaro connection with Blake Gideon"],
+  ["Florida","Tier 2 – Reach","Marcus Davis",null,"@CoachDavisWR","Buster Faulkner",null,"@Buster_Faulkner",null,null,null,null,null,null,null,null,null],
+  ["LSU","Tier 2 – Reach","George McDonald",null,"@CoachGMcDonald","Charlie Weis, Jr.",null,"@WeisJr_M",null,null,null,null,null,null,null,null,null],
+  ["Miami","Tier 2 – Reach","Kevin Beard",null,"@Kevin_Beard9","Shannon Dawson",null,"@CoachDawson_UM",null,null,null,null,null,null,null,null,null],
+  ["Oklahoma","Tier 2 – Reach","Emmett Jones",null,"@CoachEmmett","Ben Arbuckle",null,"@arbuckle_ben",null,null,null,null,null,null,null,null,null],
+  ["Oregon","Tier 2 – Reach","Ross Douglas",null,"@RossDoug21","Drew Mehringer",null,"@DrewMehringer",null,null,null,null,null,null,null,null,null],
+  ["Penn State","Tier 2 – Reach","Kashif Moore",null,"@KashifMoore","Taylor Mouser",null,"@T_Mouser",null,null,null,null,null,null,null,null,null],
+  ["Tennessee","Tier 2 – Reach","Kelsey Pope",null,"@CoachKelseyPope","Joey Halzle",null,"@CoachHalzle",null,null,null,null,null,null,null,null,null],
+  ["Texas A&M","Tier 2 – Reach","John Perry",null,"@CoachJohn_Perry","Holmon Wiggins",null,"@HolmonWiggins",null,null,null,null,null,null,null,null,"Currently live in Austin"],
+  ["Clemson","Tier 2 – Reach","Tyler Grisham",null,"@Coach_Grisham","Chad Morris",null,"@coachchadmorris",null,null,null,null,null,null,null,null,null],
+  ["Missouri","Tier 3 – Target","Jacob Peeler",null,"@NastyWideOuts","Chip Lindsey",null,"@ChipLindsey11",null,null,null,null,null,null,null,null,"Coach Peeler's TX roots"],
+  ["Texas Tech","Tier 3 – Target","Justin Johnson",null,"@COACHJUICE_","Mack Leftwich",null,"@Coach_Leftwich",null,null,null,null,null,null,null,null,"Mom's alma mater"],
+  ["Kentucky","Tier 3 – Target","Joe Price III",null,"@CoachJP3","Joe Sloan",null,"@CoachJoeSloan",null,null,null,null,null,null,null,null,"Will Stein former LT OC"],
+  ["Arizona","Tier 3 – Target","Bobby Wade",null,"@CoachBobbyWade","Seth Doege",null,"@CoachDoege",null,null,null,null,null,null,null,null,"Yogi contact, Doege Texas connection"],
+  ["Baylor","Tier 3 – Target","Dallas Baker","Dallas_Baker@Baylor.edu","@CoachDBaker81","Jake Spavital","Jake_Spavital@Baylor.edu",null,null,null,null,null,null,null,null,null,"Currently live in Austin"],
+  ["Indiana","Tier 3 – Target",null,null,null,"Mike Shanahan",null,"@CoachShanahan_",null,null,null,null,null,null,null,null,null],
+  ["Kansas","Tier 3 – Target","Terrence Samuel",null,"@CoachTSamuel","Matt Lubick",null,"@CoachLubick",null,null,null,null,null,null,null,null,null],
+  ["USF","Tier 3 – Target","Myles White",null,"@M_White03","Tim Beck",null,"@Coachtimbeck",null,null,null,null,null,null,null,null,null],
+  ["Vanderbilt","Tier 3 – Target","Alex Bailey",null,"@CoachAlexBailey","Tim Beck",null,"@TimBeckFB",null,null,null,null,null,null,null,null,null],
+  ["Michigan State","Tier 3 – Target","Courtney Hawkins",null,"@CoachHawk_5","Nick Sheridan",null,null,null,null,null,null,null,null,null,null,null],
+  ["Notre Dame","Tier 3 – Target","Mike Brown",null,null,"Mike Denbrock",null,"@MikeDenbrock",null,null,null,null,null,null,null,null,null],
+  ["Eastern Michigan","Tier 4 – Early Opportunity","Erik Campbell",null,"@ErikCampbell","Mike Piatkowski","mpiatkow@emich.edu","@M__Piatkowski",null,null,null,null,null,null,null,null,"Former Hoban QB currently attends"],
+  ["Akron","Tier 4 – Early Opportunity","JD Brookhart","jbrookha@uakron.edu","@CoachJDBrook",null,null,null,null,null,null,null,null,null,null,null,"Lived in Akron. Former LT Grad, Markus Boswell attended"],
+  ["Kent State","Tier 4 – Early Opportunity","Isaac Vance",null,"@CoachIsaacVance","Clay Patterson",null,"@CoachCPatt",null,null,null,null,null,null,null,null,"Lived in Akron"],
+  ["Toledo","Tier 4 – Early Opportunity","Devin Figaro","devin.figaro@utoledo.edu","@CoachFigaro","Cris Reisert","christopher.reisert@utoledo.edu","@CoachReisert",null,null,null,null,null,null,null,null,"Lived in Akron"],
+  ["Central Michigan","Tier 4 – Early Opportunity","Brandon Johnson-Farrell",null,"@Coach_BJFarrell","Jim Chapin",null,"@CoachChapin",null,null,null,null,null,null,null,null,null],
+  ["Houston","Tier 4 – Early Opportunity","Brian Bell",null,"@Bell_Brian_","Slade Nagle",null,"@Coach_Nagle",null,null,null,null,null,null,null,null,null],
+  ["Iowa","Tier 4 – Early Opportunity","Jon Budmayr","jon-budmayr@hawkeyefootball.com","@CoachBudmayr","Tim Lester","timothy-lester@hawkeyefootball.com","@CoachTimLester",null,null,null,null,null,null,null,null,null],
+  ["North Texas","Tier 4 – Early Opportunity","Kishawn McClain",null,null,null,null,null,null,null,null,null,null,null,null,null,"Currently live in Austin"],
+  ["SMU","Tier 4 – Early Opportunity","Rob Likens",null,"@CoachRobLikens","D'Eriq King",null,null,null,null,null,null,null,null,null,null,"Currently live in Austin"],
+  ["TCU","Tier 4 – Early Opportunity","Malcolm Kelly",null,"@CoachMXKelly","Gordon Sammis",null,"@CoachSammis",null,null,null,null,null,null,null,null,"Currently live in Austin"],
+  ["Texas State","Tier 4 – Early Opportunity","Randy Martinez",null,"@CoachMart1nez","Landon Keopple",null,"@LDKep",null,null,null,null,null,null,null,null,"Currently live in Austin"],
+  ["UTSA","Tier 4 – Early Opportunity","DeNarius McGhee",null,null,"Rick Bowie",null,"@RickBowie2",null,null,null,null,null,null,null,null,"Currently live in Austin"],
+  ["San Jose State","Tier 4 – Early Opportunity","Billyu Ray Statzmann","billyray.stutzmann@sjsu.ed","@BRayStutzmann","Craig Stutzmann","craig.stutzmann@sjsu.edu","@CoachStutzmann",null,null,null,null,null,null,null,null,null]
+];
+let schools = rawData.map((r,i) => ({
+  id:i, school:r[0], tier:r[1], wrCoach:r[2], wrEmail:r[3], wrTwitter:r[4],
+  oc:r[5], ocEmail:r[6], ocTwitter:r[7], campDate:r[8]||'', visitPlan:r[9]||'',
+  filmSent:r[10]||'', filmSentBy:r[11]||'', coachContacted:r[12]||'',
+  interestLevel:r[13]||'', lastContact:r[14]||'', nextAction:r[15]||'',
+  notes:r[16]||'', connection:'', wrSpotsRemaining:''
+}));
+function connectionBadge(c){if(!c)return '';return `<span class="status-chip conn-badge">🔗 ${c}</span>`;}
+function rosterBadge(spots){
+  if(spots===''||spots===null||spots===undefined)return '';
+  const n=parseInt(spots);
+  if(isNaN(n))return `<span class="status-chip roster-badge roster-unknown">📋 WR Spots: ${spots}</span>`;
+  if(n===0)return `<span class="status-chip roster-badge roster-full">🚫 WR Spots: Full</span>`;
+  if(n===1)return `<span class="status-chip roster-badge roster-tight">⚠️ WR Spots: ${n}</span>`;
+  if(n<=2)return `<span class="status-chip roster-badge roster-low">🟡 WR Spots: ${n}</span>`;
+  return `<span class="status-chip roster-badge roster-open">✅ WR Spots: ${n}</span>`;
+}
+const TIER_ORDER=['Tier 1 – Dream','Tier 2 – Reach','Tier 3 – Target','Tier 4 – Early Opportunity'];
+const TIER_CLASS={'Tier 1 – Dream':'tier1','Tier 2 – Reach':'tier2','Tier 3 – Target':'tier3','Tier 4 – Early Opportunity':'tier4'};
+const TIER_EMOJI={'Tier 1 – Dream':'🔴','Tier 2 – Reach':'🟠','Tier 3 – Target':'🔵','Tier 4 – Early Opportunity':'🟢'};
+function tierShort(t){const m=t.match(/Tier (\d) – (.+)/);return m?`T${m[1]} ${m[2]}`:t;}
+function progressScore(s){let sc=0;if(s.filmSent==='Y')sc+=30;if(s.coachContacted==='Y')sc+=25;if(s.campDate)sc+=20;if(s.visitPlan)sc+=15;const il={Hot:10,Warm:7,Cool:4,Cold:1};sc+=(il[s.interestLevel]||0);return Math.min(sc,100);}
+function interestClass(l){return{Hot:'interest-hot',Warm:'interest-warm',Cool:'interest-cool',Cold:'interest-cold'}[l]||'interest-cold';}
+function interestEmoji(l){return{Hot:'🔥',Warm:'🌤️',Cool:'❄️',Cold:'🧊'}[l]||'—';}
+function renderCard(s){
+  const tc=TIER_CLASS[s.tier]||'tier4',score=progressScore(s),tl=tierShort(s.tier);
+  const wrC=`${s.wrEmail?`<a class="contact-btn email" href="mailto:${s.wrEmail}" onclick="event.stopPropagation()">✉️ Email</a>`:''}${s.wrTwitter?`<a class="contact-btn twitter" href="https://twitter.com/${s.wrTwitter.replace('@','')}" target="_blank" onclick="event.stopPropagation()">𝕏 ${s.wrTwitter}</a>`:''}`;
+  const ocC=`${s.ocEmail?`<a class="contact-btn email" href="mailto:${s.ocEmail}" onclick="event.stopPropagation()">✉️ Email</a>`:''}${s.ocTwitter?`<a class="contact-btn twitter" href="https://twitter.com/${s.ocTwitter.replace('@','')}" target="_blank" onclick="event.stopPropagation()">𝕏 ${s.ocTwitter}</a>`:''}`;
+  const connB=connectionBadge(s.connection),rostB=rosterBadge(s.wrSpotsRemaining);
+  const campB=s.campDate?`<span class="camp-badge">🏕️ Camp: ${s.campDate}</span>`:'';
+  const visitB=s.visitPlan?`<span class="visit-badge">✈️ Visit: ${s.visitPlan}</span>`:'';
+  const filmB=s.filmSent?`<span class="status-chip ${s.filmSent==='Y'?'film-yes':'film-no'}">📹 Film ${s.filmSent==='Y'?'Sent ✓':'Pending'}</span>`:'';
+  const contB=s.coachContacted?`<span class="status-chip ${s.coachContacted==='Y'?'film-yes':'film-no'}">📞 ${s.coachContacted==='Y'?'Contacted ✓':'Not Contacted'}</span>`:'';
+  const intB=s.interestLevel?`<span class="status-chip ${interestClass(s.interestLevel)}">${interestEmoji(s.interestLevel)} ${s.interestLevel}</span>`:'';
+  const nextB=s.nextAction?`<span class="status-chip" style="background:rgba(88,86,214,0.1);color:#5856D6;border:1px solid rgba(88,86,214,0.2)">▶ ${s.nextAction}</span>`:'';
+  const notesH=s.notes?`<div class="notes-box">📎 ${s.notes}</div>`:'';
+  const hasBadges=filmB||contB||intB||campB||visitB||nextB||connB||rostB;
+  return `<div class="school-card ${tc}" onclick="openModal(${s.id})"><div class="card-top"><div class="card-school-name">${s.school}</div><span class="card-tier-badge">${TIER_EMOJI[s.tier]} ${tl}</span></div><div class="card-coaches">${s.wrCoach?`<div class="coach-block"><div class="coach-label">WR Coach</div><div class="coach-name">${s.wrCoach}</div><div class="coach-contact">${wrC}</div></div>`:''}${s.oc?`<div class="coach-block"><div class="coach-label">OC</div><div class="coach-name">${s.oc}</div><div class="coach-contact">${ocC}</div></div>`:''}</div>${hasBadges?`<div class="card-divider"></div><div class="card-status-row">${connB}${rostB}${filmB}${contB}${intB}${campB}${visitB}${nextB}</div>`:''}<div class="progress-wrap"><div class="progress-label-row"><span>Recruiting Progress</span><span>${score}%</span></div><div class="progress-track"><div class="progress-fill" style="width:${score}%"></div></div></div>${notesH}</div>`;
+}
+function renderBoard(){
+  const search=document.getElementById('searchInput').value.toLowerCase();
+  const tierF=document.getElementById('tierFilter').value,filmF=document.getElementById('filmFilter').value,intF=document.getElementById('interestFilter').value;
+  const filtered=schools.filter(s=>{
+    const mS=!search||[s.school,s.wrCoach,s.oc,s.notes,s.nextAction,s.wrEmail,s.ocEmail].some(v=>v&&v.toLowerCase().includes(search));
+    return mS&&(!tierF||s.tier.startsWith(tierF))&&(!filmF||s.filmSent===filmF)&&(!intF||s.interestLevel===intF);
+  });
+  document.getElementById('totalSchools').textContent=schools.length;
+  document.getElementById('filmSentCount').textContent=schools.filter(s=>s.filmSent==='Y').length;
+  document.getElementById('contactedCount').textContent=schools.filter(s=>s.coachContacted==='Y').length;
+  document.getElementById('campCount').textContent=schools.filter(s=>s.campDate).length;
+  document.getElementById('visitCount').textContent=schools.filter(s=>s.visitPlan).length;
+  let html='';
+  if(!filtered.length){html=`<div class="empty-state">🔍 No schools match your filters.</div>`;}
+  else{TIER_ORDER.forEach(tier=>{const ts=filtered.filter(s=>s.tier===tier);if(!ts.length)return;html+=`<div class="tier-section ${TIER_CLASS[tier]}"><div class="tier-section-header"><div class="tier-dot"></div><div class="tier-section-label">${tier}</div><span class="tier-count-badge">${ts.length} school${ts.length!==1?'s':''}</span></div><div class="school-grid">${ts.map(s=>renderCard(s)).join('')}</div></div>`;});}
+  document.getElementById('boardBody').innerHTML=html;
+}
+let activeId=null;
+function openModal(id){
+  activeId=id;const s=schools.find(x=>x.id===id);
+  document.getElementById('modalTitle').textContent=`✏️ ${s.school}`;
+  ['m_interest','m_film','m_filmBy','m_contacted','m_camp','m_visit','m_lastContact','m_nextAction','m_connection','m_notes'].forEach(id=>{
+    const map={m_interest:'interestLevel',m_film:'filmSent',m_filmBy:'filmSentBy',m_contacted:'coachContacted',m_camp:'campDate',m_visit:'visitPlan',m_lastContact:'lastContact',m_nextAction:'nextAction',m_connection:'connection',m_notes:'notes'};
+    document.getElementById(id).value=s[map[id]]||'';
+  });
+  document.getElementById('m_wrSpots').value=s.wrSpotsRemaining||'';
+  document.getElementById('editModal').classList.add('active');
+}
+function closeModal(){document.getElementById('editModal').classList.remove('active');activeId=null;}
+function saveModal(){
+  const s=schools.find(x=>x.id===activeId);
+  s.interestLevel=document.getElementById('m_interest').value;
+  s.filmSent=document.getElementById('m_film').value;
+  s.filmSentBy=document.getElementById('m_filmBy').value;
+  s.coachContacted=document.getElementById('m_contacted').value;
+  s.campDate=document.getElementById('m_camp').value;
+  s.visitPlan=document.getElementById('m_visit').value;
+  s.lastContact=document.getElementById('m_lastContact').value;
+  s.nextAction=document.getElementById('m_nextAction').value;
+  s.connection=document.getElementById('m_connection').value;
+  s.wrSpotsRemaining=document.getElementById('m_wrSpots').value;
+  s.notes=document.getElementById('m_notes').value;
+  closeModal();renderBoard();
+}
+document.getElementById('editModal').addEventListener('click',function(e){if(e.target===this)closeModal();});
+
+/* ─────────────────────────────────────────────
+   SAVE & EXPORT  — bakes all edits into a fresh
+   index.html and triggers a browser download.
+───────────────────────────────────────────── */
+function escJS(v){
+  if(v===null||v===undefined)return 'null';
+  return JSON.stringify(String(v));
+}
+function buildExportHTML(){
+  // Rebuild rawData rows from live `schools` array, preserving every editable field
+  const rows = schools.map(s => {
+    const v = (x) => (x === '' || x === null || x === undefined) ? 'null' : JSON.stringify(x);
+    return `  [${v(s.school)},${v(s.tier)},${v(s.wrCoach)},${v(s.wrEmail)},${v(s.wrTwitter)},` +
+           `${v(s.oc)},${v(s.ocEmail)},${v(s.ocTwitter)},` +
+           `${v(s.campDate||null)},${v(s.visitPlan||null)},` +
+           `${v(s.filmSent||null)},${v(s.filmSentBy||null)},${v(s.coachContacted||null)},` +
+           `${v(s.interestLevel||null)},${v(s.lastContact||null)},${v(s.nextAction||null)},` +
+           `${v(s.notes||null)},${v(s.connection||null)},${v(s.wrSpotsRemaining||null)}]`;
+  }).join(',\n');
+
+  // Grab the entire current page HTML, then surgically replace rawData + extend the loader
+  let html = document.documentElement.outerHTML;
+
+  // 1. Replace the rawData block with the live version
+  const newRawData = `const rawData = [\n${rows}\n];`;
+  html = html.replace(/const rawData = \[[\s\S]*?\];/, newRawData);
+
+  // 2. Extend the schools mapper to read the two new columns (connection, wrSpotsRemaining)
+  const newMapper = `let schools = rawData.map((r,i) => ({
+  id:i, school:r[0], tier:r[1], wrCoach:r[2], wrEmail:r[3], wrTwitter:r[4],
+  oc:r[5], ocEmail:r[6], ocTwitter:r[7], campDate:r[8]||'', visitPlan:r[9]||'',
+  filmSent:r[10]||'', filmSentBy:r[11]||'', coachContacted:r[12]||'',
+  interestLevel:r[13]||'', lastContact:r[14]||'', nextAction:r[15]||'',
+  notes:r[16]||'', connection:r[17]||'', wrSpotsRemaining:r[18]||''
+}));`;
+  html = html.replace(
+    /let schools = rawData\.map\(\(r,i\) => \(\{[\s\S]*?\}\)\);/,
+    newMapper
+  );
+
+  return html;
+}
+
+function showToast(msg){
+  const t = document.getElementById('exportToast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'), 3500);
+}
+
+function saveAndExport(){
+  try {
+    const html = buildExportHTML();
+    const blob = new Blob([html], {type:'text/html;charset=utf-8'});
+    const url  = URL.createObjectURL(blob);
+    const a    = document.createElement('a');
+    a.href     = url;
+    a.download = 'index.html';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+    showToast('✅ index.html downloaded — drop it on your Desktop & push to GitHub!');
+  } catch(err) {
+    showToast('⚠️ Export failed: ' + err.message);
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('lastUpdated').textContent=new Date().toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'});
+  document.getElementById('searchInput').addEventListener('input',renderBoard);
+  document.getElementById('tierFilter').addEventListener('change',renderBoard);
+  document.getElementById('filmFilter').addEventListener('change',renderBoard);
+  document.getElementById('interestFilter').addEventListener('change',renderBoard);
+  renderBoard();
+});
+</script>
+</body>
+</html>

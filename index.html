@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Carson Currie — Recruiting War Board</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&amp;family=DM+Sans:wght@300;400;500;600;700&amp;family=DM+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
 <style>
 :root {
   --gold:        #C9A84C;
@@ -582,7 +580,7 @@ body{
   <div class="hero-layout">
     <div class="hero-photo-wrap">
       <div class="hero-photo" id="heroPhoto">
-        <img src="https://lh3.googleusercontent.com/d/1R-D1VKRMGVinrX4CNCO_Fed93xZN_Qnm" alt="Carson Currie" onerror="this.src='https://drive.google.com/uc?export=view&id=1R-D1VKRMGVinrX4CNCO_Fed93xZN_Qnm';this.onerror=function(){this.style.display='none';this.parentElement.innerHTML='🏈'}">
+        <img src="https://lh3.googleusercontent.com/d/1R-D1VKRMGVinrX4CNCO_Fed93xZN_Qnm" alt="Carson Currie" onerror="this.src='https://drive.google.com/uc?export=view&amp;id=1R-D1VKRMGVinrX4CNCO_Fed93xZN_Qnm';this.onerror=function(){this.style.display='none';this.parentElement.innerHTML='🏈'}">
       </div>
     </div>
     <div class="hero-body">
@@ -603,7 +601,7 @@ body{
         <a class="hero-action film" href="https://t.co/Tq9j5HxUNF" target="_blank">▶ Camp Film</a>
         <a class="hero-action social" href="https://twitter.com/CarsonCurrie" target="_blank">𝕏 @CarsonCurrie</a>
       </div>
-      <div class="hero-sub">Last updated <span id="lastUpdated"></span></div>
+      <div class="hero-sub">Last updated <span id="lastUpdated">March 11, 2026</span></div>
     </div>
   </div>
 </div>
@@ -611,23 +609,23 @@ body{
 <!-- PIPELINE SUMMARY -->
 <div class="pipeline-summary">
   <div class="pipeline-funnel">
-    <div class="pipeline-stage" id="ps-eval-stage">
-      <div class="ps-count-large" id="ps-eval">0</div>
+    <div class="pipeline-stage ps-active" id="ps-eval-stage">
+      <div class="ps-count-large" id="ps-eval">40</div>
       <div class="ps-label">Evaluated</div>
     </div>
-    <div class="pipeline-stage" id="ps-contact-stage">
-      <div class="ps-count-large" id="ps-contact">0</div>
+    <div class="pipeline-stage ps-active" id="ps-contact-stage">
+      <div class="ps-count-large" id="ps-contact">40</div>
       <div class="ps-label">Contacted</div>
     </div>
-    <div class="pipeline-stage" id="ps-camp-stage">
+    <div class="pipeline-stage ps-zero" id="ps-camp-stage">
       <div class="ps-count-large" id="ps-camp">0</div>
       <div class="ps-label">Camp</div>
     </div>
-    <div class="pipeline-stage" id="ps-visit-stage">
+    <div class="pipeline-stage ps-zero" id="ps-visit-stage">
       <div class="ps-count-large" id="ps-visit">0</div>
       <div class="ps-label">Visit</div>
     </div>
-    <div class="pipeline-stage" id="ps-offer-stage">
+    <div class="pipeline-stage ps-zero" id="ps-offer-stage">
       <div class="ps-count-large" id="ps-offer">0</div>
       <div class="ps-label">Interest</div>
     </div>
@@ -636,9 +634,9 @@ body{
 
 <!-- STATS -->
 <div class="stats-row">
-  <div class="stat-tile"><div class="stat-icon">🏫</div><div class="stat-num" id="totalSchools">0</div><div class="stat-label">Total Schools</div></div>
-  <div class="stat-tile"><div class="stat-icon">📹</div><div class="stat-num" id="filmSentCount">0</div><div class="stat-label">Film Sent</div></div>
-  <div class="stat-tile"><div class="stat-icon">📞</div><div class="stat-num" id="contactedCount">0</div><div class="stat-label">Contacted</div></div>
+  <div class="stat-tile"><div class="stat-icon">🏫</div><div class="stat-num" id="totalSchools">40</div><div class="stat-label">Total Schools</div></div>
+  <div class="stat-tile"><div class="stat-icon">📹</div><div class="stat-num" id="filmSentCount">40</div><div class="stat-label">Film Sent</div></div>
+  <div class="stat-tile"><div class="stat-icon">📞</div><div class="stat-num" id="contactedCount">40</div><div class="stat-label">Contacted</div></div>
   <div class="stat-tile"><div class="stat-icon">🏕</div><div class="stat-num" id="campCount">0</div><div class="stat-label">Camps</div></div>
   <div class="stat-tile"><div class="stat-icon">✈</div><div class="stat-num" id="visitCount">0</div><div class="stat-label">Visits</div></div>
 </div>
@@ -678,20 +676,1997 @@ body{
     </select>
   </div>
   <div class="util-actions">
-    <button class="btn-export" onclick="saveAndExport()">💾 Save & Export</button>
+    <button class="btn-export" onclick="saveAndExport()">💾 Save &amp; Export</button>
     <button class="btn-util" onclick="window.print()">Print</button>
   </div>
 </div>
 
 <!-- BOARD -->
-<div class="board-body" id="boardBody"></div>
+<div class="board-body" id="boardBody">
+<div class="tier-section tier1">
+  <div class="tier-header">
+    <div class="tier-bar"></div>
+    <div class="tier-name">Tier 1 – Dream</div>
+    <span class="tier-badge">6 schools</span>
+  </div>
+  <div class="school-grid">
+<div class="school-card" onclick="openModal(0)">
+  <div class="card-inner">
+    <div class="card-head">
+      <div class="card-logo card-logo-img" data-init="A"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/333.png" alt="Alabama" onerror="logoFallback(this)"></div>
+      <div class="card-title-block">
+        <div class="card-school">Alabama</div>
+        <div class="card-subtitle">HC: Kalen DeBoer</div>
+      </div>
+      <span class="card-tier-pill">T1 Dream</span>
+    </div>
+
+    <div class="card-coaches">
+    <div class="coach-block">
+      <div class="coach-role">WR</div>
+      <div class="coach-name">Derrick Nix</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/DerrickDnix" target="_blank" onclick="event.stopPropagation()" title="@DerrickDnix">𝕏</a></div>
+    </div>
+    <div class="coach-block">
+      <div class="coach-role">OC</div>
+      <div class="coach-name">Ryan Grubb</div>
+      <div class="coach-contact-row"></div>
+    </div></div>
+
+    <div class="card-status"><span class="chip chip-film-yes">📹 Film Sent</span><span class="chip chip-film-yes">📞 Contacted</span></div>
+
+    <div class="card-pipeline">
+      <div class="pipeline-label-row">
+        <span class="pipeline-title">Recruiting Pipeline</span>
+        <span class="pipeline-pct">55%</span>
+      </div>
+      <div class="pipeline-track"><div class="pipeline-step done"></div><div class="pipeline-step done"></div><div class="pipeline-step"></div><div class="pipeline-step"></div><div class="pipeline-step"></div></div>
+      <div class="pipeline-stages"><div class="stage-label done">Eval</div><div class="stage-label done">Contact</div><div class="stage-label">Camp</div><div class="stage-label">Visit</div><div class="stage-label">Interest</div></div>
+    </div>
+
+    <div class="card-rule"></div>
+    <div class="card-actions">
+      <a class="action-btn quest" href="https://www.google.com/search?q=Alabama%20football%20recruiting%20questionnaire" target="_blank" onclick="event.stopPropagation()">📝 Quest.</a><a class="action-btn dir" href="https://www.google.com/search?q=ALABAMA%20ATHLETICS%20DIRECTORY" target="_blank" onclick="event.stopPropagation()">🏛 Dir.</a><a class="action-btn teamx" href="https://twitter.com/AlabamaFTBL" target="_blank" onclick="event.stopPropagation()">𝕏 @AlabamaFTBL</a>
+      <button class="action-btn edit-btn" onclick="event.stopPropagation();openModal(0)">✏ Edit</button>
+    </div>
+  </div>
+  
+  <button class="card-expand-toggle" onclick="event.stopPropagation();toggleExpand(this)">
+    Program Contacts &amp; Staff
+    <span class="expand-arrow">▾</span>
+  </button>
+  <div class="card-expanded">
+    <div class="expand-section-label">Recruiting Staff</div><div class="rc-grid"><div class="rc-person"><span class="rc-name">Kevin Green</span><a class="rc-xlink" href="https://twitter.com/CoachKev6k" target="_blank" onclick="event.stopPropagation()">@CoachKev6k</a></div><div class="rc-person"><span class="rc-name">Jaxon Warshaw</span><a class="rc-xlink" href="https://twitter.com/JaxWarshawUA" target="_blank" onclick="event.stopPropagation()">@JaxWarshawUA</a></div><div class="rc-person"><span class="rc-name">Tony Jones</span><a class="rc-xlink" href="https://twitter.com/TonyJones_810" target="_blank" onclick="event.stopPropagation()">@TonyJones_810</a></div><div class="rc-person"><span class="rc-name">Jerret McElwain</span><a class="rc-xlink" href="https://twitter.com/jerretmcelwain" target="_blank" onclick="event.stopPropagation()">@jerretmcelwain</a></div></div><div class="expand-section-label" style="margin-top:12px">Program Contacts</div><div class="emails-row"><a class="email-chip" href="mailto:jwarshaw@ia.ua.edu" onclick="event.stopPropagation()">✉ jwarshaw@ia.ua.edu</a><a class="email-chip" href="mailto:tfuhrman@ia.ua.edu" onclick="event.stopPropagation()">✉ tfuhrman@ia.ua.edu</a><a class="email-chip" href="mailto:demig@ia.ua.edu" onclick="event.stopPropagation()">✉ demig@ia.ua.edu</a></div><div class="notes-expand">📎 Attended camp last 3 years</div>
+  </div>
+</div>
+<div class="school-card" onclick="openModal(1)">
+  <div class="card-inner">
+    <div class="card-head">
+      <div class="card-logo card-logo-img" data-init="OS"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/194.png" alt="Ohio State" onerror="logoFallback(this)"></div>
+      <div class="card-title-block">
+        <div class="card-school">Ohio State</div>
+        <div class="card-subtitle">HC: Ryan Day</div>
+      </div>
+      <span class="card-tier-pill">T1 Dream</span>
+    </div>
+
+    <div class="card-coaches">
+    <div class="coach-block">
+      <div class="coach-role">WR</div>
+      <div class="coach-name">Cortez Hankton</div>
+      <div class="coach-contact-row"><a class="contact-icon email" href="mailto:hankton.3@osu.edu" onclick="event.stopPropagation()" title="hankton.3@osu.edu">✉</a><a class="contact-icon xbird" href="https://twitter.com/Coach_Hankton" target="_blank" onclick="event.stopPropagation()" title="@Coach_Hankton">𝕏</a></div>
+    </div>
+    <div class="coach-block">
+      <div class="coach-role">OC</div>
+      <div class="coach-name">Matt Guerrieri</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/MattGuerrieri" target="_blank" onclick="event.stopPropagation()" title="@MattGuerrieri">𝕏</a></div>
+    </div></div>
+
+    <div class="card-status"><span class="chip chip-film-yes">📹 Film Sent</span><span class="chip chip-film-yes">📞 Contacted</span><span class="chip chip-conn">🔗 Garret Wilson - LT Grad</span></div>
+
+    <div class="card-pipeline">
+      <div class="pipeline-label-row">
+        <span class="pipeline-title">Recruiting Pipeline</span>
+        <span class="pipeline-pct">55%</span>
+      </div>
+      <div class="pipeline-track"><div class="pipeline-step done"></div><div class="pipeline-step done"></div><div class="pipeline-step"></div><div class="pipeline-step"></div><div class="pipeline-step"></div></div>
+      <div class="pipeline-stages"><div class="stage-label done">Eval</div><div class="stage-label done">Contact</div><div class="stage-label">Camp</div><div class="stage-label">Visit</div><div class="stage-label">Interest</div></div>
+    </div>
+
+    <div class="card-rule"></div>
+    <div class="card-actions">
+      <a class="action-btn quest" href="https://www.google.com/search?q=Ohio%20State%20football%20recruiting%20questionnaire" target="_blank" onclick="event.stopPropagation()">📝 Quest.</a><a class="action-btn dir" href="https://www.google.com/search?q=OHIO%20STATE%20ATHLETICS%20DIRECTORY" target="_blank" onclick="event.stopPropagation()">🏛 Dir.</a><a class="action-btn teamx" href="https://twitter.com/OhioStateFB" target="_blank" onclick="event.stopPropagation()">𝕏 @OhioStateFB</a>
+      <button class="action-btn edit-btn" onclick="event.stopPropagation();openModal(1)">✏ Edit</button>
+    </div>
+  </div>
+  
+  <button class="card-expand-toggle" onclick="event.stopPropagation();toggleExpand(this)">
+    Program Contacts &amp; Staff
+    <span class="expand-arrow">▾</span>
+  </button>
+  <div class="card-expanded">
+    <div class="expand-section-label">Recruiting Staff</div><div class="rc-grid"><div class="rc-person"><span class="rc-name">Mark Pantoni</span><a class="rc-xlink" href="https://twitter.com/markpantoni" target="_blank" onclick="event.stopPropagation()">@markpantoni</a></div><div class="rc-person"><span class="rc-name">Nick Murphy</span><a class="rc-xlink" href="https://twitter.com/Nick_P_Murphy" target="_blank" onclick="event.stopPropagation()">@Nick_P_Murphy</a></div><div class="rc-person"><span class="rc-name">Ed Terwilliger</span><a class="rc-xlink" href="https://twitter.com/etwill21" target="_blank" onclick="event.stopPropagation()">@etwill21</a></div><div class="rc-person"><span class="rc-name">Billy Homer</span><a class="rc-xlink" href="https://twitter.com/williamh44" target="_blank" onclick="event.stopPropagation()">@williamh44</a></div></div><div class="expand-section-label" style="margin-top:12px">Program Contacts</div><div class="emails-row"><a class="email-chip" href="mailto:murphy.2307@osu.edu" onclick="event.stopPropagation()">✉ murphy.2307@osu.edu</a><a class="email-chip" href="mailto:tempel.2@osu.edu" onclick="event.stopPropagation()">✉ tempel.2@osu.edu</a><a class="email-chip" href="mailto:jackson.3392@osu.edu" onclick="event.stopPropagation()">✉ jackson.3392@osu.edu</a><a class="email-chip" href="mailto:dudley.255@osu.edu" onclick="event.stopPropagation()">✉ dudley.255@osu.edu</a></div><div class="notes-expand">📎 Attended camp last 3 years</div>
+  </div>
+</div>
+<div class="school-card" onclick="openModal(2)">
+  <div class="card-inner">
+    <div class="card-head">
+      <div class="card-logo card-logo-img" data-init="A"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/2.png" alt="Auburn" onerror="logoFallback(this)"></div>
+      <div class="card-title-block">
+        <div class="card-school">Auburn</div>
+        <div class="card-subtitle">HC: Alex Golesh</div>
+      </div>
+      <span class="card-tier-pill">T1 Dream</span>
+    </div>
+
+    <div class="card-coaches">
+    <div class="coach-block">
+      <div class="coach-role">WR</div>
+      <div class="coach-name">Kodi Burns</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/KodiBurns" target="_blank" onclick="event.stopPropagation()" title="@KodiBurns">𝕏</a></div>
+    </div>
+    <div class="coach-block">
+      <div class="coach-role">OC</div>
+      <div class="coach-name">Joel Gordon</div>
+      <div class="coach-contact-row"></div>
+    </div></div>
+
+    <div class="card-status"><span class="chip chip-film-yes">📹 Film Sent</span><span class="chip chip-film-yes">📞 Contacted</span></div>
+
+    <div class="card-pipeline">
+      <div class="pipeline-label-row">
+        <span class="pipeline-title">Recruiting Pipeline</span>
+        <span class="pipeline-pct">55%</span>
+      </div>
+      <div class="pipeline-track"><div class="pipeline-step done"></div><div class="pipeline-step done"></div><div class="pipeline-step"></div><div class="pipeline-step"></div><div class="pipeline-step"></div></div>
+      <div class="pipeline-stages"><div class="stage-label done">Eval</div><div class="stage-label done">Contact</div><div class="stage-label">Camp</div><div class="stage-label">Visit</div><div class="stage-label">Interest</div></div>
+    </div>
+
+    <div class="card-rule"></div>
+    <div class="card-actions">
+      <a class="action-btn quest" href="https://www.google.com/search?q=Auburn%20football%20recruiting%20questionnaire" target="_blank" onclick="event.stopPropagation()">📝 Quest.</a><a class="action-btn dir" href="https://www.google.com/search?q=AUBURN%20ATHLETICS%20DIRECTORY" target="_blank" onclick="event.stopPropagation()">🏛 Dir.</a><a class="action-btn teamx" href="https://twitter.com/AuburnFootball" target="_blank" onclick="event.stopPropagation()">𝕏 @AuburnFootball</a>
+      <button class="action-btn edit-btn" onclick="event.stopPropagation();openModal(2)">✏ Edit</button>
+    </div>
+  </div>
+  
+  <button class="card-expand-toggle" onclick="event.stopPropagation();toggleExpand(this)">
+    Program Contacts &amp; Staff
+    <span class="expand-arrow">▾</span>
+  </button>
+  <div class="card-expanded">
+    <div class="expand-section-label">Recruiting Staff</div><div class="rc-grid"><div class="rc-person"><span class="rc-name">Harding Harper III</span><a class="rc-xlink" href="https://twitter.com/hardingharper" target="_blank" onclick="event.stopPropagation()">@hardingharper</a></div><div class="rc-person"><span class="rc-name">Ethan Johnson</span><a class="rc-xlink" href="https://twitter.com/EthanJohnsonCFB" target="_blank" onclick="event.stopPropagation()">@EthanJohnsonCFB</a></div><div class="rc-person"><span class="rc-name">Grant Miller</span><a class="rc-xlink" href="https://twitter.com/G_miller11" target="_blank" onclick="event.stopPropagation()">@G_miller11</a></div><div class="rc-person"><span class="rc-name">Ryland Powell</span><a class="rc-xlink" href="https://twitter.com/Ryland_powell" target="_blank" onclick="event.stopPropagation()">@Ryland_powell</a></div></div><div class="expand-section-label" style="margin-top:12px">Program Contacts</div><div class="emails-row"><a class="email-chip" href="mailto:erj0031@auburn.edu" onclick="event.stopPropagation()">✉ erj0031@auburn.edu</a><a class="email-chip" href="mailto:gleatcb@auburn.edu" onclick="event.stopPropagation()">✉ gleatcb@auburn.edu</a><a class="email-chip" href="mailto:rsw0024@auburn.edu" onclick="event.stopPropagation()">✉ rsw0024@auburn.edu</a><a class="email-chip" href="mailto:jwb0020@auburn.edu" onclick="event.stopPropagation()">✉ jwb0020@auburn.edu</a></div><div class="notes-expand">📎 Former LT Grad, Caleb Burton attended</div>
+  </div>
+</div>
+<div class="school-card" onclick="openModal(3)">
+  <div class="card-inner">
+    <div class="card-head">
+      <div class="card-logo card-logo-img" data-init="M"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/130.png" alt="Michigan" onerror="logoFallback(this)"></div>
+      <div class="card-title-block">
+        <div class="card-school">Michigan</div>
+        <div class="card-subtitle">HC: Kyle Whittingham</div>
+      </div>
+      <span class="card-tier-pill">T1 Dream</span>
+    </div>
+
+    <div class="card-coaches">
+    <div class="coach-block">
+      <div class="coach-role">WR</div>
+      <div class="coach-name">Marques Hagans</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/coachmhagans" target="_blank" onclick="event.stopPropagation()" title="@coachmhagans">𝕏</a></div>
+    </div>
+    <div class="coach-block">
+      <div class="coach-role">OC</div>
+      <div class="coach-name">Jason Beck</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/Coach_Beck7" target="_blank" onclick="event.stopPropagation()" title="@Coach_Beck7">𝕏</a></div>
+    </div></div>
+
+    <div class="card-status"><span class="chip chip-film-yes">📹 Film Sent</span><span class="chip chip-film-yes">📞 Contacted</span></div>
+
+    <div class="card-pipeline">
+      <div class="pipeline-label-row">
+        <span class="pipeline-title">Recruiting Pipeline</span>
+        <span class="pipeline-pct">55%</span>
+      </div>
+      <div class="pipeline-track"><div class="pipeline-step done"></div><div class="pipeline-step done"></div><div class="pipeline-step"></div><div class="pipeline-step"></div><div class="pipeline-step"></div></div>
+      <div class="pipeline-stages"><div class="stage-label done">Eval</div><div class="stage-label done">Contact</div><div class="stage-label">Camp</div><div class="stage-label">Visit</div><div class="stage-label">Interest</div></div>
+    </div>
+
+    <div class="card-rule"></div>
+    <div class="card-actions">
+      <a class="action-btn quest" href="https://www.google.com/search?q=Michigan%20football%20recruiting%20questionnaire" target="_blank" onclick="event.stopPropagation()">📝 Quest.</a><a class="action-btn dir" href="https://www.google.com/search?q=MICHIGAN%20ATHLETICS%20DIRECTORY" target="_blank" onclick="event.stopPropagation()">🏛 Dir.</a><a class="action-btn teamx" href="https://twitter.com/UMichFootball" target="_blank" onclick="event.stopPropagation()">𝕏 @UMichFootball</a>
+      <button class="action-btn edit-btn" onclick="event.stopPropagation();openModal(3)">✏ Edit</button>
+    </div>
+  </div>
+  
+  <button class="card-expand-toggle" onclick="event.stopPropagation();toggleExpand(this)">
+    Program Contacts &amp; Staff
+    <span class="expand-arrow">▾</span>
+  </button>
+  <div class="card-expanded">
+    <div class="expand-section-label">Recruiting Staff</div><div class="rc-grid"><div class="rc-person"><span class="rc-name">Albert Karschnia</span><a class="rc-xlink" href="https://twitter.com/AKarsch_UM" target="_blank" onclick="event.stopPropagation()">@AKarsch_UM</a></div><div class="rc-person"><span class="rc-name">Richard Perry</span><a class="rc-xlink" href="https://twitter.com/RichardPerryUM" target="_blank" onclick="event.stopPropagation()">@RichardPerryUM</a></div><div class="rc-person"><span class="rc-name">Kayli Johnson</span><a class="rc-xlink" href="https://twitter.com/itskaylij" target="_blank" onclick="event.stopPropagation()">@itskaylij</a></div></div><div class="expand-section-label" style="margin-top:12px">Program Contacts</div><div class="emails-row"><a class="email-chip" href="mailto:askarsch@umich.edu" onclick="event.stopPropagation()">✉ askarsch@umich.edu</a><a class="email-chip" href="mailto:wgsmith@umich.edu" onclick="event.stopPropagation()">✉ wgsmith@umich.edu</a><a class="email-chip" href="mailto:stasieb@umich.edu" onclick="event.stopPropagation()">✉ stasieb@umich.edu</a></div><div class="notes-expand">📎 Grandparents are alumns and live in the area</div>
+  </div>
+</div>
+<div class="school-card" onclick="openModal(4)">
+  <div class="card-inner">
+    <div class="card-head">
+      <div class="card-logo card-logo-img" data-init="U"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/30.png" alt="USC" onerror="logoFallback(this)"></div>
+      <div class="card-title-block">
+        <div class="card-school">USC</div>
+        <div class="card-subtitle">HC: Lincoln Riley</div>
+      </div>
+      <span class="card-tier-pill">T1 Dream</span>
+    </div>
+
+    <div class="card-coaches">
+    <div class="coach-block">
+      <div class="coach-role">WR</div>
+      <div class="coach-name">Dennis Simmons</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/CoachSimmonsSC" target="_blank" onclick="event.stopPropagation()" title="@CoachSimmonsSC">𝕏</a></div>
+    </div>
+    <div class="coach-block">
+      <div class="coach-role">OC</div>
+      <div class="coach-name">Luke Huard</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/CoachLukeHuard" target="_blank" onclick="event.stopPropagation()" title="@CoachLukeHuard">𝕏</a></div>
+    </div></div>
+
+    <div class="card-status"><span class="chip chip-film-yes">📹 Film Sent</span><span class="chip chip-film-yes">📞 Contacted</span></div>
+
+    <div class="card-pipeline">
+      <div class="pipeline-label-row">
+        <span class="pipeline-title">Recruiting Pipeline</span>
+        <span class="pipeline-pct">55%</span>
+      </div>
+      <div class="pipeline-track"><div class="pipeline-step done"></div><div class="pipeline-step done"></div><div class="pipeline-step"></div><div class="pipeline-step"></div><div class="pipeline-step"></div></div>
+      <div class="pipeline-stages"><div class="stage-label done">Eval</div><div class="stage-label done">Contact</div><div class="stage-label">Camp</div><div class="stage-label">Visit</div><div class="stage-label">Interest</div></div>
+    </div>
+
+    <div class="card-rule"></div>
+    <div class="card-actions">
+      <a class="action-btn quest" href="https://www.google.com/search?q=USC%20football%20recruiting%20questionnaire" target="_blank" onclick="event.stopPropagation()">📝 Quest.</a><a class="action-btn dir" href="https://www.google.com/search?q=USC%20ATHLETICS%20DIRECTORY" target="_blank" onclick="event.stopPropagation()">🏛 Dir.</a><a class="action-btn teamx" href="https://twitter.com/USC_FB" target="_blank" onclick="event.stopPropagation()">𝕏 @USC_FB</a>
+      <button class="action-btn edit-btn" onclick="event.stopPropagation();openModal(4)">✏ Edit</button>
+    </div>
+  </div>
+  
+  <button class="card-expand-toggle" onclick="event.stopPropagation();toggleExpand(this)">
+    Program Contacts &amp; Staff
+    <span class="expand-arrow">▾</span>
+  </button>
+  <div class="card-expanded">
+    <div class="expand-section-label">Recruiting Staff</div><div class="rc-grid"><div class="rc-person"><span class="rc-name">Chad Bowden</span><a class="rc-xlink" href="https://twitter.com/chaseHbowden" target="_blank" onclick="event.stopPropagation()">@chaseHbowden</a></div><div class="rc-person"><span class="rc-name">Dre Brown</span><a class="rc-xlink" href="https://twitter.com/DreBrownUSC" target="_blank" onclick="event.stopPropagation()">@DreBrownUSC</a></div><div class="rc-person"><span class="rc-name">Max Stienecker</span><a class="rc-xlink" href="https://twitter.com/_maximus347" target="_blank" onclick="event.stopPropagation()">@_maximus347</a></div><div class="rc-person"><span class="rc-name">Weston Zernechel</span><a class="rc-xlink" href="https://twitter.com/WestonZernechel" target="_blank" onclick="event.stopPropagation()">@WestonZernechel</a></div></div><div class="expand-section-label" style="margin-top:12px">Program Contacts</div><div class="emails-row"><a class="email-chip" href="mailto:zerneche@usc.edu" onclick="event.stopPropagation()">✉ zerneche@usc.edu</a><a class="email-chip" href="mailto:alandreb@usc.edu" onclick="event.stopPropagation()">✉ alandreb@usc.edu</a><a class="email-chip" href="mailto:jmohiudd@usc.edu" onclick="event.stopPropagation()">✉ jmohiudd@usc.edu</a><a class="email-chip" href="mailto:football@usc.edu" onclick="event.stopPropagation()">✉ football@usc.edu</a></div><div class="notes-expand">📎 Lake McRee is LT alumn</div>
+  </div>
+</div>
+<div class="school-card" onclick="openModal(5)">
+  <div class="card-inner">
+    <div class="card-head">
+      <div class="card-logo card-logo-img" data-init="G"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/61.png" alt="Georgia" onerror="logoFallback(this)"></div>
+      <div class="card-title-block">
+        <div class="card-school">Georgia</div>
+        <div class="card-subtitle">HC: Kirby Smart</div>
+      </div>
+      <span class="card-tier-pill">T1 Dream</span>
+    </div>
+
+    <div class="card-coaches">
+    <div class="coach-block">
+      <div class="coach-role">WR</div>
+      <div class="coach-name">James Coley</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/CoachColey" target="_blank" onclick="event.stopPropagation()" title="@CoachColey">𝕏</a></div>
+    </div>
+    <div class="coach-block">
+      <div class="coach-role">OC</div>
+      <div class="coach-name">Mike Bobo</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/CoachMikeBobo" target="_blank" onclick="event.stopPropagation()" title="@CoachMikeBobo">𝕏</a></div>
+    </div></div>
+
+    <div class="card-status"><span class="chip chip-film-yes">📹 Film Sent</span><span class="chip chip-film-yes">📞 Contacted</span></div>
+
+    <div class="card-pipeline">
+      <div class="pipeline-label-row">
+        <span class="pipeline-title">Recruiting Pipeline</span>
+        <span class="pipeline-pct">55%</span>
+      </div>
+      <div class="pipeline-track"><div class="pipeline-step done"></div><div class="pipeline-step done"></div><div class="pipeline-step"></div><div class="pipeline-step"></div><div class="pipeline-step"></div></div>
+      <div class="pipeline-stages"><div class="stage-label done">Eval</div><div class="stage-label done">Contact</div><div class="stage-label">Camp</div><div class="stage-label">Visit</div><div class="stage-label">Interest</div></div>
+    </div>
+
+    <div class="card-rule"></div>
+    <div class="card-actions">
+      <a class="action-btn quest" href="https://www.google.com/search?q=Georgia%20football%20recruiting%20questionnaire" target="_blank" onclick="event.stopPropagation()">📝 Quest.</a><a class="action-btn dir" href="https://www.google.com/search?q=GEORGIA%20ATHLETICS%20DIRECTORY" target="_blank" onclick="event.stopPropagation()">🏛 Dir.</a><a class="action-btn teamx" href="https://twitter.com/GeorgiaFootball" target="_blank" onclick="event.stopPropagation()">𝕏 @GeorgiaFootball</a>
+      <button class="action-btn edit-btn" onclick="event.stopPropagation();openModal(5)">✏ Edit</button>
+    </div>
+  </div>
+  
+  <button class="card-expand-toggle" onclick="event.stopPropagation();toggleExpand(this)">
+    Program Contacts &amp; Staff
+    <span class="expand-arrow">▾</span>
+  </button>
+  <div class="card-expanded">
+    <div class="expand-section-label">Recruiting Staff</div><div class="rc-grid"><div class="rc-person"><span class="rc-name">Will Myers</span><a class="rc-xlink" href="https://twitter.com/UGA_WillM" target="_blank" onclick="event.stopPropagation()">@UGA_WillM</a></div><div class="rc-person"><span class="rc-name">Price Petagna</span><a class="rc-xlink" href="https://twitter.com/price_petagna" target="_blank" onclick="event.stopPropagation()">@price_petagna</a></div><div class="rc-person"><span class="rc-name">Kyle Simpson</span><a class="rc-xlink" href="https://twitter.com/kylesimpsonuga" target="_blank" onclick="event.stopPropagation()">@kylesimpsonuga</a></div><div class="rc-person"><span class="rc-name">James Ellis</span><a class="rc-xlink" href="https://twitter.com/JEllisUGA" target="_blank" onclick="event.stopPropagation()">@JEllisUGA</a></div></div><div class="expand-section-label" style="margin-top:12px">Program Contacts</div><div class="emails-row"><a class="email-chip" href="mailto:jpe00108@uga.edu" onclick="event.stopPropagation()">✉ jpe00108@uga.edu</a><a class="email-chip" href="mailto:lreed@sports.uga.edu" onclick="event.stopPropagation()">✉ lreed@sports.uga.edu</a><a class="email-chip" href="mailto:ahunt@sports.uga.edu" onclick="event.stopPropagation()">✉ ahunt@sports.uga.edu</a><a class="email-chip" href="mailto:hhughes@sports.uga.edu" onclick="event.stopPropagation()">✉ hhughes@sports.uga.edu</a></div>
+  </div>
+</div></div>
+</div>
+<div class="tier-section tier2">
+  <div class="tier-header">
+    <div class="tier-bar"></div>
+    <div class="tier-name">Tier 2 – Reach</div>
+    <span class="tier-badge">10 schools</span>
+  </div>
+  <div class="school-grid">
+<div class="school-card" onclick="openModal(6)">
+  <div class="card-inner">
+    <div class="card-head">
+      <div class="card-logo card-logo-img" data-init="T"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/251.png" alt="Texas" onerror="logoFallback(this)"></div>
+      <div class="card-title-block">
+        <div class="card-school">Texas</div>
+        <div class="card-subtitle">HC: Steve Sarkisian</div>
+      </div>
+      <span class="card-tier-pill">T2 Reach</span>
+    </div>
+
+    <div class="card-coaches">
+    <div class="coach-block">
+      <div class="coach-role">WR</div>
+      <div class="coach-name">Chris Jackson</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/ciege81" target="_blank" onclick="event.stopPropagation()" title="@ciege81">𝕏</a></div>
+    </div>
+    <div class="coach-block">
+      <div class="coach-role">OC</div>
+      <div class="coach-name">Kyle Flood</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/KJJFlood" target="_blank" onclick="event.stopPropagation()" title="@KJJFlood">𝕏</a></div>
+    </div></div>
+
+    <div class="card-status"><span class="chip chip-film-yes">📹 Film Sent</span><span class="chip chip-film-yes">📞 Contacted</span></div>
+
+    <div class="card-pipeline">
+      <div class="pipeline-label-row">
+        <span class="pipeline-title">Recruiting Pipeline</span>
+        <span class="pipeline-pct">55%</span>
+      </div>
+      <div class="pipeline-track"><div class="pipeline-step done"></div><div class="pipeline-step done"></div><div class="pipeline-step"></div><div class="pipeline-step"></div><div class="pipeline-step"></div></div>
+      <div class="pipeline-stages"><div class="stage-label done">Eval</div><div class="stage-label done">Contact</div><div class="stage-label">Camp</div><div class="stage-label">Visit</div><div class="stage-label">Interest</div></div>
+    </div>
+
+    <div class="card-rule"></div>
+    <div class="card-actions">
+      <a class="action-btn quest" href="https://www.google.com/search?q=Texas%20football%20recruiting%20questionnaire" target="_blank" onclick="event.stopPropagation()">📝 Quest.</a><a class="action-btn dir" href="https://www.google.com/search?q=TEXAS%20ATHLETICS%20DIRECTORY" target="_blank" onclick="event.stopPropagation()">🏛 Dir.</a><a class="action-btn teamx" href="https://twitter.com/TexasFootball" target="_blank" onclick="event.stopPropagation()">𝕏 @TexasFootball</a>
+      <button class="action-btn edit-btn" onclick="event.stopPropagation();openModal(6)">✏ Edit</button>
+    </div>
+  </div>
+  
+  <button class="card-expand-toggle" onclick="event.stopPropagation();toggleExpand(this)">
+    Program Contacts &amp; Staff
+    <span class="expand-arrow">▾</span>
+  </button>
+  <div class="card-expanded">
+    <div class="expand-section-label">Recruiting Staff</div><div class="rc-grid"><div class="rc-person"><span class="rc-name">Brandon Harris</span><a class="rc-xlink" href="https://twitter.com/BrandonHarris" target="_blank" onclick="event.stopPropagation()">@BrandonHarris</a></div><div class="rc-person"><span class="rc-name">Taylor Searels</span><a class="rc-xlink" href="https://twitter.com/taylor_searels" target="_blank" onclick="event.stopPropagation()">@taylor_searels</a></div><div class="rc-person"><span class="rc-name">JM Jones</span><a class="rc-xlink" href="https://twitter.com/jmjonesUT" target="_blank" onclick="event.stopPropagation()">@jmjonesUT</a></div><div class="rc-person"><span class="rc-name">Kyndal Perry</span><a class="rc-xlink" href="https://twitter.com/KyndalPerry1" target="_blank" onclick="event.stopPropagation()">@KyndalPerry1</a></div></div><div class="expand-section-label" style="margin-top:12px">Program Contacts</div><div class="emails-row"><a class="email-chip" href="mailto:brandon.harris@athletics.utexas.edu" onclick="event.stopPropagation()">✉ brandon.harris@athletics.utexas.edu</a><a class="email-chip" href="mailto:jmjones@utexas.edu" onclick="event.stopPropagation()">✉ jmjones@utexas.edu</a><a class="email-chip" href="mailto:kyndal.perry@athletics.utexas.edu" onclick="event.stopPropagation()">✉ kyndal.perry@athletics.utexas.edu</a><a class="email-chip" href="mailto:jahmal.fenner@athletics.utexas.edu" onclick="event.stopPropagation()">✉ jahmal.fenner@athletics.utexas.edu</a></div><div class="notes-expand">📎 Vaccaro connection with Blake Gideon</div>
+  </div>
+</div>
+<div class="school-card" onclick="openModal(7)">
+  <div class="card-inner">
+    <div class="card-head">
+      <div class="card-logo card-logo-img" data-init="F"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/57.png" alt="Florida" onerror="logoFallback(this)"></div>
+      <div class="card-title-block">
+        <div class="card-school">Florida</div>
+        <div class="card-subtitle">HC: Jon Sumrall</div>
+      </div>
+      <span class="card-tier-pill">T2 Reach</span>
+    </div>
+
+    <div class="card-coaches">
+    <div class="coach-block">
+      <div class="coach-role">WR</div>
+      <div class="coach-name">Marcus Davis</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/CoachDavisWR" target="_blank" onclick="event.stopPropagation()" title="@CoachDavisWR">𝕏</a></div>
+    </div>
+    <div class="coach-block">
+      <div class="coach-role">OC</div>
+      <div class="coach-name">Buster Faulkner</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/Buster_Faulkner" target="_blank" onclick="event.stopPropagation()" title="@Buster_Faulkner">𝕏</a></div>
+    </div></div>
+
+    <div class="card-status"><span class="chip chip-film-yes">📹 Film Sent</span><span class="chip chip-film-yes">📞 Contacted</span></div>
+
+    <div class="card-pipeline">
+      <div class="pipeline-label-row">
+        <span class="pipeline-title">Recruiting Pipeline</span>
+        <span class="pipeline-pct">55%</span>
+      </div>
+      <div class="pipeline-track"><div class="pipeline-step done"></div><div class="pipeline-step done"></div><div class="pipeline-step"></div><div class="pipeline-step"></div><div class="pipeline-step"></div></div>
+      <div class="pipeline-stages"><div class="stage-label done">Eval</div><div class="stage-label done">Contact</div><div class="stage-label">Camp</div><div class="stage-label">Visit</div><div class="stage-label">Interest</div></div>
+    </div>
+
+    <div class="card-rule"></div>
+    <div class="card-actions">
+      <a class="action-btn quest" href="https://www.google.com/search?q=Florida%20football%20recruiting%20questionnaire" target="_blank" onclick="event.stopPropagation()">📝 Quest.</a><a class="action-btn dir" href="https://www.google.com/search?q=FLORIDA%20ATHLETICS%20DIRECTORY" target="_blank" onclick="event.stopPropagation()">🏛 Dir.</a><a class="action-btn teamx" href="https://twitter.com/GatorsFB" target="_blank" onclick="event.stopPropagation()">𝕏 @GatorsFB</a>
+      <button class="action-btn edit-btn" onclick="event.stopPropagation();openModal(7)">✏ Edit</button>
+    </div>
+  </div>
+  
+  <button class="card-expand-toggle" onclick="event.stopPropagation();toggleExpand(this)">
+    Program Contacts &amp; Staff
+    <span class="expand-arrow">▾</span>
+  </button>
+  <div class="card-expanded">
+    <div class="expand-section-label">Recruiting Staff</div><div class="rc-grid"><div class="rc-person"><span class="rc-name">Joe Hamilton</span><a class="rc-xlink" href="https://twitter.com/JoeHamilton__" target="_blank" onclick="event.stopPropagation()">@JoeHamilton__</a></div><div class="rc-person"><span class="rc-name">Chris Prescott</span><a class="rc-xlink" href="https://twitter.com/PrescottChris91" target="_blank" onclick="event.stopPropagation()">@PrescottChris91</a></div><div class="rc-person"><span class="rc-name">Nick Polk</span><a class="rc-xlink" href="https://twitter.com/neripolk" target="_blank" onclick="event.stopPropagation()">@neripolk</a></div><div class="rc-person"><span class="rc-name">Katie Turner</span><a class="rc-xlink" href="https://twitter.com/katieturner0087" target="_blank" onclick="event.stopPropagation()">@katieturner0087</a></div></div><div class="expand-section-label" style="margin-top:12px">Program Contacts</div><div class="emails-row"><a class="email-chip" href="mailto:joeh@gators.ufl.edu" onclick="event.stopPropagation()">✉ joeh@gators.ufl.edu</a><a class="email-chip" href="mailto:chrispr@gators.ufl.edu" onclick="event.stopPropagation()">✉ chrispr@gators.ufl.edu</a><a class="email-chip" href="mailto:katiet@gators.ufl.edu" onclick="event.stopPropagation()">✉ katiet@gators.ufl.edu</a><a class="email-chip" href="mailto:nancys@gators.ufl.edu" onclick="event.stopPropagation()">✉ nancys@gators.ufl.edu</a></div>
+  </div>
+</div>
+<div class="school-card" onclick="openModal(8)">
+  <div class="card-inner">
+    <div class="card-head">
+      <div class="card-logo card-logo-img" data-init="L"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/99.png" alt="LSU" onerror="logoFallback(this)"></div>
+      <div class="card-title-block">
+        <div class="card-school">LSU</div>
+        <div class="card-subtitle">HC: Lane Kiffin</div>
+      </div>
+      <span class="card-tier-pill">T2 Reach</span>
+    </div>
+
+    <div class="card-coaches">
+    <div class="coach-block">
+      <div class="coach-role">WR</div>
+      <div class="coach-name">George McDonald</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/CoachGMcDonald" target="_blank" onclick="event.stopPropagation()" title="@CoachGMcDonald">𝕏</a></div>
+    </div>
+    <div class="coach-block">
+      <div class="coach-role">OC</div>
+      <div class="coach-name">Charlie Weis, Jr.</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/WeisJr_M" target="_blank" onclick="event.stopPropagation()" title="@WeisJr_M">𝕏</a></div>
+    </div></div>
+
+    <div class="card-status"><span class="chip chip-film-yes">📹 Film Sent</span><span class="chip chip-film-yes">📞 Contacted</span></div>
+
+    <div class="card-pipeline">
+      <div class="pipeline-label-row">
+        <span class="pipeline-title">Recruiting Pipeline</span>
+        <span class="pipeline-pct">55%</span>
+      </div>
+      <div class="pipeline-track"><div class="pipeline-step done"></div><div class="pipeline-step done"></div><div class="pipeline-step"></div><div class="pipeline-step"></div><div class="pipeline-step"></div></div>
+      <div class="pipeline-stages"><div class="stage-label done">Eval</div><div class="stage-label done">Contact</div><div class="stage-label">Camp</div><div class="stage-label">Visit</div><div class="stage-label">Interest</div></div>
+    </div>
+
+    <div class="card-rule"></div>
+    <div class="card-actions">
+      <a class="action-btn quest" href="https://www.google.com/search?q=LSU%20football%20recruiting%20questionnaire" target="_blank" onclick="event.stopPropagation()">📝 Quest.</a><a class="action-btn dir" href="https://www.google.com/search?q=LSU%20ATHLETICS%20DIRECTORY" target="_blank" onclick="event.stopPropagation()">🏛 Dir.</a><a class="action-btn teamx" href="https://twitter.com/LSUfootball" target="_blank" onclick="event.stopPropagation()">𝕏 @LSUfootball</a>
+      <button class="action-btn edit-btn" onclick="event.stopPropagation();openModal(8)">✏ Edit</button>
+    </div>
+  </div>
+  
+  <button class="card-expand-toggle" onclick="event.stopPropagation();toggleExpand(this)">
+    Program Contacts &amp; Staff
+    <span class="expand-arrow">▾</span>
+  </button>
+  <div class="card-expanded">
+    <div class="expand-section-label">Recruiting Staff</div><div class="rc-grid"><div class="rc-person"><span class="rc-name">Austin Shelton</span><a class="rc-xlink" href="https://twitter.com/ustinShelton" target="_blank" onclick="event.stopPropagation()">@ustinShelton</a></div><div class="rc-person"><span class="rc-name">Jeff Martin</span><a class="rc-xlink" href="https://twitter.com/G5JeffMartin" target="_blank" onclick="event.stopPropagation()">@G5JeffMartin</a></div><div class="rc-person"><span class="rc-name">Carl St. Cyr</span><a class="rc-xlink" href="https://twitter.com/CarlSt_Cyr" target="_blank" onclick="event.stopPropagation()">@CarlSt_Cyr</a></div><div class="rc-person"><span class="rc-name">Donovan Tate</span><a class="rc-xlink" href="https://twitter.com/_donovantate" target="_blank" onclick="event.stopPropagation()">@_donovantate</a></div></div><div class="expand-section-label" style="margin-top:12px">Program Contacts</div><div class="emails-row"><a class="email-chip" href="mailto:jmarti11@lsu.edu" onclick="event.stopPropagation()">✉ jmarti11@lsu.edu</a><a class="email-chip" href="mailto:cstcyr1@lsu.edu" onclick="event.stopPropagation()">✉ cstcyr1@lsu.edu</a><a class="email-chip" href="mailto:dttate@lsu.edu" onclick="event.stopPropagation()">✉ dttate@lsu.edu</a><a class="email-chip" href="mailto:dwilso11@lsu.edu" onclick="event.stopPropagation()">✉ dwilso11@lsu.edu</a></div>
+  </div>
+</div>
+<div class="school-card" onclick="openModal(9)">
+  <div class="card-inner">
+    <div class="card-head">
+      <div class="card-logo card-logo-img" data-init="M"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/2390.png" alt="Miami" onerror="logoFallback(this)"></div>
+      <div class="card-title-block">
+        <div class="card-school">Miami</div>
+        <div class="card-subtitle">HC: Mario Cristobal</div>
+      </div>
+      <span class="card-tier-pill">T2 Reach</span>
+    </div>
+
+    <div class="card-coaches">
+    <div class="coach-block">
+      <div class="coach-role">WR</div>
+      <div class="coach-name">Kevin Beard</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/Kevin_Beard9" target="_blank" onclick="event.stopPropagation()" title="@Kevin_Beard9">𝕏</a></div>
+    </div>
+    <div class="coach-block">
+      <div class="coach-role">OC</div>
+      <div class="coach-name">Shannon Dawson</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/CoachDawson_UM" target="_blank" onclick="event.stopPropagation()" title="@CoachDawson_UM">𝕏</a></div>
+    </div></div>
+
+    <div class="card-status"><span class="chip chip-film-yes">📹 Film Sent</span><span class="chip chip-film-yes">📞 Contacted</span></div>
+
+    <div class="card-pipeline">
+      <div class="pipeline-label-row">
+        <span class="pipeline-title">Recruiting Pipeline</span>
+        <span class="pipeline-pct">55%</span>
+      </div>
+      <div class="pipeline-track"><div class="pipeline-step done"></div><div class="pipeline-step done"></div><div class="pipeline-step"></div><div class="pipeline-step"></div><div class="pipeline-step"></div></div>
+      <div class="pipeline-stages"><div class="stage-label done">Eval</div><div class="stage-label done">Contact</div><div class="stage-label">Camp</div><div class="stage-label">Visit</div><div class="stage-label">Interest</div></div>
+    </div>
+
+    <div class="card-rule"></div>
+    <div class="card-actions">
+      <a class="action-btn quest" href="https://www.google.com/search?q=Miami%20football%20recruiting%20questionnaire" target="_blank" onclick="event.stopPropagation()">📝 Quest.</a><a class="action-btn dir" href="https://www.google.com/search?q=MIAMI%20(FL)%20ATHLETICS%20DIRECTORY" target="_blank" onclick="event.stopPropagation()">🏛 Dir.</a><a class="action-btn teamx" href="https://twitter.com/CanesFootball" target="_blank" onclick="event.stopPropagation()">𝕏 @CanesFootball</a>
+      <button class="action-btn edit-btn" onclick="event.stopPropagation();openModal(9)">✏ Edit</button>
+    </div>
+  </div>
+  
+  <button class="card-expand-toggle" onclick="event.stopPropagation();toggleExpand(this)">
+    Program Contacts &amp; Staff
+    <span class="expand-arrow">▾</span>
+  </button>
+  <div class="card-expanded">
+    <div class="expand-section-label">Recruiting Staff</div><div class="rc-grid"><div class="rc-person"><span class="rc-name">Stephen Field</span><a class="rc-xlink" href="https://twitter.com/CoachField" target="_blank" onclick="event.stopPropagation()">@CoachField</a></div><div class="rc-person"><span class="rc-name">Trip Carrico</span><a class="rc-xlink" href="https://twitter.com/TripCarrico" target="_blank" onclick="event.stopPropagation()">@TripCarrico</a></div><div class="rc-person"><span class="rc-name">Mike Rumph</span><a class="rc-xlink" href="https://twitter.com/CoachRumph16" target="_blank" onclick="event.stopPropagation()">@CoachRumph16</a></div><div class="rc-person"><span class="rc-name">Roland Smith Jr.</span><a class="rc-xlink" href="https://twitter.com/RolandSmithJr4" target="_blank" onclick="event.stopPropagation()">@RolandSmithJr4</a></div></div><div class="expand-section-label" style="margin-top:12px">Program Contacts</div><div class="emails-row"><a class="email-chip" href="mailto:sfield@miami.edu" onclick="event.stopPropagation()">✉ sfield@miami.edu</a><a class="email-chip" href="mailto:mrumph@miami.edu" onclick="event.stopPropagation()">✉ mrumph@miami.edu</a><a class="email-chip" href="mailto:sxs3987@miami.edu" onclick="event.stopPropagation()">✉ sxs3987@miami.edu</a><a class="email-chip" href="mailto:jlb147@miami.edu" onclick="event.stopPropagation()">✉ jlb147@miami.edu</a></div>
+  </div>
+</div>
+<div class="school-card" onclick="openModal(10)">
+  <div class="card-inner">
+    <div class="card-head">
+      <div class="card-logo card-logo-img" data-init="O"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/201.png" alt="Oklahoma" onerror="logoFallback(this)"></div>
+      <div class="card-title-block">
+        <div class="card-school">Oklahoma</div>
+        <div class="card-subtitle">HC: Brent Venables</div>
+      </div>
+      <span class="card-tier-pill">T2 Reach</span>
+    </div>
+
+    <div class="card-coaches">
+    <div class="coach-block">
+      <div class="coach-role">WR</div>
+      <div class="coach-name">Emmett Jones</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/CoachEmmett" target="_blank" onclick="event.stopPropagation()" title="@CoachEmmett">𝕏</a></div>
+    </div>
+    <div class="coach-block">
+      <div class="coach-role">OC</div>
+      <div class="coach-name">Ben Arbuckle</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/arbuckle_ben" target="_blank" onclick="event.stopPropagation()" title="@arbuckle_ben">𝕏</a></div>
+    </div></div>
+
+    <div class="card-status"><span class="chip chip-film-yes">📹 Film Sent</span><span class="chip chip-film-yes">📞 Contacted</span></div>
+
+    <div class="card-pipeline">
+      <div class="pipeline-label-row">
+        <span class="pipeline-title">Recruiting Pipeline</span>
+        <span class="pipeline-pct">55%</span>
+      </div>
+      <div class="pipeline-track"><div class="pipeline-step done"></div><div class="pipeline-step done"></div><div class="pipeline-step"></div><div class="pipeline-step"></div><div class="pipeline-step"></div></div>
+      <div class="pipeline-stages"><div class="stage-label done">Eval</div><div class="stage-label done">Contact</div><div class="stage-label">Camp</div><div class="stage-label">Visit</div><div class="stage-label">Interest</div></div>
+    </div>
+
+    <div class="card-rule"></div>
+    <div class="card-actions">
+      <a class="action-btn quest" href="https://www.google.com/search?q=Oklahoma%20football%20recruiting%20questionnaire" target="_blank" onclick="event.stopPropagation()">📝 Quest.</a><a class="action-btn dir" href="https://www.google.com/search?q=OKLAHOMA%20ATHLETICS%20DIRECTORY" target="_blank" onclick="event.stopPropagation()">🏛 Dir.</a><a class="action-btn teamx" href="https://twitter.com/OU_Football" target="_blank" onclick="event.stopPropagation()">𝕏 @OU_Football</a>
+      <button class="action-btn edit-btn" onclick="event.stopPropagation();openModal(10)">✏ Edit</button>
+    </div>
+  </div>
+  
+  <button class="card-expand-toggle" onclick="event.stopPropagation();toggleExpand(this)">
+    Program Contacts &amp; Staff
+    <span class="expand-arrow">▾</span>
+  </button>
+  <div class="card-expanded">
+    <div class="expand-section-label">Recruiting Staff</div><div class="rc-grid"><div class="rc-person"><span class="rc-name">Molly Jacoby</span><a class="rc-xlink" href="https://twitter.com/molly_jacoby" target="_blank" onclick="event.stopPropagation()">@molly_jacoby</a></div><div class="rc-person"><span class="rc-name">Stacey Ford</span><a class="rc-xlink" href="https://twitter.com/COACHSTACE_" target="_blank" onclick="event.stopPropagation()">@COACHSTACE_</a></div><div class="rc-person"><span class="rc-name">Kale Pearson</span><a class="rc-xlink" href="https://twitter.com/CoachKPearson" target="_blank" onclick="event.stopPropagation()">@CoachKPearson</a></div><div class="rc-person"><span class="rc-name">Drew Hill</span><a class="rc-xlink" href="https://twitter.com/OU_CoachHill" target="_blank" onclick="event.stopPropagation()">@OU_CoachHill</a></div></div><div class="expand-section-label" style="margin-top:12px">Program Contacts</div><div class="emails-row"><a class="email-chip" href="mailto:mhouck@ou.edu" onclick="event.stopPropagation()">✉ mhouck@ou.edu</a><a class="email-chip" href="mailto:adeal@ou.edu" onclick="event.stopPropagation()">✉ adeal@ou.edu</a><a class="email-chip" href="mailto:gholder@ou.edu" onclick="event.stopPropagation()">✉ gholder@ou.edu</a><a class="email-chip" href="mailto:lnaifeh@ou.edu" onclick="event.stopPropagation()">✉ lnaifeh@ou.edu</a></div>
+  </div>
+</div>
+<div class="school-card" onclick="openModal(11)">
+  <div class="card-inner">
+    <div class="card-head">
+      <div class="card-logo card-logo-img" data-init="O"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/2483.png" alt="Oregon" onerror="logoFallback(this)"></div>
+      <div class="card-title-block">
+        <div class="card-school">Oregon</div>
+        <div class="card-subtitle">HC: Dan Lanning</div>
+      </div>
+      <span class="card-tier-pill">T2 Reach</span>
+    </div>
+
+    <div class="card-coaches">
+    <div class="coach-block">
+      <div class="coach-role">WR</div>
+      <div class="coach-name">Ross Douglas</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/RossDoug21" target="_blank" onclick="event.stopPropagation()" title="@RossDoug21">𝕏</a></div>
+    </div>
+    <div class="coach-block">
+      <div class="coach-role">OC</div>
+      <div class="coach-name">Drew Mehringer</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/DrewMehringer" target="_blank" onclick="event.stopPropagation()" title="@DrewMehringer">𝕏</a></div>
+    </div></div>
+
+    <div class="card-status"><span class="chip chip-film-yes">📹 Film Sent</span><span class="chip chip-film-yes">📞 Contacted</span></div>
+
+    <div class="card-pipeline">
+      <div class="pipeline-label-row">
+        <span class="pipeline-title">Recruiting Pipeline</span>
+        <span class="pipeline-pct">55%</span>
+      </div>
+      <div class="pipeline-track"><div class="pipeline-step done"></div><div class="pipeline-step done"></div><div class="pipeline-step"></div><div class="pipeline-step"></div><div class="pipeline-step"></div></div>
+      <div class="pipeline-stages"><div class="stage-label done">Eval</div><div class="stage-label done">Contact</div><div class="stage-label">Camp</div><div class="stage-label">Visit</div><div class="stage-label">Interest</div></div>
+    </div>
+
+    <div class="card-rule"></div>
+    <div class="card-actions">
+      <a class="action-btn quest" href="https://www.google.com/search?q=Oregon%20football%20recruiting%20questionnaire" target="_blank" onclick="event.stopPropagation()">📝 Quest.</a><a class="action-btn dir" href="https://www.google.com/search?q=OREGON%20ATHLETICS%20DIRECTORY" target="_blank" onclick="event.stopPropagation()">🏛 Dir.</a><a class="action-btn teamx" href="https://twitter.com/oregonfootball" target="_blank" onclick="event.stopPropagation()">𝕏 @oregonfootball</a>
+      <button class="action-btn edit-btn" onclick="event.stopPropagation();openModal(11)">✏ Edit</button>
+    </div>
+  </div>
+  
+  <button class="card-expand-toggle" onclick="event.stopPropagation();toggleExpand(this)">
+    Program Contacts &amp; Staff
+    <span class="expand-arrow">▾</span>
+  </button>
+  <div class="card-expanded">
+    <div class="expand-section-label">Recruiting Staff</div><div class="rc-grid"><div class="rc-person"><span class="rc-name">Tyler Dean</span><a class="rc-xlink" href="https://twitter.com/T_Dean55" target="_blank" onclick="event.stopPropagation()">@T_Dean55</a></div><div class="rc-person"><span class="rc-name">Pat Biondo</span><a class="rc-xlink" href="https://twitter.com/ptbiondo" target="_blank" onclick="event.stopPropagation()">@ptbiondo</a></div><div class="rc-person"><span class="rc-name">Verone McKinley III</span><a class="rc-xlink" href="https://twitter.com/vmckinley23" target="_blank" onclick="event.stopPropagation()">@vmckinley23</a></div><div class="rc-person"><span class="rc-name">Alex Bullock</span><a class="rc-xlink" href="https://twitter.com/alexanderbull19" target="_blank" onclick="event.stopPropagation()">@alexanderbull19</a></div></div><div class="expand-section-label" style="margin-top:12px">Program Contacts</div><div class="emails-row"><a class="email-chip" href="mailto:tdean@uoregon.edu" onclick="event.stopPropagation()">✉ tdean@uoregon.edu</a><a class="email-chip" href="mailto:nkrueger@uoregon.edu" onclick="event.stopPropagation()">✉ nkrueger@uoregon.edu</a><a class="email-chip" href="mailto:pswan@uoregon.edu" onclick="event.stopPropagation()">✉ pswan@uoregon.edu</a><a class="email-chip" href="mailto:kaceyj@uoregon.edu" onclick="event.stopPropagation()">✉ kaceyj@uoregon.edu</a></div>
+  </div>
+</div>
+<div class="school-card" onclick="openModal(12)">
+  <div class="card-inner">
+    <div class="card-head">
+      <div class="card-logo card-logo-img" data-init="PS"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/213.png" alt="Penn State" onerror="logoFallback(this)"></div>
+      <div class="card-title-block">
+        <div class="card-school">Penn State</div>
+        <div class="card-subtitle">HC: Matt Campbell</div>
+      </div>
+      <span class="card-tier-pill">T2 Reach</span>
+    </div>
+
+    <div class="card-coaches">
+    <div class="coach-block">
+      <div class="coach-role">WR</div>
+      <div class="coach-name">Kashif Moore</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/KashifMoore" target="_blank" onclick="event.stopPropagation()" title="@KashifMoore">𝕏</a></div>
+    </div>
+    <div class="coach-block">
+      <div class="coach-role">OC</div>
+      <div class="coach-name">Taylor Mouser</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/T_Mouser" target="_blank" onclick="event.stopPropagation()" title="@T_Mouser">𝕏</a></div>
+    </div></div>
+
+    <div class="card-status"><span class="chip chip-film-yes">📹 Film Sent</span><span class="chip chip-film-yes">📞 Contacted</span></div>
+
+    <div class="card-pipeline">
+      <div class="pipeline-label-row">
+        <span class="pipeline-title">Recruiting Pipeline</span>
+        <span class="pipeline-pct">55%</span>
+      </div>
+      <div class="pipeline-track"><div class="pipeline-step done"></div><div class="pipeline-step done"></div><div class="pipeline-step"></div><div class="pipeline-step"></div><div class="pipeline-step"></div></div>
+      <div class="pipeline-stages"><div class="stage-label done">Eval</div><div class="stage-label done">Contact</div><div class="stage-label">Camp</div><div class="stage-label">Visit</div><div class="stage-label">Interest</div></div>
+    </div>
+
+    <div class="card-rule"></div>
+    <div class="card-actions">
+      <a class="action-btn quest" href="https://www.google.com/search?q=Penn%20State%20football%20recruiting%20questionnaire" target="_blank" onclick="event.stopPropagation()">📝 Quest.</a><a class="action-btn dir" href="https://www.google.com/search?q=PENN%20STATE%20ATHLETICS%20DIRECTORY" target="_blank" onclick="event.stopPropagation()">🏛 Dir.</a><a class="action-btn teamx" href="https://twitter.com/PennStateFball" target="_blank" onclick="event.stopPropagation()">𝕏 @PennStateFball</a>
+      <button class="action-btn edit-btn" onclick="event.stopPropagation();openModal(12)">✏ Edit</button>
+    </div>
+  </div>
+  
+  <button class="card-expand-toggle" onclick="event.stopPropagation();toggleExpand(this)">
+    Program Contacts &amp; Staff
+    <span class="expand-arrow">▾</span>
+  </button>
+  <div class="card-expanded">
+    <div class="expand-section-label">Recruiting Staff</div><div class="rc-grid"><div class="rc-person"><span class="rc-name">Derek Hoodjer</span><a class="rc-xlink" href="https://twitter.com/DerekHoodjer" target="_blank" onclick="event.stopPropagation()">@DerekHoodjer</a></div><div class="rc-person"><span class="rc-name">Justin Cummings-Morrow</span><a class="rc-xlink" href="https://twitter.com/PSU_JCM" target="_blank" onclick="event.stopPropagation()">@PSU_JCM</a></div><div class="rc-person"><span class="rc-name">Gabby Mazzie</span><a class="rc-xlink" href="https://twitter.com/gabbymazzie" target="_blank" onclick="event.stopPropagation()">@gabbymazzie</a></div><div class="rc-person"><span class="rc-name">Naz Oliver</span><a class="rc-xlink" href="https://twitter.com/coachnazoliver" target="_blank" onclick="event.stopPropagation()">@coachnazoliver</a></div></div><div class="expand-section-label" style="margin-top:12px">Program Contacts</div><div class="emails-row"><a class="email-chip" href="mailto:gcm5449@psu.edu" onclick="event.stopPropagation()">✉ gcm5449@psu.edu</a><a class="email-chip" href="mailto:nbo5156@psu.edu" onclick="event.stopPropagation()">✉ nbo5156@psu.edu</a><a class="email-chip" href="mailto:jth5187@psu.edu" onclick="event.stopPropagation()">✉ jth5187@psu.edu</a><a class="email-chip" href="mailto:avh2@psu.edu" onclick="event.stopPropagation()">✉ avh2@psu.edu</a></div>
+  </div>
+</div>
+<div class="school-card" onclick="openModal(13)">
+  <div class="card-inner">
+    <div class="card-head">
+      <div class="card-logo card-logo-img" data-init="T"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/2633.png" alt="Tennessee" onerror="logoFallback(this)"></div>
+      <div class="card-title-block">
+        <div class="card-school">Tennessee</div>
+        <div class="card-subtitle">HC: Josh Heupel</div>
+      </div>
+      <span class="card-tier-pill">T2 Reach</span>
+    </div>
+
+    <div class="card-coaches">
+    <div class="coach-block">
+      <div class="coach-role">WR</div>
+      <div class="coach-name">Kelsey Pope</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/CoachKelseyPope" target="_blank" onclick="event.stopPropagation()" title="@CoachKelseyPope">𝕏</a></div>
+    </div>
+    <div class="coach-block">
+      <div class="coach-role">OC</div>
+      <div class="coach-name">Joey Halzle</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/CoachHalzle" target="_blank" onclick="event.stopPropagation()" title="@CoachHalzle">𝕏</a></div>
+    </div></div>
+
+    <div class="card-status"><span class="chip chip-film-yes">📹 Film Sent</span><span class="chip chip-film-yes">📞 Contacted</span></div>
+
+    <div class="card-pipeline">
+      <div class="pipeline-label-row">
+        <span class="pipeline-title">Recruiting Pipeline</span>
+        <span class="pipeline-pct">55%</span>
+      </div>
+      <div class="pipeline-track"><div class="pipeline-step done"></div><div class="pipeline-step done"></div><div class="pipeline-step"></div><div class="pipeline-step"></div><div class="pipeline-step"></div></div>
+      <div class="pipeline-stages"><div class="stage-label done">Eval</div><div class="stage-label done">Contact</div><div class="stage-label">Camp</div><div class="stage-label">Visit</div><div class="stage-label">Interest</div></div>
+    </div>
+
+    <div class="card-rule"></div>
+    <div class="card-actions">
+      <a class="action-btn quest" href="https://www.google.com/search?q=Tennessee%20football%20recruiting%20questionnaire" target="_blank" onclick="event.stopPropagation()">📝 Quest.</a><a class="action-btn dir" href="https://www.google.com/search?q=TENNESSEE%20ATHLETICS%20DIRECTORY" target="_blank" onclick="event.stopPropagation()">🏛 Dir.</a><a class="action-btn teamx" href="https://twitter.com/Vol_Football" target="_blank" onclick="event.stopPropagation()">𝕏 @Vol_Football</a>
+      <button class="action-btn edit-btn" onclick="event.stopPropagation();openModal(13)">✏ Edit</button>
+    </div>
+  </div>
+  
+  <button class="card-expand-toggle" onclick="event.stopPropagation();toggleExpand(this)">
+    Program Contacts &amp; Staff
+    <span class="expand-arrow">▾</span>
+  </button>
+  <div class="card-expanded">
+    <div class="expand-section-label">Recruiting Staff</div><div class="rc-grid"><div class="rc-person"><span class="rc-name">Trey Johnson</span><a class="rc-xlink" href="https://twitter.com/ThisIsTreyJ" target="_blank" onclick="event.stopPropagation()">@ThisIsTreyJ</a></div><div class="rc-person"><span class="rc-name">Miles Robinson Jr.</span><a class="rc-xlink" href="https://twitter.com/milesrobinsonjr" target="_blank" onclick="event.stopPropagation()">@milesrobinsonjr</a></div><div class="rc-person"><span class="rc-name">Janae Simmonds</span><a class="rc-xlink" href="https://twitter.com/JanaeSimmonds" target="_blank" onclick="event.stopPropagation()">@JanaeSimmonds</a></div><div class="rc-person"><span class="rc-name">Madison Surface</span><a class="rc-xlink" href="https://twitter.com/MadisonSurface" target="_blank" onclick="event.stopPropagation()">@MadisonSurface</a></div></div><div class="expand-section-label" style="margin-top:12px">Program Contacts</div><div class="emails-row"><a class="email-chip" href="mailto:saltizer@utk.edu" onclick="event.stopPropagation()">✉ saltizer@utk.edu</a><a class="email-chip" href="mailto:fb-recruiting@utk.edu" onclick="event.stopPropagation()">✉ fb-recruiting@utk.edu</a><a class="email-chip" href="mailto:jcaplan@utk.edu" onclick="event.stopPropagation()">✉ jcaplan@utk.edu</a><a class="email-chip" href="mailto:ncowan@utk.edu" onclick="event.stopPropagation()">✉ ncowan@utk.edu</a></div>
+  </div>
+</div>
+<div class="school-card" onclick="openModal(14)">
+  <div class="card-inner">
+    <div class="card-head">
+      <div class="card-logo card-logo-img" data-init="TA"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/245.png" alt="Texas A&amp;M" onerror="logoFallback(this)"></div>
+      <div class="card-title-block">
+        <div class="card-school">Texas A&amp;M</div>
+        <div class="card-subtitle">HC: Mike Elko</div>
+      </div>
+      <span class="card-tier-pill">T2 Reach</span>
+    </div>
+
+    <div class="card-coaches">
+    <div class="coach-block">
+      <div class="coach-role">WR</div>
+      <div class="coach-name">John Perry</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/CoachJohn_Perry" target="_blank" onclick="event.stopPropagation()" title="@CoachJohn_Perry">𝕏</a></div>
+    </div>
+    <div class="coach-block">
+      <div class="coach-role">OC</div>
+      <div class="coach-name">Holmon Wiggins</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/HolmonWiggins" target="_blank" onclick="event.stopPropagation()" title="@HolmonWiggins">𝕏</a></div>
+    </div></div>
+
+    <div class="card-status"><span class="chip chip-film-yes">📹 Film Sent</span><span class="chip chip-film-yes">📞 Contacted</span></div>
+
+    <div class="card-pipeline">
+      <div class="pipeline-label-row">
+        <span class="pipeline-title">Recruiting Pipeline</span>
+        <span class="pipeline-pct">55%</span>
+      </div>
+      <div class="pipeline-track"><div class="pipeline-step done"></div><div class="pipeline-step done"></div><div class="pipeline-step"></div><div class="pipeline-step"></div><div class="pipeline-step"></div></div>
+      <div class="pipeline-stages"><div class="stage-label done">Eval</div><div class="stage-label done">Contact</div><div class="stage-label">Camp</div><div class="stage-label">Visit</div><div class="stage-label">Interest</div></div>
+    </div>
+
+    <div class="card-rule"></div>
+    <div class="card-actions">
+      <a class="action-btn quest" href="https://www.google.com/search?q=Texas%20A%26M%20football%20recruiting%20questionnaire" target="_blank" onclick="event.stopPropagation()">📝 Quest.</a><a class="action-btn dir" href="https://www.google.com/search?q=TEXAS%20A%26M%20ATHLETICS%20DIRECTORY" target="_blank" onclick="event.stopPropagation()">🏛 Dir.</a><a class="action-btn teamx" href="https://twitter.com/AggieFootball" target="_blank" onclick="event.stopPropagation()">𝕏 @AggieFootball</a>
+      <button class="action-btn edit-btn" onclick="event.stopPropagation();openModal(14)">✏ Edit</button>
+    </div>
+  </div>
+  
+  <button class="card-expand-toggle" onclick="event.stopPropagation();toggleExpand(this)">
+    Program Contacts &amp; Staff
+    <span class="expand-arrow">▾</span>
+  </button>
+  <div class="card-expanded">
+    <div class="expand-section-label">Recruiting Staff</div><div class="rc-grid"><div class="rc-person"><span class="rc-name">Derek Miller</span><a class="rc-xlink" href="https://twitter.com/DerekMillerTAMU" target="_blank" onclick="event.stopPropagation()">@DerekMillerTAMU</a></div><div class="rc-person"><span class="rc-name">Allen Gaudet IV</span><a class="rc-xlink" href="https://twitter.com/agaudet_tamu" target="_blank" onclick="event.stopPropagation()">@agaudet_tamu</a></div><div class="rc-person"><span class="rc-name">DJ Mann</span><a class="rc-xlink" href="https://twitter.com/Thamannjr" target="_blank" onclick="event.stopPropagation()">@Thamannjr</a></div><div class="rc-person"><span class="rc-name">Shaun Cook</span><a class="rc-xlink" href="https://twitter.com/ShaunCookFB" target="_blank" onclick="event.stopPropagation()">@ShaunCookFB</a></div></div><div class="expand-section-label" style="margin-top:12px">Program Contacts</div><div class="emails-row"><a class="email-chip" href="mailto:derekmiller@tamu.edu" onclick="event.stopPropagation()">✉ derekmiller@tamu.edu</a><a class="email-chip" href="mailto:agaudet@athletics.tamu.edu" onclick="event.stopPropagation()">✉ agaudet@athletics.tamu.edu</a><a class="email-chip" href="mailto:kjasper@athletics.tamu.edu" onclick="event.stopPropagation()">✉ kjasper@athletics.tamu.edu</a><a class="email-chip" href="mailto:mhoward@athletics.tamu.edu" onclick="event.stopPropagation()">✉ mhoward@athletics.tamu.edu</a></div><div class="notes-expand">📎 Currently live in Austin</div>
+  </div>
+</div>
+<div class="school-card" onclick="openModal(15)">
+  <div class="card-inner">
+    <div class="card-head">
+      <div class="card-logo card-logo-img" data-init="C"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/228.png" alt="Clemson" onerror="logoFallback(this)"></div>
+      <div class="card-title-block">
+        <div class="card-school">Clemson</div>
+        <div class="card-subtitle">HC: Dabo Swinney</div>
+      </div>
+      <span class="card-tier-pill">T2 Reach</span>
+    </div>
+
+    <div class="card-coaches">
+    <div class="coach-block">
+      <div class="coach-role">WR</div>
+      <div class="coach-name">Tyler Grisham</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/Coach_Grisham" target="_blank" onclick="event.stopPropagation()" title="@Coach_Grisham">𝕏</a></div>
+    </div>
+    <div class="coach-block">
+      <div class="coach-role">OC</div>
+      <div class="coach-name">Chad Morris</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/coachchadmorris" target="_blank" onclick="event.stopPropagation()" title="@coachchadmorris">𝕏</a></div>
+    </div></div>
+
+    <div class="card-status"><span class="chip chip-film-yes">📹 Film Sent</span><span class="chip chip-film-yes">📞 Contacted</span></div>
+
+    <div class="card-pipeline">
+      <div class="pipeline-label-row">
+        <span class="pipeline-title">Recruiting Pipeline</span>
+        <span class="pipeline-pct">55%</span>
+      </div>
+      <div class="pipeline-track"><div class="pipeline-step done"></div><div class="pipeline-step done"></div><div class="pipeline-step"></div><div class="pipeline-step"></div><div class="pipeline-step"></div></div>
+      <div class="pipeline-stages"><div class="stage-label done">Eval</div><div class="stage-label done">Contact</div><div class="stage-label">Camp</div><div class="stage-label">Visit</div><div class="stage-label">Interest</div></div>
+    </div>
+
+    <div class="card-rule"></div>
+    <div class="card-actions">
+      <a class="action-btn quest" href="https://www.google.com/search?q=Clemson%20football%20recruiting%20questionnaire" target="_blank" onclick="event.stopPropagation()">📝 Quest.</a><a class="action-btn dir" href="https://www.google.com/search?q=CLEMSON%20ATHLETICS%20DIRECTORY" target="_blank" onclick="event.stopPropagation()">🏛 Dir.</a><a class="action-btn teamx" href="https://twitter.com/ClemsonFB" target="_blank" onclick="event.stopPropagation()">𝕏 @ClemsonFB</a>
+      <button class="action-btn edit-btn" onclick="event.stopPropagation();openModal(15)">✏ Edit</button>
+    </div>
+  </div>
+  
+  <button class="card-expand-toggle" onclick="event.stopPropagation();toggleExpand(this)">
+    Program Contacts &amp; Staff
+    <span class="expand-arrow">▾</span>
+  </button>
+  <div class="card-expanded">
+    <div class="expand-section-label">Recruiting Staff</div><div class="rc-grid"><div class="rc-person"><span class="rc-name">Jordan Sorrells</span><a class="rc-xlink" href="https://twitter.com/SorrellsJordan" target="_blank" onclick="event.stopPropagation()">@SorrellsJordan</a></div><div class="rc-person"><span class="rc-name">Tyler Clements</span><a class="rc-xlink" href="https://twitter.com/Clements_TJC" target="_blank" onclick="event.stopPropagation()">@Clements_TJC</a></div><div class="rc-person"><span class="rc-name">Zach Fulmer</span><a class="rc-xlink" href="https://twitter.com/CoachZachFulmer" target="_blank" onclick="event.stopPropagation()">@CoachZachFulmer</a></div><div class="rc-person"><span class="rc-name">Josh Wall</span><a class="rc-xlink" href="https://twitter.com/joshjwall16" target="_blank" onclick="event.stopPropagation()">@joshjwall16</a></div></div><div class="expand-section-label" style="margin-top:12px">Program Contacts</div><div class="emails-row"><a class="email-chip" href="mailto:jjsorre@clemson.edu" onclick="event.stopPropagation()">✉ jjsorre@clemson.edu</a><a class="email-chip" href="mailto:clemen6@clemson.edu" onclick="event.stopPropagation()">✉ clemen6@clemson.edu</a><a class="email-chip" href="mailto:dfulmer@clemson.edu" onclick="event.stopPropagation()">✉ dfulmer@clemson.edu</a><a class="email-chip" href="mailto:jjwall@clemson.edu" onclick="event.stopPropagation()">✉ jjwall@clemson.edu</a></div>
+  </div>
+</div></div>
+</div>
+<div class="tier-section tier3">
+  <div class="tier-header">
+    <div class="tier-bar"></div>
+    <div class="tier-name">Tier 3 – Target</div>
+    <span class="tier-badge">11 schools</span>
+  </div>
+  <div class="school-grid">
+<div class="school-card" onclick="openModal(16)">
+  <div class="card-inner">
+    <div class="card-head">
+      <div class="card-logo card-logo-img" data-init="M"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/142.png" alt="Missouri" onerror="logoFallback(this)"></div>
+      <div class="card-title-block">
+        <div class="card-school">Missouri</div>
+        <div class="card-subtitle">HC: Eli Drinkwitz</div>
+      </div>
+      <span class="card-tier-pill">T3 Target</span>
+    </div>
+
+    <div class="card-coaches">
+    <div class="coach-block">
+      <div class="coach-role">WR</div>
+      <div class="coach-name">Jacob Peeler</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/NastyWideOuts" target="_blank" onclick="event.stopPropagation()" title="@NastyWideOuts">𝕏</a></div>
+    </div>
+    <div class="coach-block">
+      <div class="coach-role">OC</div>
+      <div class="coach-name">Chip Lindsey</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/ChipLindsey11" target="_blank" onclick="event.stopPropagation()" title="@ChipLindsey11">𝕏</a></div>
+    </div></div>
+
+    <div class="card-status"><span class="chip chip-film-yes">📹 Film Sent</span><span class="chip chip-film-yes">📞 Contacted</span></div>
+
+    <div class="card-pipeline">
+      <div class="pipeline-label-row">
+        <span class="pipeline-title">Recruiting Pipeline</span>
+        <span class="pipeline-pct">55%</span>
+      </div>
+      <div class="pipeline-track"><div class="pipeline-step done"></div><div class="pipeline-step done"></div><div class="pipeline-step"></div><div class="pipeline-step"></div><div class="pipeline-step"></div></div>
+      <div class="pipeline-stages"><div class="stage-label done">Eval</div><div class="stage-label done">Contact</div><div class="stage-label">Camp</div><div class="stage-label">Visit</div><div class="stage-label">Interest</div></div>
+    </div>
+
+    <div class="card-rule"></div>
+    <div class="card-actions">
+      <a class="action-btn quest" href="https://www.google.com/search?q=Missouri%20football%20recruiting%20questionnaire" target="_blank" onclick="event.stopPropagation()">📝 Quest.</a><a class="action-btn dir" href="https://www.google.com/search?q=MISSOURI%20ATHLETICS%20DIRECTORY" target="_blank" onclick="event.stopPropagation()">🏛 Dir.</a><a class="action-btn teamx" href="https://twitter.com/MizzouFootball" target="_blank" onclick="event.stopPropagation()">𝕏 @MizzouFootball</a>
+      <button class="action-btn edit-btn" onclick="event.stopPropagation();openModal(16)">✏ Edit</button>
+    </div>
+  </div>
+  
+  <button class="card-expand-toggle" onclick="event.stopPropagation();toggleExpand(this)">
+    Program Contacts &amp; Staff
+    <span class="expand-arrow">▾</span>
+  </button>
+  <div class="card-expanded">
+    <div class="expand-section-label">Recruiting Staff</div><div class="rc-grid"><div class="rc-person"><span class="rc-name">Jake Breske</span><a class="rc-xlink" href="https://twitter.com/CoachBreske" target="_blank" onclick="event.stopPropagation()">@CoachBreske</a></div><div class="rc-person"><span class="rc-name">Roman Goode</span><a class="rc-xlink" href="https://twitter.com/romandg3" target="_blank" onclick="event.stopPropagation()">@romandg3</a></div><div class="rc-person"><span class="rc-name">Jared Russell</span><a class="rc-xlink" href="https://twitter.com/JaredRussellMIZ" target="_blank" onclick="event.stopPropagation()">@JaredRussellMIZ</a></div><div class="rc-person"><span class="rc-name">Wayne Younger</span><a class="rc-xlink" href="https://twitter.com/CoachYounger14" target="_blank" onclick="event.stopPropagation()">@CoachYounger14</a></div></div><div class="expand-section-label" style="margin-top:12px">Program Contacts</div><div class="emails-row"><a class="email-chip" href="mailto:fbrecruiting@missouri.edu" onclick="event.stopPropagation()">✉ fbrecruiting@missouri.edu</a><a class="email-chip" href="mailto:ajlutz@missouri.edu" onclick="event.stopPropagation()">✉ ajlutz@missouri.edu</a><a class="email-chip" href="mailto:rick.jones@missouri.edu" onclick="event.stopPropagation()">✉ rick.jones@missouri.edu</a><a class="email-chip" href="mailto:m.hardy@missouri.edu" onclick="event.stopPropagation()">✉ m.hardy@missouri.edu</a></div><div class="notes-expand">📎 Coach Peeler's TX roots</div>
+  </div>
+</div>
+<div class="school-card" onclick="openModal(17)">
+  <div class="card-inner">
+    <div class="card-head">
+      <div class="card-logo card-logo-img" data-init="TT"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/2641.png" alt="Texas Tech" onerror="logoFallback(this)"></div>
+      <div class="card-title-block">
+        <div class="card-school">Texas Tech</div>
+        <div class="card-subtitle">HC: Joey McGuire</div>
+      </div>
+      <span class="card-tier-pill">T3 Target</span>
+    </div>
+
+    <div class="card-coaches">
+    <div class="coach-block">
+      <div class="coach-role">WR</div>
+      <div class="coach-name">Justin Johnson</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/COACHJUICE_" target="_blank" onclick="event.stopPropagation()" title="@COACHJUICE_">𝕏</a></div>
+    </div>
+    <div class="coach-block">
+      <div class="coach-role">OC</div>
+      <div class="coach-name">Mack Leftwich</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/Coach_Leftwich" target="_blank" onclick="event.stopPropagation()" title="@Coach_Leftwich">𝕏</a></div>
+    </div></div>
+
+    <div class="card-status"><span class="chip chip-film-yes">📹 Film Sent</span><span class="chip chip-film-yes">📞 Contacted</span></div>
+
+    <div class="card-pipeline">
+      <div class="pipeline-label-row">
+        <span class="pipeline-title">Recruiting Pipeline</span>
+        <span class="pipeline-pct">55%</span>
+      </div>
+      <div class="pipeline-track"><div class="pipeline-step done"></div><div class="pipeline-step done"></div><div class="pipeline-step"></div><div class="pipeline-step"></div><div class="pipeline-step"></div></div>
+      <div class="pipeline-stages"><div class="stage-label done">Eval</div><div class="stage-label done">Contact</div><div class="stage-label">Camp</div><div class="stage-label">Visit</div><div class="stage-label">Interest</div></div>
+    </div>
+
+    <div class="card-rule"></div>
+    <div class="card-actions">
+      <a class="action-btn quest" href="https://www.google.com/search?q=Texas%20Tech%20football%20recruiting%20questionnaire" target="_blank" onclick="event.stopPropagation()">📝 Quest.</a><a class="action-btn dir" href="https://www.google.com/search?q=TEXAS%20TECH%20ATHLETICS%20DIRECTORY" target="_blank" onclick="event.stopPropagation()">🏛 Dir.</a><a class="action-btn teamx" href="https://twitter.com/TexasTechFB" target="_blank" onclick="event.stopPropagation()">𝕏 @TexasTechFB</a>
+      <button class="action-btn edit-btn" onclick="event.stopPropagation();openModal(17)">✏ Edit</button>
+    </div>
+  </div>
+  
+  <button class="card-expand-toggle" onclick="event.stopPropagation();toggleExpand(this)">
+    Program Contacts &amp; Staff
+    <span class="expand-arrow">▾</span>
+  </button>
+  <div class="card-expanded">
+    <div class="expand-section-label">Recruiting Staff</div><div class="rc-grid"><div class="rc-person"><span class="rc-name">James Blanchard</span><a class="rc-xlink" href="https://twitter.com/jkbtjc_53" target="_blank" onclick="event.stopPropagation()">@jkbtjc_53</a></div><div class="rc-person"><span class="rc-name">Brian Nance</span><a class="rc-xlink" href="https://twitter.com/BnanceTTU" target="_blank" onclick="event.stopPropagation()">@BnanceTTU</a></div><div class="rc-person"><span class="rc-name">Sean Kenney</span><a class="rc-xlink" href="https://twitter.com/TTU_SeanK" target="_blank" onclick="event.stopPropagation()">@TTU_SeanK</a></div><div class="rc-person"><span class="rc-name">Freddie Johnson</span><a class="rc-xlink" href="https://twitter.com/coachfreddiej" target="_blank" onclick="event.stopPropagation()">@coachfreddiej</a></div></div><div class="expand-section-label" style="margin-top:12px">Program Contacts</div><div class="emails-row"><a class="email-chip" href="mailto:alayshia.green@ttu.edu" onclick="event.stopPropagation()">✉ alayshia.green@ttu.edu</a><a class="email-chip" href="mailto:quintin.jordan@ttu.edu" onclick="event.stopPropagation()">✉ quintin.jordan@ttu.edu</a><a class="email-chip" href="mailto:matthew.dowdy@ttu.edu" onclick="event.stopPropagation()">✉ matthew.dowdy@ttu.edu</a></div><div class="notes-expand">📎 Mom's alma mater</div>
+  </div>
+</div>
+<div class="school-card" onclick="openModal(18)">
+  <div class="card-inner">
+    <div class="card-head">
+      <div class="card-logo card-logo-img" data-init="K"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/96.png" alt="Kentucky" onerror="logoFallback(this)"></div>
+      <div class="card-title-block">
+        <div class="card-school">Kentucky</div>
+        <div class="card-subtitle">HC: Will Stein</div>
+      </div>
+      <span class="card-tier-pill">T3 Target</span>
+    </div>
+
+    <div class="card-coaches">
+    <div class="coach-block">
+      <div class="coach-role">WR</div>
+      <div class="coach-name">Joe Price III</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/CoachJP3" target="_blank" onclick="event.stopPropagation()" title="@CoachJP3">𝕏</a></div>
+    </div>
+    <div class="coach-block">
+      <div class="coach-role">OC</div>
+      <div class="coach-name">Joe Sloan</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/CoachJoeSloan" target="_blank" onclick="event.stopPropagation()" title="@CoachJoeSloan">𝕏</a></div>
+    </div></div>
+
+    <div class="card-status"><span class="chip chip-film-yes">📹 Film Sent</span><span class="chip chip-film-yes">📞 Contacted</span></div>
+
+    <div class="card-pipeline">
+      <div class="pipeline-label-row">
+        <span class="pipeline-title">Recruiting Pipeline</span>
+        <span class="pipeline-pct">55%</span>
+      </div>
+      <div class="pipeline-track"><div class="pipeline-step done"></div><div class="pipeline-step done"></div><div class="pipeline-step"></div><div class="pipeline-step"></div><div class="pipeline-step"></div></div>
+      <div class="pipeline-stages"><div class="stage-label done">Eval</div><div class="stage-label done">Contact</div><div class="stage-label">Camp</div><div class="stage-label">Visit</div><div class="stage-label">Interest</div></div>
+    </div>
+
+    <div class="card-rule"></div>
+    <div class="card-actions">
+      <a class="action-btn quest" href="https://www.google.com/search?q=Kentucky%20football%20recruiting%20questionnaire" target="_blank" onclick="event.stopPropagation()">📝 Quest.</a><a class="action-btn dir" href="https://www.google.com/search?q=KENTUCKY%20ATHLETICS%20DIRECTORY" target="_blank" onclick="event.stopPropagation()">🏛 Dir.</a><a class="action-btn teamx" href="https://twitter.com/UKFootball" target="_blank" onclick="event.stopPropagation()">𝕏 @UKFootball</a>
+      <button class="action-btn edit-btn" onclick="event.stopPropagation();openModal(18)">✏ Edit</button>
+    </div>
+  </div>
+  
+  <button class="card-expand-toggle" onclick="event.stopPropagation();toggleExpand(this)">
+    Program Contacts &amp; Staff
+    <span class="expand-arrow">▾</span>
+  </button>
+  <div class="card-expanded">
+    <div class="expand-section-label">Recruiting Staff</div><div class="rc-grid"><div class="rc-person"><span class="rc-name">Danielle Braswell</span><a class="rc-xlink" href="https://twitter.com/DaniBraswell" target="_blank" onclick="event.stopPropagation()">@DaniBraswell</a></div><div class="rc-person"><span class="rc-name">Ty Williams</span><a class="rc-xlink" href="https://twitter.com/Ty_Williams16" target="_blank" onclick="event.stopPropagation()">@Ty_Williams16</a></div><div class="rc-person"><span class="rc-name">Josh Pruitt</span><a class="rc-xlink" href="https://twitter.com/CoachJoshPruitt" target="_blank" onclick="event.stopPropagation()">@CoachJoshPruitt</a></div><div class="rc-person"><span class="rc-name">Jocelyn Grimsley</span><a class="rc-xlink" href="https://twitter.com/JocelynGrimsley" target="_blank" onclick="event.stopPropagation()">@JocelynGrimsley</a></div></div><div class="expand-section-label" style="margin-top:12px">Program Contacts</div><div class="emails-row"><a class="email-chip" href="mailto:braswell@uky.edu" onclick="event.stopPropagation()">✉ braswell@uky.edu</a><a class="email-chip" href="mailto:kentuckyfootball@uky.edu" onclick="event.stopPropagation()">✉ kentuckyfootball@uky.edu</a><a class="email-chip" href="mailto:melissa.tomlinson@uky.edu" onclick="event.stopPropagation()">✉ melissa.tomlinson@uky.edu</a><a class="email-chip" href="mailto:shellee.hein@uky.edu" onclick="event.stopPropagation()">✉ shellee.hein@uky.edu</a></div><div class="notes-expand">📎 Will Stein former LT OC</div>
+  </div>
+</div>
+<div class="school-card" onclick="openModal(19)">
+  <div class="card-inner">
+    <div class="card-head">
+      <div class="card-logo card-logo-img" data-init="A"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/12.png" alt="Arizona" onerror="logoFallback(this)"></div>
+      <div class="card-title-block">
+        <div class="card-school">Arizona</div>
+        <div class="card-subtitle">HC: Brent Brennan</div>
+      </div>
+      <span class="card-tier-pill">T3 Target</span>
+    </div>
+
+    <div class="card-coaches">
+    <div class="coach-block">
+      <div class="coach-role">WR</div>
+      <div class="coach-name">Bobby Wade</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/CoachBobbyWade" target="_blank" onclick="event.stopPropagation()" title="@CoachBobbyWade">𝕏</a></div>
+    </div>
+    <div class="coach-block">
+      <div class="coach-role">OC</div>
+      <div class="coach-name">Seth Doege</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/CoachDoege" target="_blank" onclick="event.stopPropagation()" title="@CoachDoege">𝕏</a></div>
+    </div></div>
+
+    <div class="card-status"><span class="chip chip-film-yes">📹 Film Sent</span><span class="chip chip-film-yes">📞 Contacted</span></div>
+
+    <div class="card-pipeline">
+      <div class="pipeline-label-row">
+        <span class="pipeline-title">Recruiting Pipeline</span>
+        <span class="pipeline-pct">55%</span>
+      </div>
+      <div class="pipeline-track"><div class="pipeline-step done"></div><div class="pipeline-step done"></div><div class="pipeline-step"></div><div class="pipeline-step"></div><div class="pipeline-step"></div></div>
+      <div class="pipeline-stages"><div class="stage-label done">Eval</div><div class="stage-label done">Contact</div><div class="stage-label">Camp</div><div class="stage-label">Visit</div><div class="stage-label">Interest</div></div>
+    </div>
+
+    <div class="card-rule"></div>
+    <div class="card-actions">
+      <a class="action-btn quest" href="https://www.google.com/search?q=Arizona%20football%20recruiting%20questionnaire" target="_blank" onclick="event.stopPropagation()">📝 Quest.</a><a class="action-btn dir" href="https://www.google.com/search?q=ARIZONA%20ATHLETICS%20DIRECTORY" target="_blank" onclick="event.stopPropagation()">🏛 Dir.</a><a class="action-btn teamx" href="https://twitter.com/ArizonaFBall" target="_blank" onclick="event.stopPropagation()">𝕏 @ArizonaFBall</a>
+      <button class="action-btn edit-btn" onclick="event.stopPropagation();openModal(19)">✏ Edit</button>
+    </div>
+  </div>
+  
+  <button class="card-expand-toggle" onclick="event.stopPropagation();toggleExpand(this)">
+    Program Contacts &amp; Staff
+    <span class="expand-arrow">▾</span>
+  </button>
+  <div class="card-expanded">
+    <div class="expand-section-label">Recruiting Staff</div><div class="rc-grid"><div class="rc-person"><span class="rc-name">Katherine Joiner</span><a class="rc-xlink" href="https://twitter.com/katiejoiner_" target="_blank" onclick="event.stopPropagation()">@katiejoiner_</a></div><div class="rc-person"><span class="rc-name">Andrew Morgan</span><a class="rc-xlink" href="https://twitter.com/AJMorganFB" target="_blank" onclick="event.stopPropagation()">@AJMorganFB</a></div><div class="rc-person"><span class="rc-name">Brandon Sanders</span><a class="rc-xlink" href="https://twitter.com/coachBSanders18" target="_blank" onclick="event.stopPropagation()">@coachBSanders18</a></div><div class="rc-person"><span class="rc-name">Aaron Knotts</span><a class="rc-xlink" href="https://twitter.com/AaronKnottsUofA" target="_blank" onclick="event.stopPropagation()">@AaronKnottsUofA</a></div></div><div class="expand-section-label" style="margin-top:12px">Program Contacts</div><div class="emails-row"><a class="email-chip" href="mailto:joinerk@arizona.edu" onclick="event.stopPropagation()">✉ joinerk@arizona.edu</a><a class="email-chip" href="mailto:andrewjmorgan@arizona.edu" onclick="event.stopPropagation()">✉ andrewjmorgan@arizona.edu</a><a class="email-chip" href="mailto:ica-fbrecruiting@arizona.edu" onclick="event.stopPropagation()">✉ ica-fbrecruiting@arizona.edu</a><a class="email-chip" href="mailto:abknotts@arizona.edu" onclick="event.stopPropagation()">✉ abknotts@arizona.edu</a></div><div class="notes-expand">📎 Yogi contact, Doege Texas connection</div>
+  </div>
+</div>
+<div class="school-card" onclick="openModal(20)">
+  <div class="card-inner">
+    <div class="card-head">
+      <div class="card-logo card-logo-img" data-init="B"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/239.png" alt="Baylor" onerror="logoFallback(this)"></div>
+      <div class="card-title-block">
+        <div class="card-school">Baylor</div>
+        <div class="card-subtitle">HC: Dave Aranda</div>
+      </div>
+      <span class="card-tier-pill">T3 Target</span>
+    </div>
+
+    <div class="card-coaches">
+    <div class="coach-block">
+      <div class="coach-role">WR</div>
+      <div class="coach-name">Dallas Baker</div>
+      <div class="coach-contact-row"><a class="contact-icon email" href="mailto:Dallas_Baker@Baylor.edu" onclick="event.stopPropagation()" title="Dallas_Baker@Baylor.edu">✉</a><a class="contact-icon xbird" href="https://twitter.com/CoachDBaker81" target="_blank" onclick="event.stopPropagation()" title="@CoachDBaker81">𝕏</a></div>
+    </div>
+    <div class="coach-block">
+      <div class="coach-role">OC</div>
+      <div class="coach-name">Jake Spavital</div>
+      <div class="coach-contact-row"><a class="contact-icon email" href="mailto:Jake_Spavital@Baylor.edu" onclick="event.stopPropagation()" title="Jake_Spavital@Baylor.edu">✉</a></div>
+    </div></div>
+
+    <div class="card-status"><span class="chip chip-film-yes">📹 Film Sent</span><span class="chip chip-film-yes">📞 Contacted</span></div>
+
+    <div class="card-pipeline">
+      <div class="pipeline-label-row">
+        <span class="pipeline-title">Recruiting Pipeline</span>
+        <span class="pipeline-pct">55%</span>
+      </div>
+      <div class="pipeline-track"><div class="pipeline-step done"></div><div class="pipeline-step done"></div><div class="pipeline-step"></div><div class="pipeline-step"></div><div class="pipeline-step"></div></div>
+      <div class="pipeline-stages"><div class="stage-label done">Eval</div><div class="stage-label done">Contact</div><div class="stage-label">Camp</div><div class="stage-label">Visit</div><div class="stage-label">Interest</div></div>
+    </div>
+
+    <div class="card-rule"></div>
+    <div class="card-actions">
+      <a class="action-btn quest" href="https://www.google.com/search?q=Baylor%20football%20recruiting%20questionnaire" target="_blank" onclick="event.stopPropagation()">📝 Quest.</a><a class="action-btn dir" href="https://www.google.com/search?q=BAYLOR%20ATHLETICS%20DIRECTORY" target="_blank" onclick="event.stopPropagation()">🏛 Dir.</a><a class="action-btn teamx" href="https://twitter.com/BUFootball" target="_blank" onclick="event.stopPropagation()">𝕏 @BUFootball</a>
+      <button class="action-btn edit-btn" onclick="event.stopPropagation();openModal(20)">✏ Edit</button>
+    </div>
+  </div>
+  
+  <button class="card-expand-toggle" onclick="event.stopPropagation();toggleExpand(this)">
+    Program Contacts &amp; Staff
+    <span class="expand-arrow">▾</span>
+  </button>
+  <div class="card-expanded">
+    <div class="expand-section-label">Recruiting Staff</div><div class="rc-grid"><div class="rc-person"><span class="rc-name">Larry McDonald</span><a class="rc-xlink" href="https://twitter.com/LarryBaylorFB" target="_blank" onclick="event.stopPropagation()">@LarryBaylorFB</a></div><div class="rc-person"><span class="rc-name">Callie Cameron</span><a class="rc-xlink" href="https://twitter.com/CallieCam_" target="_blank" onclick="event.stopPropagation()">@CallieCam_</a></div><div class="rc-person"><span class="rc-name">Joe Reynolds</span><a class="rc-xlink" href="https://twitter.com/JoeReynoldsBU" target="_blank" onclick="event.stopPropagation()">@JoeReynoldsBU</a></div><div class="rc-person"><span class="rc-name">Aaron Appleberry</span><a class="rc-xlink" href="https://twitter.com/AppleberryBU" target="_blank" onclick="event.stopPropagation()">@AppleberryBU</a></div></div><div class="expand-section-label" style="margin-top:12px">Program Contacts</div><div class="emails-row"><a class="email-chip" href="mailto:larry_mcDonald@baylor.edu" onclick="event.stopPropagation()">✉ larry_mcDonald@baylor.edu</a><a class="email-chip" href="mailto:callie_cameron@baylor.edu" onclick="event.stopPropagation()">✉ callie_cameron@baylor.edu</a><a class="email-chip" href="mailto:joe_i_reynolds@baylor.edu" onclick="event.stopPropagation()">✉ joe_i_reynolds@baylor.edu</a><a class="email-chip" href="mailto:aaron_appleberry@baylor.edu" onclick="event.stopPropagation()">✉ aaron_appleberry@baylor.edu</a></div><div class="notes-expand">📎 Currently live in Austin</div>
+  </div>
+</div>
+<div class="school-card" onclick="openModal(21)">
+  <div class="card-inner">
+    <div class="card-head">
+      <div class="card-logo card-logo-img" data-init="I"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/84.png" alt="Indiana" onerror="logoFallback(this)"></div>
+      <div class="card-title-block">
+        <div class="card-school">Indiana</div>
+        <div class="card-subtitle">HC: Curt Cignetti</div>
+      </div>
+      <span class="card-tier-pill">T3 Target</span>
+    </div>
+
+    <div class="card-coaches">
+    <div class="coach-block">
+      <div class="coach-role">OC</div>
+      <div class="coach-name">Mike Shanahan</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/CoachShanahan_" target="_blank" onclick="event.stopPropagation()" title="@CoachShanahan_">𝕏</a></div>
+    </div></div>
+
+    <div class="card-status"><span class="chip chip-film-yes">📹 Film Sent</span><span class="chip chip-film-yes">📞 Contacted</span></div>
+
+    <div class="card-pipeline">
+      <div class="pipeline-label-row">
+        <span class="pipeline-title">Recruiting Pipeline</span>
+        <span class="pipeline-pct">55%</span>
+      </div>
+      <div class="pipeline-track"><div class="pipeline-step done"></div><div class="pipeline-step done"></div><div class="pipeline-step"></div><div class="pipeline-step"></div><div class="pipeline-step"></div></div>
+      <div class="pipeline-stages"><div class="stage-label done">Eval</div><div class="stage-label done">Contact</div><div class="stage-label">Camp</div><div class="stage-label">Visit</div><div class="stage-label">Interest</div></div>
+    </div>
+
+    <div class="card-rule"></div>
+    <div class="card-actions">
+      <a class="action-btn quest" href="https://www.google.com/search?q=Indiana%20football%20recruiting%20questionnaire" target="_blank" onclick="event.stopPropagation()">📝 Quest.</a><a class="action-btn dir" href="https://www.google.com/search?q=INDIANA%20ATHLETICS" target="_blank" onclick="event.stopPropagation()">🏛 Dir.</a><a class="action-btn teamx" href="https://twitter.com/IndianaFootball" target="_blank" onclick="event.stopPropagation()">𝕏 @IndianaFootball</a>
+      <button class="action-btn edit-btn" onclick="event.stopPropagation();openModal(21)">✏ Edit</button>
+    </div>
+  </div>
+  
+  <button class="card-expand-toggle" onclick="event.stopPropagation();toggleExpand(this)">
+    Program Contacts &amp; Staff
+    <span class="expand-arrow">▾</span>
+  </button>
+  <div class="card-expanded">
+    <div class="expand-section-label">Recruiting Staff</div><div class="rc-grid"><div class="rc-person"><span class="rc-name">Mike Ferrara</span><a class="rc-xlink" href="https://twitter.com/MikeFerraraIU" target="_blank" onclick="event.stopPropagation()">@MikeFerraraIU</a></div><div class="rc-person"><span class="rc-name">Brooks Halsey</span><a class="rc-xlink" href="https://twitter.com/brooks_halsey" target="_blank" onclick="event.stopPropagation()">@brooks_halsey</a></div><div class="rc-person"><span class="rc-name">John Srofe</span><a class="rc-xlink" href="https://twitter.com/JSrofe" target="_blank" onclick="event.stopPropagation()">@JSrofe</a></div><div class="rc-person"><span class="rc-name">Sales Pinckney</span><a class="rc-xlink" href="https://twitter.com/SalesPinckney" target="_blank" onclick="event.stopPropagation()">@SalesPinckney</a></div></div><div class="expand-section-label" style="margin-top:12px">Program Contacts</div><div class="emails-row"><a class="email-chip" href="mailto:football@iu.edu" onclick="event.stopPropagation()">✉ football@iu.edu</a><a class="email-chip" href="mailto:lablevin@iu.edu" onclick="event.stopPropagation()">✉ lablevin@iu.edu</a></div>
+  </div>
+</div>
+<div class="school-card" onclick="openModal(22)">
+  <div class="card-inner">
+    <div class="card-head">
+      <div class="card-logo card-logo-img" data-init="K"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/2305.png" alt="Kansas" onerror="logoFallback(this)"></div>
+      <div class="card-title-block">
+        <div class="card-school">Kansas</div>
+        <div class="card-subtitle">HC: Lance Leipold</div>
+      </div>
+      <span class="card-tier-pill">T3 Target</span>
+    </div>
+
+    <div class="card-coaches">
+    <div class="coach-block">
+      <div class="coach-role">WR</div>
+      <div class="coach-name">Terrence Samuel</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/CoachTSamuel" target="_blank" onclick="event.stopPropagation()" title="@CoachTSamuel">𝕏</a></div>
+    </div>
+    <div class="coach-block">
+      <div class="coach-role">OC</div>
+      <div class="coach-name">Matt Lubick</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/CoachLubick" target="_blank" onclick="event.stopPropagation()" title="@CoachLubick">𝕏</a></div>
+    </div></div>
+
+    <div class="card-status"><span class="chip chip-film-yes">📹 Film Sent</span><span class="chip chip-film-yes">📞 Contacted</span></div>
+
+    <div class="card-pipeline">
+      <div class="pipeline-label-row">
+        <span class="pipeline-title">Recruiting Pipeline</span>
+        <span class="pipeline-pct">55%</span>
+      </div>
+      <div class="pipeline-track"><div class="pipeline-step done"></div><div class="pipeline-step done"></div><div class="pipeline-step"></div><div class="pipeline-step"></div><div class="pipeline-step"></div></div>
+      <div class="pipeline-stages"><div class="stage-label done">Eval</div><div class="stage-label done">Contact</div><div class="stage-label">Camp</div><div class="stage-label">Visit</div><div class="stage-label">Interest</div></div>
+    </div>
+
+    <div class="card-rule"></div>
+    <div class="card-actions">
+      <a class="action-btn quest" href="https://www.google.com/search?q=Kansas%20football%20recruiting%20questionnaire" target="_blank" onclick="event.stopPropagation()">📝 Quest.</a><a class="action-btn dir" href="https://www.google.com/search?q=KANSAS%20ATHLETICS%20DIRECTORY" target="_blank" onclick="event.stopPropagation()">🏛 Dir.</a><a class="action-btn teamx" href="https://twitter.com/KU_Football" target="_blank" onclick="event.stopPropagation()">𝕏 @KU_Football</a>
+      <button class="action-btn edit-btn" onclick="event.stopPropagation();openModal(22)">✏ Edit</button>
+    </div>
+  </div>
+  
+  <button class="card-expand-toggle" onclick="event.stopPropagation();toggleExpand(this)">
+    Program Contacts &amp; Staff
+    <span class="expand-arrow">▾</span>
+  </button>
+  <div class="card-expanded">
+    <div class="expand-section-label">Recruiting Staff</div><div class="rc-grid"><div class="rc-person"><span class="rc-name">Grant Murray</span><a class="rc-xlink" href="https://twitter.com/RealCoachMurray" target="_blank" onclick="event.stopPropagation()">@RealCoachMurray</a></div><div class="rc-person"><span class="rc-name">Billy Bonneau</span><a class="rc-xlink" href="https://twitter.com/BillyBonneau" target="_blank" onclick="event.stopPropagation()">@BillyBonneau</a></div><div class="rc-person"><span class="rc-name">Darcy Daugherty</span><a class="rc-xlink" href="https://twitter.com/darc_daugherty" target="_blank" onclick="event.stopPropagation()">@darc_daugherty</a></div><div class="rc-person"><span class="rc-name">Braunson Williams</span><a class="rc-xlink" href="https://twitter.com/BW__FB" target="_blank" onclick="event.stopPropagation()">@BW__FB</a></div></div><div class="expand-section-label" style="margin-top:12px">Program Contacts</div><div class="emails-row"><a class="email-chip" href="mailto:kansasfootball@ku.edu" onclick="event.stopPropagation()">✉ kansasfootball@ku.edu</a><a class="email-chip" href="mailto:ashleygoodman@ku.edu" onclick="event.stopPropagation()">✉ ashleygoodman@ku.edu</a><a class="email-chip" href="mailto:carie@ku.edu" onclick="event.stopPropagation()">✉ carie@ku.edu</a></div>
+  </div>
+</div>
+<div class="school-card" onclick="openModal(23)">
+  <div class="card-inner">
+    <div class="card-head">
+      <div class="card-logo card-logo-img" data-init="U"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/58.png" alt="USF" onerror="logoFallback(this)"></div>
+      <div class="card-title-block">
+        <div class="card-school">USF</div>
+        <div class="card-subtitle">HC: Brian Hartline</div>
+      </div>
+      <span class="card-tier-pill">T3 Target</span>
+    </div>
+
+    <div class="card-coaches">
+    <div class="coach-block">
+      <div class="coach-role">WR</div>
+      <div class="coach-name">Myles White</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/M_White03" target="_blank" onclick="event.stopPropagation()" title="@M_White03">𝕏</a></div>
+    </div>
+    <div class="coach-block">
+      <div class="coach-role">OC</div>
+      <div class="coach-name">Tim Beck</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/Coachtimbeck" target="_blank" onclick="event.stopPropagation()" title="@Coachtimbeck">𝕏</a></div>
+    </div></div>
+
+    <div class="card-status"><span class="chip chip-film-yes">📹 Film Sent</span><span class="chip chip-film-yes">📞 Contacted</span></div>
+
+    <div class="card-pipeline">
+      <div class="pipeline-label-row">
+        <span class="pipeline-title">Recruiting Pipeline</span>
+        <span class="pipeline-pct">55%</span>
+      </div>
+      <div class="pipeline-track"><div class="pipeline-step done"></div><div class="pipeline-step done"></div><div class="pipeline-step"></div><div class="pipeline-step"></div><div class="pipeline-step"></div></div>
+      <div class="pipeline-stages"><div class="stage-label done">Eval</div><div class="stage-label done">Contact</div><div class="stage-label">Camp</div><div class="stage-label">Visit</div><div class="stage-label">Interest</div></div>
+    </div>
+
+    <div class="card-rule"></div>
+    <div class="card-actions">
+      <a class="action-btn quest" href="https://www.google.com/search?q=USF%20football%20recruiting%20questionnaire" target="_blank" onclick="event.stopPropagation()">📝 Quest.</a><a class="action-btn dir" href="https://www.google.com/search?q=SOUTH%20FLORIDA%20(USF)%20ATHLETICS%20DIRECTORY" target="_blank" onclick="event.stopPropagation()">🏛 Dir.</a><a class="action-btn teamx" href="https://twitter.com/USFFootball" target="_blank" onclick="event.stopPropagation()">𝕏 @USFFootball</a>
+      <button class="action-btn edit-btn" onclick="event.stopPropagation();openModal(23)">✏ Edit</button>
+    </div>
+  </div>
+  
+  <button class="card-expand-toggle" onclick="event.stopPropagation();toggleExpand(this)">
+    Program Contacts &amp; Staff
+    <span class="expand-arrow">▾</span>
+  </button>
+  <div class="card-expanded">
+    <div class="expand-section-label">Recruiting Staff</div><div class="rc-grid"><div class="rc-person"><span class="rc-name">Carter Wilson</span><a class="rc-xlink" href="https://twitter.com/cwilsFB" target="_blank" onclick="event.stopPropagation()">@cwilsFB</a></div><div class="rc-person"><span class="rc-name">Jenna Learn</span><a class="rc-xlink" href="https://twitter.com/LearnJenna" target="_blank" onclick="event.stopPropagation()">@LearnJenna</a></div><div class="rc-person"><span class="rc-name">TyGee Leach</span><a class="rc-xlink" href="https://twitter.com/tygeeleach" target="_blank" onclick="event.stopPropagation()">@tygeeleach</a></div><div class="rc-person"><span class="rc-name">Kyle Steinhoff</span><a class="rc-xlink" href="https://twitter.com/KyleWSteinhoff" target="_blank" onclick="event.stopPropagation()">@KyleWSteinhoff</a></div></div><div class="expand-section-label" style="margin-top:12px">Program Contacts</div><div class="emails-row"><a class="email-chip" href="mailto:ksteinhoff@usf.edu" onclick="event.stopPropagation()">✉ ksteinhoff@usf.edu</a><a class="email-chip" href="mailto:ath-bullsrecruiting@usf.edu" onclick="event.stopPropagation()">✉ ath-bullsrecruiting@usf.edu</a><a class="email-chip" href="mailto:ccohron@usf.edu" onclick="event.stopPropagation()">✉ ccohron@usf.edu</a><a class="email-chip" href="mailto:kellihinton@usf.edu" onclick="event.stopPropagation()">✉ kellihinton@usf.edu</a></div>
+  </div>
+</div>
+<div class="school-card" onclick="openModal(24)">
+  <div class="card-inner">
+    <div class="card-head">
+      <div class="card-logo card-logo-img" data-init="V"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/238.png" alt="Vanderbilt" onerror="logoFallback(this)"></div>
+      <div class="card-title-block">
+        <div class="card-school">Vanderbilt</div>
+        <div class="card-subtitle">HC: Clark Lea</div>
+      </div>
+      <span class="card-tier-pill">T3 Target</span>
+    </div>
+
+    <div class="card-coaches">
+    <div class="coach-block">
+      <div class="coach-role">WR</div>
+      <div class="coach-name">Alex Bailey</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/CoachAlexBailey" target="_blank" onclick="event.stopPropagation()" title="@CoachAlexBailey">𝕏</a></div>
+    </div>
+    <div class="coach-block">
+      <div class="coach-role">OC</div>
+      <div class="coach-name">Tim Beck</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/TimBeckFB" target="_blank" onclick="event.stopPropagation()" title="@TimBeckFB">𝕏</a></div>
+    </div></div>
+
+    <div class="card-status"><span class="chip chip-film-yes">📹 Film Sent</span><span class="chip chip-film-yes">📞 Contacted</span></div>
+
+    <div class="card-pipeline">
+      <div class="pipeline-label-row">
+        <span class="pipeline-title">Recruiting Pipeline</span>
+        <span class="pipeline-pct">55%</span>
+      </div>
+      <div class="pipeline-track"><div class="pipeline-step done"></div><div class="pipeline-step done"></div><div class="pipeline-step"></div><div class="pipeline-step"></div><div class="pipeline-step"></div></div>
+      <div class="pipeline-stages"><div class="stage-label done">Eval</div><div class="stage-label done">Contact</div><div class="stage-label">Camp</div><div class="stage-label">Visit</div><div class="stage-label">Interest</div></div>
+    </div>
+
+    <div class="card-rule"></div>
+    <div class="card-actions">
+      <a class="action-btn quest" href="https://www.google.com/search?q=Vanderbilt%20football%20recruiting%20questionnaire" target="_blank" onclick="event.stopPropagation()">📝 Quest.</a><a class="action-btn dir" href="https://www.google.com/search?q=VANDERBILT%20ATHLETICS%20DIRECTORY" target="_blank" onclick="event.stopPropagation()">🏛 Dir.</a><a class="action-btn teamx" href="https://twitter.com/VandyFootball" target="_blank" onclick="event.stopPropagation()">𝕏 @VandyFootball</a>
+      <button class="action-btn edit-btn" onclick="event.stopPropagation();openModal(24)">✏ Edit</button>
+    </div>
+  </div>
+  
+  <button class="card-expand-toggle" onclick="event.stopPropagation();toggleExpand(this)">
+    Program Contacts &amp; Staff
+    <span class="expand-arrow">▾</span>
+  </button>
+  <div class="card-expanded">
+    <div class="expand-section-label">Recruiting Staff</div><div class="rc-grid"><div class="rc-person"><span class="rc-name">Nik Valdiserri</span><a class="rc-xlink" href="https://twitter.com/NickyV05" target="_blank" onclick="event.stopPropagation()">@NickyV05</a></div><div class="rc-person"><span class="rc-name">Bella LePak</span><a class="rc-xlink" href="https://twitter.com/bellalepak" target="_blank" onclick="event.stopPropagation()">@bellalepak</a></div><div class="rc-person"><span class="rc-name">Kendall Lawson</span><a class="rc-xlink" href="https://twitter.com/Kendall_Lawson3" target="_blank" onclick="event.stopPropagation()">@Kendall_Lawson3</a></div><div class="rc-person"><span class="rc-name">Mya Webster</span><a class="rc-xlink" href="https://twitter.com/myawebster_" target="_blank" onclick="event.stopPropagation()">@myawebster_</a></div></div><div class="expand-section-label" style="margin-top:12px">Program Contacts</div><div class="emails-row"><a class="email-chip" href="mailto:jacob.jola@vanderbilt.edu" onclick="event.stopPropagation()">✉ jacob.jola@vanderbilt.edu</a><a class="email-chip" href="mailto:sarah.c.mcloud@vanderbilt.edu" onclick="event.stopPropagation()">✉ sarah.c.mcloud@vanderbilt.edu</a><a class="email-chip" href="mailto:football_recruiting@vanderbilt.edu" onclick="event.stopPropagation()">✉ football_recruiting@vanderbilt.edu</a><a class="email-chip" href="mailto:football@vanderbilt.edu" onclick="event.stopPropagation()">✉ football@vanderbilt.edu</a></div>
+  </div>
+</div>
+<div class="school-card" onclick="openModal(25)">
+  <div class="card-inner">
+    <div class="card-head">
+      <div class="card-logo card-logo-img" data-init="MS"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/127.png" alt="Michigan State" onerror="logoFallback(this)"></div>
+      <div class="card-title-block">
+        <div class="card-school">Michigan State</div>
+        <div class="card-subtitle">HC: Pat Fitzgerald</div>
+      </div>
+      <span class="card-tier-pill">T3 Target</span>
+    </div>
+
+    <div class="card-coaches">
+    <div class="coach-block">
+      <div class="coach-role">WR</div>
+      <div class="coach-name">Courtney Hawkins</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/CoachHawk_5" target="_blank" onclick="event.stopPropagation()" title="@CoachHawk_5">𝕏</a></div>
+    </div>
+    <div class="coach-block">
+      <div class="coach-role">OC</div>
+      <div class="coach-name">Nick Sheridan</div>
+      <div class="coach-contact-row"></div>
+    </div></div>
+
+    <div class="card-status"><span class="chip chip-film-yes">📹 Film Sent</span><span class="chip chip-film-yes">📞 Contacted</span></div>
+
+    <div class="card-pipeline">
+      <div class="pipeline-label-row">
+        <span class="pipeline-title">Recruiting Pipeline</span>
+        <span class="pipeline-pct">55%</span>
+      </div>
+      <div class="pipeline-track"><div class="pipeline-step done"></div><div class="pipeline-step done"></div><div class="pipeline-step"></div><div class="pipeline-step"></div><div class="pipeline-step"></div></div>
+      <div class="pipeline-stages"><div class="stage-label done">Eval</div><div class="stage-label done">Contact</div><div class="stage-label">Camp</div><div class="stage-label">Visit</div><div class="stage-label">Interest</div></div>
+    </div>
+
+    <div class="card-rule"></div>
+    <div class="card-actions">
+      <a class="action-btn quest" href="https://www.google.com/search?q=Michigan%20State%20football%20recruiting%20questionnaire" target="_blank" onclick="event.stopPropagation()">📝 Quest.</a><a class="action-btn dir" href="https://www.google.com/search?q=MICHIGAN%20STATE%20ATHLETICS%20DIRECTORY" target="_blank" onclick="event.stopPropagation()">🏛 Dir.</a><a class="action-btn teamx" href="https://twitter.com/MSU_Football" target="_blank" onclick="event.stopPropagation()">𝕏 @MSU_Football</a>
+      <button class="action-btn edit-btn" onclick="event.stopPropagation();openModal(25)">✏ Edit</button>
+    </div>
+  </div>
+  
+  <button class="card-expand-toggle" onclick="event.stopPropagation();toggleExpand(this)">
+    Program Contacts &amp; Staff
+    <span class="expand-arrow">▾</span>
+  </button>
+  <div class="card-expanded">
+    <div class="expand-section-label">Recruiting Staff</div><div class="rc-grid"><div class="rc-person"><span class="rc-name">Bryan Gasser</span><a class="rc-xlink" href="https://twitter.com/CoachBGasser" target="_blank" onclick="event.stopPropagation()">@CoachBGasser</a></div><div class="rc-person"><span class="rc-name">Antwon Murray</span><a class="rc-xlink" href="https://twitter.com/Antwon_Murray" target="_blank" onclick="event.stopPropagation()">@Antwon_Murray</a></div><div class="rc-person"><span class="rc-name">Sean Levy</span><a class="rc-xlink" href="https://twitter.com/SeanLevyMSU" target="_blank" onclick="event.stopPropagation()">@SeanLevyMSU</a></div><div class="rc-person"><span class="rc-name">AJ Pearson</span><a class="rc-xlink" href="https://twitter.com/AJPearson_IV" target="_blank" onclick="event.stopPropagation()">@AJPearson_IV</a></div></div><div class="expand-section-label" style="margin-top:12px">Program Contacts</div><div class="emails-row"><a class="email-chip" href="mailto:football@msu.edu" onclick="event.stopPropagation()">✉ football@msu.edu</a><a class="email-chip" href="mailto:weigan15@msu.edu" onclick="event.stopPropagation()">✉ weigan15@msu.edu</a><a class="email-chip" href="mailto:mackley@ath.msu.edu" onclick="event.stopPropagation()">✉ mackley@ath.msu.edu</a><a class="email-chip" href="mailto:phlegarb@ath.msu.edu" onclick="event.stopPropagation()">✉ phlegarb@ath.msu.edu</a></div>
+  </div>
+</div>
+<div class="school-card" onclick="openModal(26)">
+  <div class="card-inner">
+    <div class="card-head">
+      <div class="card-logo card-logo-img" data-init="ND"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/87.png" alt="Notre Dame" onerror="logoFallback(this)"></div>
+      <div class="card-title-block">
+        <div class="card-school">Notre Dame</div>
+        <div class="card-subtitle">HC: Marcus Freeman</div>
+      </div>
+      <span class="card-tier-pill">T3 Target</span>
+    </div>
+
+    <div class="card-coaches">
+    <div class="coach-block">
+      <div class="coach-role">WR</div>
+      <div class="coach-name">Mike Brown</div>
+      <div class="coach-contact-row"></div>
+    </div>
+    <div class="coach-block">
+      <div class="coach-role">OC</div>
+      <div class="coach-name">Mike Denbrock</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/MikeDenbrock" target="_blank" onclick="event.stopPropagation()" title="@MikeDenbrock">𝕏</a></div>
+    </div></div>
+
+    <div class="card-status"><span class="chip chip-film-yes">📹 Film Sent</span><span class="chip chip-film-yes">📞 Contacted</span></div>
+
+    <div class="card-pipeline">
+      <div class="pipeline-label-row">
+        <span class="pipeline-title">Recruiting Pipeline</span>
+        <span class="pipeline-pct">55%</span>
+      </div>
+      <div class="pipeline-track"><div class="pipeline-step done"></div><div class="pipeline-step done"></div><div class="pipeline-step"></div><div class="pipeline-step"></div><div class="pipeline-step"></div></div>
+      <div class="pipeline-stages"><div class="stage-label done">Eval</div><div class="stage-label done">Contact</div><div class="stage-label">Camp</div><div class="stage-label">Visit</div><div class="stage-label">Interest</div></div>
+    </div>
+
+    <div class="card-rule"></div>
+    <div class="card-actions">
+      <a class="action-btn quest" href="https://www.google.com/search?q=Notre%20Dame%20football%20recruiting%20questionnaire" target="_blank" onclick="event.stopPropagation()">📝 Quest.</a><a class="action-btn dir" href="https://www.google.com/search?q=NOTRE%20DAME%20ATHLETICS%20DIRECTORY" target="_blank" onclick="event.stopPropagation()">🏛 Dir.</a><a class="action-btn teamx" href="https://twitter.com/NDFootball" target="_blank" onclick="event.stopPropagation()">𝕏 @NDFootball</a>
+      <button class="action-btn edit-btn" onclick="event.stopPropagation();openModal(26)">✏ Edit</button>
+    </div>
+  </div>
+  
+  <button class="card-expand-toggle" onclick="event.stopPropagation();toggleExpand(this)">
+    Program Contacts &amp; Staff
+    <span class="expand-arrow">▾</span>
+  </button>
+  <div class="card-expanded">
+    <div class="expand-section-label">Recruiting Staff</div><div class="rc-grid"><div class="rc-person"><span class="rc-name">Kenny Sanders</span><a class="rc-xlink" href="https://twitter.com/knnysndrs" target="_blank" onclick="event.stopPropagation()">@knnysndrs</a></div><div class="rc-person"><span class="rc-name">Matt Jansen</span><a class="rc-xlink" href="https://twitter.com/MJScouting" target="_blank" onclick="event.stopPropagation()">@MJScouting</a></div><div class="rc-person"><span class="rc-name">Carter Auman</span><a class="rc-xlink" href="https://twitter.com/CarterAuman" target="_blank" onclick="event.stopPropagation()">@CarterAuman</a></div><div class="rc-person"><span class="rc-name">Becca Sites</span><a class="rc-xlink" href="https://twitter.com/beccasites" target="_blank" onclick="event.stopPropagation()">@beccasites</a></div></div><div class="expand-section-label" style="margin-top:12px">Program Contacts</div><div class="emails-row"><a class="email-chip" href="mailto:ndfootballrecruiting@nd.edu" onclick="event.stopPropagation()">✉ ndfootballrecruiting@nd.edu</a><a class="email-chip" href="mailto:ktinkham@nd.edu" onclick="event.stopPropagation()">✉ ktinkham@nd.edu</a><a class="email-chip" href="mailto:dmays1@nd.edu" onclick="event.stopPropagation()">✉ dmays1@nd.edu</a><a class="email-chip" href="mailto:bellia.2@nd.edu" onclick="event.stopPropagation()">✉ bellia.2@nd.edu</a></div>
+  </div>
+</div></div>
+</div>
+<div class="tier-section tier4">
+  <div class="tier-header">
+    <div class="tier-bar"></div>
+    <div class="tier-name">Tier 4 – Early Opportunity</div>
+    <span class="tier-badge">13 schools</span>
+  </div>
+  <div class="school-grid">
+<div class="school-card" onclick="openModal(27)">
+  <div class="card-inner">
+    <div class="card-head">
+      <div class="card-logo card-logo-img" data-init="EM"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/2199.png" alt="Eastern Michigan" onerror="logoFallback(this)"></div>
+      <div class="card-title-block">
+        <div class="card-school">Eastern Michigan</div>
+        <div class="card-subtitle">HC: Chris Creighton</div>
+      </div>
+      <span class="card-tier-pill">T4 Early</span>
+    </div>
+
+    <div class="card-coaches">
+    <div class="coach-block">
+      <div class="coach-role">WR</div>
+      <div class="coach-name">Erik Campbell</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/ErikCampbell" target="_blank" onclick="event.stopPropagation()" title="@ErikCampbell">𝕏</a></div>
+    </div>
+    <div class="coach-block">
+      <div class="coach-role">OC</div>
+      <div class="coach-name">Mike Piatkowski</div>
+      <div class="coach-contact-row"><a class="contact-icon email" href="mailto:mpiatkow@emich.edu" onclick="event.stopPropagation()" title="mpiatkow@emich.edu">✉</a><a class="contact-icon xbird" href="https://twitter.com/M__Piatkowski" target="_blank" onclick="event.stopPropagation()" title="@M__Piatkowski">𝕏</a></div>
+    </div></div>
+
+    <div class="card-status"><span class="chip chip-film-yes">📹 Film Sent</span><span class="chip chip-film-yes">📞 Contacted</span></div>
+
+    <div class="card-pipeline">
+      <div class="pipeline-label-row">
+        <span class="pipeline-title">Recruiting Pipeline</span>
+        <span class="pipeline-pct">55%</span>
+      </div>
+      <div class="pipeline-track"><div class="pipeline-step done"></div><div class="pipeline-step done"></div><div class="pipeline-step"></div><div class="pipeline-step"></div><div class="pipeline-step"></div></div>
+      <div class="pipeline-stages"><div class="stage-label done">Eval</div><div class="stage-label done">Contact</div><div class="stage-label">Camp</div><div class="stage-label">Visit</div><div class="stage-label">Interest</div></div>
+    </div>
+
+    <div class="card-rule"></div>
+    <div class="card-actions">
+      <a class="action-btn quest" href="https://www.google.com/search?q=Eastern%20Michigan%20football%20recruiting%20questionnaire" target="_blank" onclick="event.stopPropagation()">📝 Quest.</a><a class="action-btn dir" href="https://www.google.com/search?q=EASTERN%20MICHIGAN%20ATHLETICS%20DIRECTORY" target="_blank" onclick="event.stopPropagation()">🏛 Dir.</a><a class="action-btn teamx" href="https://twitter.com/EMUFB" target="_blank" onclick="event.stopPropagation()">𝕏 @EMUFB</a>
+      <button class="action-btn edit-btn" onclick="event.stopPropagation();openModal(27)">✏ Edit</button>
+    </div>
+  </div>
+  
+  <button class="card-expand-toggle" onclick="event.stopPropagation();toggleExpand(this)">
+    Program Contacts &amp; Staff
+    <span class="expand-arrow">▾</span>
+  </button>
+  <div class="card-expanded">
+    <div class="expand-section-label">Recruiting Staff</div><div class="rc-grid"><div class="rc-person"><span class="rc-name">Brock Humbert</span><a class="rc-xlink" href="https://twitter.com/CoachBHumbert" target="_blank" onclick="event.stopPropagation()">@CoachBHumbert</a></div><div class="rc-person"><span class="rc-name">Neil Herman</span><a class="rc-xlink" href="https://twitter.com/CoachNeilHerman" target="_blank" onclick="event.stopPropagation()">@CoachNeilHerman</a></div><div class="rc-person"><span class="rc-name">Bryce Troher</span><a class="rc-xlink" href="https://twitter.com/btroher14" target="_blank" onclick="event.stopPropagation()">@btroher14</a></div><div class="rc-person"><span class="rc-name">Jeff Collett</span><a class="rc-xlink" href="https://twitter.com/Coach_Collett" target="_blank" onclick="event.stopPropagation()">@Coach_Collett</a></div></div><div class="expand-section-label" style="margin-top:12px">Program Contacts</div><div class="emails-row"><a class="email-chip" href="mailto:bhumbert@emich.edu" onclick="event.stopPropagation()">✉ bhumbert@emich.edu</a><a class="email-chip" href="mailto:nherman2@emich.edu" onclick="event.stopPropagation()">✉ nherman2@emich.edu</a><a class="email-chip" href="mailto:jcollet2@emich.edu" onclick="event.stopPropagation()">✉ jcollet2@emich.edu</a><a class="email-chip" href="mailto:ldrinane@emich.edu" onclick="event.stopPropagation()">✉ ldrinane@emich.edu</a></div><div class="notes-expand">📎 Former Hoban QB currently attends</div>
+  </div>
+</div>
+<div class="school-card" onclick="openModal(28)">
+  <div class="card-inner">
+    <div class="card-head">
+      <div class="card-logo card-logo-img" data-init="A"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/2006.png" alt="Akron" onerror="logoFallback(this)"></div>
+      <div class="card-title-block">
+        <div class="card-school">Akron</div>
+        <div class="card-subtitle">HC: Joe Moorhead</div>
+      </div>
+      <span class="card-tier-pill">T4 Early</span>
+    </div>
+
+    <div class="card-coaches">
+    <div class="coach-block">
+      <div class="coach-role">WR</div>
+      <div class="coach-name">JD Brookhart</div>
+      <div class="coach-contact-row"><a class="contact-icon email" href="mailto:jbrookha@uakron.edu" onclick="event.stopPropagation()" title="jbrookha@uakron.edu">✉</a><a class="contact-icon xbird" href="https://twitter.com/CoachJDBrook" target="_blank" onclick="event.stopPropagation()" title="@CoachJDBrook">𝕏</a></div>
+    </div></div>
+
+    <div class="card-status"><span class="chip chip-film-yes">📹 Film Sent</span><span class="chip chip-film-yes">📞 Contacted</span></div>
+
+    <div class="card-pipeline">
+      <div class="pipeline-label-row">
+        <span class="pipeline-title">Recruiting Pipeline</span>
+        <span class="pipeline-pct">55%</span>
+      </div>
+      <div class="pipeline-track"><div class="pipeline-step done"></div><div class="pipeline-step done"></div><div class="pipeline-step"></div><div class="pipeline-step"></div><div class="pipeline-step"></div></div>
+      <div class="pipeline-stages"><div class="stage-label done">Eval</div><div class="stage-label done">Contact</div><div class="stage-label">Camp</div><div class="stage-label">Visit</div><div class="stage-label">Interest</div></div>
+    </div>
+
+    <div class="card-rule"></div>
+    <div class="card-actions">
+      <a class="action-btn quest" href="https://www.google.com/search?q=Akron%20football%20recruiting%20questionnaire" target="_blank" onclick="event.stopPropagation()">📝 Quest.</a><a class="action-btn dir" href="https://www.google.com/search?q=AKRON%20ATHLETICS%20DIRECTORY" target="_blank" onclick="event.stopPropagation()">🏛 Dir.</a><a class="action-btn teamx" href="https://twitter.com/ZipsFB" target="_blank" onclick="event.stopPropagation()">𝕏 @ZipsFB</a>
+      <button class="action-btn edit-btn" onclick="event.stopPropagation();openModal(28)">✏ Edit</button>
+    </div>
+  </div>
+  
+  <button class="card-expand-toggle" onclick="event.stopPropagation();toggleExpand(this)">
+    Program Contacts &amp; Staff
+    <span class="expand-arrow">▾</span>
+  </button>
+  <div class="card-expanded">
+    <div class="expand-section-label">Recruiting Staff</div><div class="rc-grid"><div class="rc-person"><span class="rc-name">Reno Ferri</span><a class="rc-xlink" href="https://twitter.com/CoachRenoFerri" target="_blank" onclick="event.stopPropagation()">@CoachRenoFerri</a></div><div class="rc-person"><span class="rc-name">Terry Richardson</span><a class="rc-xlink" href="https://twitter.com/Terry_Rich" target="_blank" onclick="event.stopPropagation()">@Terry_Rich</a></div><div class="rc-person"><span class="rc-name">Joel Rodriguez</span><a class="rc-xlink" href="https://twitter.com/Coach_J_Rod" target="_blank" onclick="event.stopPropagation()">@Coach_J_Rod</a></div><div class="rc-person"><span class="rc-name">JD Brookhart</span><a class="rc-xlink" href="https://twitter.com/CoachJDBrook" target="_blank" onclick="event.stopPropagation()">@CoachJDBrook</a></div></div><div class="expand-section-label" style="margin-top:12px">Program Contacts</div><div class="emails-row"><a class="email-chip" href="mailto:rf6@uakron.edu" onclick="event.stopPropagation()">✉ rf6@uakron.edu</a><a class="email-chip" href="mailto:trichardson@uakron.edu" onclick="event.stopPropagation()">✉ trichardson@uakron.edu</a><a class="email-chip" href="mailto:jrodriguez@uakron.edu" onclick="event.stopPropagation()">✉ jrodriguez@uakron.edu</a><a class="email-chip" href="mailto:sbutler@uakron.edu" onclick="event.stopPropagation()">✉ sbutler@uakron.edu</a></div><div class="notes-expand">📎 Lived in Akron. Former LT Grad, Markus Boswell attended</div>
+  </div>
+</div>
+<div class="school-card" onclick="openModal(29)">
+  <div class="card-inner">
+    <div class="card-head">
+      <div class="card-logo card-logo-img" data-init="KS"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/2309.png" alt="Kent State" onerror="logoFallback(this)"></div>
+      <div class="card-title-block">
+        <div class="card-school">Kent State</div>
+        <div class="card-subtitle">HC: Mark Carney</div>
+      </div>
+      <span class="card-tier-pill">T4 Early</span>
+    </div>
+
+    <div class="card-coaches">
+    <div class="coach-block">
+      <div class="coach-role">WR</div>
+      <div class="coach-name">Isaac Vance</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/CoachIsaacVance" target="_blank" onclick="event.stopPropagation()" title="@CoachIsaacVance">𝕏</a></div>
+    </div>
+    <div class="coach-block">
+      <div class="coach-role">OC</div>
+      <div class="coach-name">Clay Patterson</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/CoachCPatt" target="_blank" onclick="event.stopPropagation()" title="@CoachCPatt">𝕏</a></div>
+    </div></div>
+
+    <div class="card-status"><span class="chip chip-film-yes">📹 Film Sent</span><span class="chip chip-film-yes">📞 Contacted</span></div>
+
+    <div class="card-pipeline">
+      <div class="pipeline-label-row">
+        <span class="pipeline-title">Recruiting Pipeline</span>
+        <span class="pipeline-pct">55%</span>
+      </div>
+      <div class="pipeline-track"><div class="pipeline-step done"></div><div class="pipeline-step done"></div><div class="pipeline-step"></div><div class="pipeline-step"></div><div class="pipeline-step"></div></div>
+      <div class="pipeline-stages"><div class="stage-label done">Eval</div><div class="stage-label done">Contact</div><div class="stage-label">Camp</div><div class="stage-label">Visit</div><div class="stage-label">Interest</div></div>
+    </div>
+
+    <div class="card-rule"></div>
+    <div class="card-actions">
+      <a class="action-btn quest" href="https://www.google.com/search?q=Kent%20State%20football%20recruiting%20questionnaire" target="_blank" onclick="event.stopPropagation()">📝 Quest.</a><a class="action-btn dir" href="https://www.google.com/search?q=KENT%20STATE%20ATHLETICS%20DIRECTORY" target="_blank" onclick="event.stopPropagation()">🏛 Dir.</a><a class="action-btn teamx" href="https://twitter.com/KentStFootball" target="_blank" onclick="event.stopPropagation()">𝕏 @KentStFootball</a>
+      <button class="action-btn edit-btn" onclick="event.stopPropagation();openModal(29)">✏ Edit</button>
+    </div>
+  </div>
+  
+  <button class="card-expand-toggle" onclick="event.stopPropagation();toggleExpand(this)">
+    Program Contacts &amp; Staff
+    <span class="expand-arrow">▾</span>
+  </button>
+  <div class="card-expanded">
+    <div class="expand-section-label">Recruiting Staff</div><div class="rc-grid"><div class="rc-person"><span class="rc-name">DeMarkco Butler</span><a class="rc-xlink" href="https://twitter.com/DLButler_2114" target="_blank" onclick="event.stopPropagation()">@DLButler_2114</a></div><div class="rc-person"><span class="rc-name">Karter Kesner</span><a class="rc-xlink" href="https://twitter.com/KarterKesner" target="_blank" onclick="event.stopPropagation()">@KarterKesner</a></div><div class="rc-person"><span class="rc-name">Elizabeth Toth</span><a class="rc-xlink" href="https://twitter.com/DFOToth" target="_blank" onclick="event.stopPropagation()">@DFOToth</a></div><div class="rc-person"><span class="rc-name">CJ Conrad</span><a class="rc-xlink" href="https://twitter.com/CoachCJConrad" target="_blank" onclick="event.stopPropagation()">@CoachCJConrad</a></div></div><div class="expand-section-label" style="margin-top:12px">Program Contacts</div><div class="emails-row"><a class="email-chip" href="mailto:dbutle28@kent.edu" onclick="event.stopPropagation()">✉ dbutle28@kent.edu</a><a class="email-chip" href="mailto:kkesner2@kent.edu" onclick="event.stopPropagation()">✉ kkesner2@kent.edu</a><a class="email-chip" href="mailto:etoth10@kent.edu" onclick="event.stopPropagation()">✉ etoth10@kent.edu</a><a class="email-chip" href="mailto:football@kent.edu" onclick="event.stopPropagation()">✉ football@kent.edu</a></div><div class="notes-expand">📎 Lived in Akron</div>
+  </div>
+</div>
+<div class="school-card" onclick="openModal(30)">
+  <div class="card-inner">
+    <div class="card-head">
+      <div class="card-logo card-logo-img" data-init="T"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/2649.png" alt="Toledo" onerror="logoFallback(this)"></div>
+      <div class="card-title-block">
+        <div class="card-school">Toledo</div>
+        <div class="card-subtitle">HC: Mike Jacobs</div>
+      </div>
+      <span class="card-tier-pill">T4 Early</span>
+    </div>
+
+    <div class="card-coaches">
+    <div class="coach-block">
+      <div class="coach-role">WR</div>
+      <div class="coach-name">Devin Figaro</div>
+      <div class="coach-contact-row"><a class="contact-icon email" href="mailto:devin.figaro@utoledo.edu" onclick="event.stopPropagation()" title="devin.figaro@utoledo.edu">✉</a><a class="contact-icon xbird" href="https://twitter.com/CoachFigaro" target="_blank" onclick="event.stopPropagation()" title="@CoachFigaro">𝕏</a></div>
+    </div>
+    <div class="coach-block">
+      <div class="coach-role">OC</div>
+      <div class="coach-name">Cris Reisert</div>
+      <div class="coach-contact-row"><a class="contact-icon email" href="mailto:christopher.reisert@utoledo.edu" onclick="event.stopPropagation()" title="christopher.reisert@utoledo.edu">✉</a><a class="contact-icon xbird" href="https://twitter.com/CoachReisert" target="_blank" onclick="event.stopPropagation()" title="@CoachReisert">𝕏</a></div>
+    </div></div>
+
+    <div class="card-status"><span class="chip chip-film-yes">📹 Film Sent</span><span class="chip chip-film-yes">📞 Contacted</span></div>
+
+    <div class="card-pipeline">
+      <div class="pipeline-label-row">
+        <span class="pipeline-title">Recruiting Pipeline</span>
+        <span class="pipeline-pct">55%</span>
+      </div>
+      <div class="pipeline-track"><div class="pipeline-step done"></div><div class="pipeline-step done"></div><div class="pipeline-step"></div><div class="pipeline-step"></div><div class="pipeline-step"></div></div>
+      <div class="pipeline-stages"><div class="stage-label done">Eval</div><div class="stage-label done">Contact</div><div class="stage-label">Camp</div><div class="stage-label">Visit</div><div class="stage-label">Interest</div></div>
+    </div>
+
+    <div class="card-rule"></div>
+    <div class="card-actions">
+      <a class="action-btn quest" href="https://www.google.com/search?q=Toledo%20football%20recruiting%20questionnaire" target="_blank" onclick="event.stopPropagation()">📝 Quest.</a><a class="action-btn dir" href="https://www.google.com/search?q=TOLEDO%20ATHLETICS%20DIRECTORY" target="_blank" onclick="event.stopPropagation()">🏛 Dir.</a><a class="action-btn teamx" href="https://twitter.com/ToledoFB" target="_blank" onclick="event.stopPropagation()">𝕏 @ToledoFB</a>
+      <button class="action-btn edit-btn" onclick="event.stopPropagation();openModal(30)">✏ Edit</button>
+    </div>
+  </div>
+  
+  <button class="card-expand-toggle" onclick="event.stopPropagation();toggleExpand(this)">
+    Program Contacts &amp; Staff
+    <span class="expand-arrow">▾</span>
+  </button>
+  <div class="card-expanded">
+    <div class="expand-section-label">Recruiting Staff</div><div class="rc-grid"><div class="rc-person"><span class="rc-name">Logan Meyer</span><a class="rc-xlink" href="https://twitter.com/LoganM_CFB" target="_blank" onclick="event.stopPropagation()">@LoganM_CFB</a></div><div class="rc-person"><span class="rc-name">Tyler Miller</span><a class="rc-xlink" href="https://twitter.com/TylerMillerCFB" target="_blank" onclick="event.stopPropagation()">@TylerMillerCFB</a></div><div class="rc-person"><span class="rc-name">Jacob Bonacci</span><a class="rc-xlink" href="https://twitter.com/JacobBonacci" target="_blank" onclick="event.stopPropagation()">@JacobBonacci</a></div><div class="rc-person"><span class="rc-name">Addie Shane</span><a class="rc-xlink" href="https://twitter.com/Addie_Ward17" target="_blank" onclick="event.stopPropagation()">@Addie_Ward17</a></div></div><div class="expand-section-label" style="margin-top:12px">Program Contacts</div><div class="emails-row"><a class="email-chip" href="mailto:logan.meyer3@utoledo.edu" onclick="event.stopPropagation()">✉ logan.meyer3@utoledo.edu</a><a class="email-chip" href="mailto:tyler.miller9@utoledo.edu" onclick="event.stopPropagation()">✉ tyler.miller9@utoledo.edu</a><a class="email-chip" href="mailto:jacob.bonacci@utoledo.edu" onclick="event.stopPropagation()">✉ jacob.bonacci@utoledo.edu</a><a class="email-chip" href="mailto:addison.ward@rockets.utoledo.edu" onclick="event.stopPropagation()">✉ addison.ward@rockets.utoledo.edu</a></div><div class="notes-expand">📎 Lived in Akron</div>
+  </div>
+</div>
+<div class="school-card" onclick="openModal(31)">
+  <div class="card-inner">
+    <div class="card-head">
+      <div class="card-logo card-logo-img" data-init="CM"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/2117.png" alt="Central Michigan" onerror="logoFallback(this)"></div>
+      <div class="card-title-block">
+        <div class="card-school">Central Michigan</div>
+        <div class="card-subtitle">HC: Matt Drinkall</div>
+      </div>
+      <span class="card-tier-pill">T4 Early</span>
+    </div>
+
+    <div class="card-coaches">
+    <div class="coach-block">
+      <div class="coach-role">WR</div>
+      <div class="coach-name">Brandon Johnson-Farrell</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/Coach_BJFarrell" target="_blank" onclick="event.stopPropagation()" title="@Coach_BJFarrell">𝕏</a></div>
+    </div>
+    <div class="coach-block">
+      <div class="coach-role">OC</div>
+      <div class="coach-name">Jim Chapin</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/CoachChapin" target="_blank" onclick="event.stopPropagation()" title="@CoachChapin">𝕏</a></div>
+    </div></div>
+
+    <div class="card-status"><span class="chip chip-film-yes">📹 Film Sent</span><span class="chip chip-film-yes">📞 Contacted</span></div>
+
+    <div class="card-pipeline">
+      <div class="pipeline-label-row">
+        <span class="pipeline-title">Recruiting Pipeline</span>
+        <span class="pipeline-pct">55%</span>
+      </div>
+      <div class="pipeline-track"><div class="pipeline-step done"></div><div class="pipeline-step done"></div><div class="pipeline-step"></div><div class="pipeline-step"></div><div class="pipeline-step"></div></div>
+      <div class="pipeline-stages"><div class="stage-label done">Eval</div><div class="stage-label done">Contact</div><div class="stage-label">Camp</div><div class="stage-label">Visit</div><div class="stage-label">Interest</div></div>
+    </div>
+
+    <div class="card-rule"></div>
+    <div class="card-actions">
+      <a class="action-btn quest" href="https://www.google.com/search?q=Central%20Michigan%20football%20recruiting%20questionnaire" target="_blank" onclick="event.stopPropagation()">📝 Quest.</a><a class="action-btn dir" href="https://www.google.com/search?q=CENTRAL%20MICHIGAN%20ATHLETICS%20DIRECTORY" target="_blank" onclick="event.stopPropagation()">🏛 Dir.</a><a class="action-btn teamx" href="https://twitter.com/CMU_Football" target="_blank" onclick="event.stopPropagation()">𝕏 @CMU_Football</a>
+      <button class="action-btn edit-btn" onclick="event.stopPropagation();openModal(31)">✏ Edit</button>
+    </div>
+  </div>
+  
+  <button class="card-expand-toggle" onclick="event.stopPropagation();toggleExpand(this)">
+    Program Contacts &amp; Staff
+    <span class="expand-arrow">▾</span>
+  </button>
+  <div class="card-expanded">
+    <div class="expand-section-label">Recruiting Staff</div><div class="rc-grid"><div class="rc-person"><span class="rc-name">Ayden Opfer</span><a class="rc-xlink" href="https://twitter.com/coachopfer" target="_blank" onclick="event.stopPropagation()">@coachopfer</a></div><div class="rc-person"><span class="rc-name">Abigayl Cox</span><a class="rc-xlink" href="https://twitter.com/abiiicox" target="_blank" onclick="event.stopPropagation()">@abiiicox</a></div><div class="rc-person"><span class="rc-name">Jacob Sakk</span><a class="rc-xlink" href="https://twitter.com/CoachSakk" target="_blank" onclick="event.stopPropagation()">@CoachSakk</a></div><div class="rc-person"><span class="rc-name">Ashley Jetzer</span><a class="rc-xlink" href="https://twitter.com/Ashjetzer" target="_blank" onclick="event.stopPropagation()">@Ashjetzer</a></div></div><div class="expand-section-label" style="margin-top:12px">Program Contacts</div><div class="emails-row"><a class="email-chip" href="mailto:fbrecruiting@cmich.edu" onclick="event.stopPropagation()">✉ fbrecruiting@cmich.edu</a><a class="email-chip" href="mailto:hotch1ga@cmich.edu" onclick="event.stopPropagation()">✉ hotch1ga@cmich.edu</a><a class="email-chip" href="mailto:athleticdirector@cmich.edu" onclick="event.stopPropagation()">✉ athleticdirector@cmich.edu</a></div>
+  </div>
+</div>
+<div class="school-card" onclick="openModal(32)">
+  <div class="card-inner">
+    <div class="card-head">
+      <div class="card-logo card-logo-img" data-init="H"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/248.png" alt="Houston" onerror="logoFallback(this)"></div>
+      <div class="card-title-block">
+        <div class="card-school">Houston</div>
+        <div class="card-subtitle">HC: Willie Fritz</div>
+      </div>
+      <span class="card-tier-pill">T4 Early</span>
+    </div>
+
+    <div class="card-coaches">
+    <div class="coach-block">
+      <div class="coach-role">WR</div>
+      <div class="coach-name">Brian Bell</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/Bell_Brian_" target="_blank" onclick="event.stopPropagation()" title="@Bell_Brian_">𝕏</a></div>
+    </div>
+    <div class="coach-block">
+      <div class="coach-role">OC</div>
+      <div class="coach-name">Slade Nagle</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/Coach_Nagle" target="_blank" onclick="event.stopPropagation()" title="@Coach_Nagle">𝕏</a></div>
+    </div></div>
+
+    <div class="card-status"><span class="chip chip-film-yes">📹 Film Sent</span><span class="chip chip-film-yes">📞 Contacted</span></div>
+
+    <div class="card-pipeline">
+      <div class="pipeline-label-row">
+        <span class="pipeline-title">Recruiting Pipeline</span>
+        <span class="pipeline-pct">55%</span>
+      </div>
+      <div class="pipeline-track"><div class="pipeline-step done"></div><div class="pipeline-step done"></div><div class="pipeline-step"></div><div class="pipeline-step"></div><div class="pipeline-step"></div></div>
+      <div class="pipeline-stages"><div class="stage-label done">Eval</div><div class="stage-label done">Contact</div><div class="stage-label">Camp</div><div class="stage-label">Visit</div><div class="stage-label">Interest</div></div>
+    </div>
+
+    <div class="card-rule"></div>
+    <div class="card-actions">
+      <a class="action-btn quest" href="https://www.google.com/search?q=Houston%20football%20recruiting%20questionnaire" target="_blank" onclick="event.stopPropagation()">📝 Quest.</a><a class="action-btn dir" href="https://www.google.com/search?q=HOUSTON%20ATHLETICS%20DIRECTORY" target="_blank" onclick="event.stopPropagation()">🏛 Dir.</a><a class="action-btn teamx" href="https://twitter.com/UHCougarFB" target="_blank" onclick="event.stopPropagation()">𝕏 @UHCougarFB</a>
+      <button class="action-btn edit-btn" onclick="event.stopPropagation();openModal(32)">✏ Edit</button>
+    </div>
+  </div>
+  
+  <button class="card-expand-toggle" onclick="event.stopPropagation();toggleExpand(this)">
+    Program Contacts &amp; Staff
+    <span class="expand-arrow">▾</span>
+  </button>
+  <div class="card-expanded">
+    <div class="expand-section-label">Recruiting Staff</div><div class="rc-grid"><div class="rc-person"><span class="rc-name">Casey Smithson</span><a class="rc-xlink" href="https://twitter.com/Casey_Smithson" target="_blank" onclick="event.stopPropagation()">@Casey_Smithson</a></div><div class="rc-person"><span class="rc-name">Jake Pittman</span><a class="rc-xlink" href="https://twitter.com/Jake_Pittman11" target="_blank" onclick="event.stopPropagation()">@Jake_Pittman11</a></div><div class="rc-person"><span class="rc-name">Jay Girdner</span><a class="rc-xlink" href="https://twitter.com/JayGirdner" target="_blank" onclick="event.stopPropagation()">@JayGirdner</a></div><div class="rc-person"><span class="rc-name">Ella Guerrero</span><a class="rc-xlink" href="https://twitter.com/ellagguerrero" target="_blank" onclick="event.stopPropagation()">@ellagguerrero</a></div></div><div class="expand-section-label" style="margin-top:12px">Program Contacts</div><div class="emails-row"><a class="email-chip" href="mailto:tcsmithson@uh.edu" onclick="event.stopPropagation()">✉ tcsmithson@uh.edu</a><a class="email-chip" href="mailto:jcgirdner@uh.edu" onclick="event.stopPropagation()">✉ jcgirdner@uh.edu</a><a class="email-chip" href="mailto:cougarfootball@uh.edu" onclick="event.stopPropagation()">✉ cougarfootball@uh.edu</a></div>
+  </div>
+</div>
+<div class="school-card" onclick="openModal(33)">
+  <div class="card-inner">
+    <div class="card-head">
+      <div class="card-logo card-logo-img" data-init="I"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/2294.png" alt="Iowa" onerror="logoFallback(this)"></div>
+      <div class="card-title-block">
+        <div class="card-school">Iowa</div>
+        <div class="card-subtitle">HC: Kirk Ferentz</div>
+      </div>
+      <span class="card-tier-pill">T4 Early</span>
+    </div>
+
+    <div class="card-coaches">
+    <div class="coach-block">
+      <div class="coach-role">WR</div>
+      <div class="coach-name">Jon Budmayr</div>
+      <div class="coach-contact-row"><a class="contact-icon email" href="mailto:jon-budmayr@hawkeyefootball.com" onclick="event.stopPropagation()" title="jon-budmayr@hawkeyefootball.com">✉</a><a class="contact-icon xbird" href="https://twitter.com/CoachBudmayr" target="_blank" onclick="event.stopPropagation()" title="@CoachBudmayr">𝕏</a></div>
+    </div>
+    <div class="coach-block">
+      <div class="coach-role">OC</div>
+      <div class="coach-name">Tim Lester</div>
+      <div class="coach-contact-row"><a class="contact-icon email" href="mailto:timothy-lester@hawkeyefootball.com" onclick="event.stopPropagation()" title="timothy-lester@hawkeyefootball.com">✉</a><a class="contact-icon xbird" href="https://twitter.com/CoachTimLester" target="_blank" onclick="event.stopPropagation()" title="@CoachTimLester">𝕏</a></div>
+    </div></div>
+
+    <div class="card-status"><span class="chip chip-film-yes">📹 Film Sent</span><span class="chip chip-film-yes">📞 Contacted</span></div>
+
+    <div class="card-pipeline">
+      <div class="pipeline-label-row">
+        <span class="pipeline-title">Recruiting Pipeline</span>
+        <span class="pipeline-pct">55%</span>
+      </div>
+      <div class="pipeline-track"><div class="pipeline-step done"></div><div class="pipeline-step done"></div><div class="pipeline-step"></div><div class="pipeline-step"></div><div class="pipeline-step"></div></div>
+      <div class="pipeline-stages"><div class="stage-label done">Eval</div><div class="stage-label done">Contact</div><div class="stage-label">Camp</div><div class="stage-label">Visit</div><div class="stage-label">Interest</div></div>
+    </div>
+
+    <div class="card-rule"></div>
+    <div class="card-actions">
+      <a class="action-btn quest" href="https://www.google.com/search?q=Iowa%20football%20recruiting%20questionnaire" target="_blank" onclick="event.stopPropagation()">📝 Quest.</a><a class="action-btn dir" href="https://www.google.com/search?q=IOWA%20ATHLETICS%20DIRECTORY" target="_blank" onclick="event.stopPropagation()">🏛 Dir.</a><a class="action-btn teamx" href="https://twitter.com/HawkeyeFootball" target="_blank" onclick="event.stopPropagation()">𝕏 @HawkeyeFootball</a>
+      <button class="action-btn edit-btn" onclick="event.stopPropagation();openModal(33)">✏ Edit</button>
+    </div>
+  </div>
+  
+  <button class="card-expand-toggle" onclick="event.stopPropagation();toggleExpand(this)">
+    Program Contacts &amp; Staff
+    <span class="expand-arrow">▾</span>
+  </button>
+  <div class="card-expanded">
+    <div class="expand-section-label">Recruiting Staff</div><div class="rc-grid"><div class="rc-person"><span class="rc-name">Matt Spaulding</span><a class="rc-xlink" href="https://twitter.com/Spauldingiowa" target="_blank" onclick="event.stopPropagation()">@Spauldingiowa</a></div><div class="rc-person"><span class="rc-name">Rhett Smeins</span><a class="rc-xlink" href="https://twitter.com/RhettSmeins" target="_blank" onclick="event.stopPropagation()">@RhettSmeins</a></div><div class="rc-person"><span class="rc-name">Tyler Barnes</span><a class="rc-xlink" href="https://twitter.com/TylerBarnesIOWA" target="_blank" onclick="event.stopPropagation()">@TylerBarnesIOWA</a></div><div class="rc-person"><span class="rc-name">Delayna Cotton</span><a class="rc-xlink" href="https://twitter.com/CottonDelayna" target="_blank" onclick="event.stopPropagation()">@CottonDelayna</a></div></div><div class="expand-section-label" style="margin-top:12px">Program Contacts</div><div class="emails-row"><a class="email-chip" href="mailto:matt-spaulding@uiowa.edu" onclick="event.stopPropagation()">✉ matt-spaulding@uiowa.edu</a><a class="email-chip" href="mailto:rhett-smeins@hawkeyefootball.com" onclick="event.stopPropagation()">✉ rhett-smeins@hawkeyefootball.com</a><a class="email-chip" href="mailto:tyler-barnes@hawkeyefootball.com" onclick="event.stopPropagation()">✉ tyler-barnes@hawkeyefootball.com</a><a class="email-chip" href="mailto:delayna-cotton@hawkeyefootball.com" onclick="event.stopPropagation()">✉ delayna-cotton@hawkeyefootball.com</a></div>
+  </div>
+</div>
+<div class="school-card" onclick="openModal(34)">
+  <div class="card-inner">
+    <div class="card-head">
+      <div class="card-logo card-logo-img" data-init="NT"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/249.png" alt="North Texas" onerror="logoFallback(this)"></div>
+      <div class="card-title-block">
+        <div class="card-school">North Texas</div>
+        <div class="card-subtitle">HC: Neal Brown</div>
+      </div>
+      <span class="card-tier-pill">T4 Early</span>
+    </div>
+
+    <div class="card-coaches">
+    <div class="coach-block">
+      <div class="coach-role">WR</div>
+      <div class="coach-name">Kishawn McClain</div>
+      <div class="coach-contact-row"></div>
+    </div></div>
+
+    <div class="card-status"><span class="chip chip-film-yes">📹 Film Sent</span><span class="chip chip-film-yes">📞 Contacted</span></div>
+
+    <div class="card-pipeline">
+      <div class="pipeline-label-row">
+        <span class="pipeline-title">Recruiting Pipeline</span>
+        <span class="pipeline-pct">55%</span>
+      </div>
+      <div class="pipeline-track"><div class="pipeline-step done"></div><div class="pipeline-step done"></div><div class="pipeline-step"></div><div class="pipeline-step"></div><div class="pipeline-step"></div></div>
+      <div class="pipeline-stages"><div class="stage-label done">Eval</div><div class="stage-label done">Contact</div><div class="stage-label">Camp</div><div class="stage-label">Visit</div><div class="stage-label">Interest</div></div>
+    </div>
+
+    <div class="card-rule"></div>
+    <div class="card-actions">
+      <a class="action-btn quest" href="https://www.google.com/search?q=North%20Texas%20football%20recruiting%20questionnaire" target="_blank" onclick="event.stopPropagation()">📝 Quest.</a><a class="action-btn dir" href="https://www.google.com/search?q=NORTH%20TEXAS%20ATHLETICS%20DIRECTORY" target="_blank" onclick="event.stopPropagation()">🏛 Dir.</a><a class="action-btn teamx" href="https://twitter.com/MeanGreenFB" target="_blank" onclick="event.stopPropagation()">𝕏 @MeanGreenFB</a>
+      <button class="action-btn edit-btn" onclick="event.stopPropagation();openModal(34)">✏ Edit</button>
+    </div>
+  </div>
+  
+  <button class="card-expand-toggle" onclick="event.stopPropagation();toggleExpand(this)">
+    Program Contacts &amp; Staff
+    <span class="expand-arrow">▾</span>
+  </button>
+  <div class="card-expanded">
+    <div class="expand-section-label">Recruiting Staff</div><div class="rc-grid"><div class="rc-person"><span class="rc-name">Errin Joe</span><a class="rc-xlink" href="https://twitter.com/coacherrinjoe" target="_blank" onclick="event.stopPropagation()">@coacherrinjoe</a></div><div class="rc-person"><span class="rc-name">Wesley Harwell</span><a class="rc-xlink" href="https://twitter.com/iwp4short" target="_blank" onclick="event.stopPropagation()">@iwp4short</a></div><div class="rc-person"><span class="rc-name">Jarae Thurmond</span><a class="rc-xlink" href="https://twitter.com/CoachThurm87" target="_blank" onclick="event.stopPropagation()">@CoachThurm87</a></div><div class="rc-person"><span class="rc-name">Daniel Reakes</span><a class="rc-xlink" href="https://twitter.com/CoachDReakes" target="_blank" onclick="event.stopPropagation()">@CoachDReakes</a></div></div><div class="expand-section-label" style="margin-top:12px">Program Contacts</div><div class="emails-row"><a class="email-chip" href="mailto:untfootball@unt.edu" onclick="event.stopPropagation()">✉ untfootball@unt.edu</a><a class="email-chip" href="mailto:wesley.harwell@unt.edu" onclick="event.stopPropagation()">✉ wesley.harwell@unt.edu</a><a class="email-chip" href="mailto:jarae.thurmond@unt.edu" onclick="event.stopPropagation()">✉ jarae.thurmond@unt.edu</a><a class="email-chip" href="mailto:daniel.reakes@unt.edu" onclick="event.stopPropagation()">✉ daniel.reakes@unt.edu</a></div><div class="notes-expand">📎 Currently live in Austin</div>
+  </div>
+</div>
+<div class="school-card" onclick="openModal(35)">
+  <div class="card-inner">
+    <div class="card-head">
+      <div class="card-logo card-logo-img" data-init="S"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/2567.png" alt="SMU" onerror="logoFallback(this)"></div>
+      <div class="card-title-block">
+        <div class="card-school">SMU</div>
+        <div class="card-subtitle">HC: Rhett Lashlee</div>
+      </div>
+      <span class="card-tier-pill">T4 Early</span>
+    </div>
+
+    <div class="card-coaches">
+    <div class="coach-block">
+      <div class="coach-role">WR</div>
+      <div class="coach-name">Rob Likens</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/CoachRobLikens" target="_blank" onclick="event.stopPropagation()" title="@CoachRobLikens">𝕏</a></div>
+    </div>
+    <div class="coach-block">
+      <div class="coach-role">OC</div>
+      <div class="coach-name">D'Eriq King</div>
+      <div class="coach-contact-row"></div>
+    </div></div>
+
+    <div class="card-status"><span class="chip chip-film-yes">📹 Film Sent</span><span class="chip chip-film-yes">📞 Contacted</span></div>
+
+    <div class="card-pipeline">
+      <div class="pipeline-label-row">
+        <span class="pipeline-title">Recruiting Pipeline</span>
+        <span class="pipeline-pct">55%</span>
+      </div>
+      <div class="pipeline-track"><div class="pipeline-step done"></div><div class="pipeline-step done"></div><div class="pipeline-step"></div><div class="pipeline-step"></div><div class="pipeline-step"></div></div>
+      <div class="pipeline-stages"><div class="stage-label done">Eval</div><div class="stage-label done">Contact</div><div class="stage-label">Camp</div><div class="stage-label">Visit</div><div class="stage-label">Interest</div></div>
+    </div>
+
+    <div class="card-rule"></div>
+    <div class="card-actions">
+      <a class="action-btn quest" href="https://www.google.com/search?q=SMU%20football%20recruiting%20questionnaire" target="_blank" onclick="event.stopPropagation()">📝 Quest.</a><a class="action-btn dir" href="https://www.google.com/search?q=SMU%20ATHLETICS%20DIRECTORY" target="_blank" onclick="event.stopPropagation()">🏛 Dir.</a><a class="action-btn teamx" href="https://twitter.com/SMUFB" target="_blank" onclick="event.stopPropagation()">𝕏 @SMUFB</a>
+      <button class="action-btn edit-btn" onclick="event.stopPropagation();openModal(35)">✏ Edit</button>
+    </div>
+  </div>
+  
+  <button class="card-expand-toggle" onclick="event.stopPropagation();toggleExpand(this)">
+    Program Contacts &amp; Staff
+    <span class="expand-arrow">▾</span>
+  </button>
+  <div class="card-expanded">
+    <div class="expand-section-label">Recruiting Staff</div><div class="rc-grid"><div class="rc-person"><span class="rc-name">Connor Morgan</span><a class="rc-xlink" href="https://twitter.com/ConnorMFB" target="_blank" onclick="event.stopPropagation()">@ConnorMFB</a></div><div class="rc-person"><span class="rc-name">Jake Langi</span><a class="rc-xlink" href="https://twitter.com/jakelangi" target="_blank" onclick="event.stopPropagation()">@jakelangi</a></div><div class="rc-person"><span class="rc-name">Jeremiah Wait</span><a class="rc-xlink" href="https://twitter.com/mrfootballwait" target="_blank" onclick="event.stopPropagation()">@mrfootballwait</a></div><div class="rc-person"><span class="rc-name">Bryan Filker</span><a class="rc-xlink" href="https://twitter.com/bryanfilker" target="_blank" onclick="event.stopPropagation()">@bryanfilker</a></div></div><div class="expand-section-label" style="margin-top:12px">Program Contacts</div><div class="emails-row"><a class="email-chip" href="mailto:jwait@smu.edu" onclick="event.stopPropagation()">✉ jwait@smu.edu</a><a class="email-chip" href="mailto:bfilker@smu.edu" onclick="event.stopPropagation()">✉ bfilker@smu.edu</a><a class="email-chip" href="mailto:fbrecruiting@smu.edu" onclick="event.stopPropagation()">✉ fbrecruiting@smu.edu</a><a class="email-chip" href="mailto:pnsmith@smu.edu" onclick="event.stopPropagation()">✉ pnsmith@smu.edu</a></div><div class="notes-expand">📎 Currently live in Austin</div>
+  </div>
+</div>
+<div class="school-card" onclick="openModal(36)">
+  <div class="card-inner">
+    <div class="card-head">
+      <div class="card-logo card-logo-img" data-init="T"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/2628.png" alt="TCU" onerror="logoFallback(this)"></div>
+      <div class="card-title-block">
+        <div class="card-school">TCU</div>
+        <div class="card-subtitle">HC: Sonny Dykes</div>
+      </div>
+      <span class="card-tier-pill">T4 Early</span>
+    </div>
+
+    <div class="card-coaches">
+    <div class="coach-block">
+      <div class="coach-role">WR</div>
+      <div class="coach-name">Malcolm Kelly</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/CoachMXKelly" target="_blank" onclick="event.stopPropagation()" title="@CoachMXKelly">𝕏</a></div>
+    </div>
+    <div class="coach-block">
+      <div class="coach-role">OC</div>
+      <div class="coach-name">Gordon Sammis</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/CoachSammis" target="_blank" onclick="event.stopPropagation()" title="@CoachSammis">𝕏</a></div>
+    </div></div>
+
+    <div class="card-status"><span class="chip chip-film-yes">📹 Film Sent</span><span class="chip chip-film-yes">📞 Contacted</span></div>
+
+    <div class="card-pipeline">
+      <div class="pipeline-label-row">
+        <span class="pipeline-title">Recruiting Pipeline</span>
+        <span class="pipeline-pct">55%</span>
+      </div>
+      <div class="pipeline-track"><div class="pipeline-step done"></div><div class="pipeline-step done"></div><div class="pipeline-step"></div><div class="pipeline-step"></div><div class="pipeline-step"></div></div>
+      <div class="pipeline-stages"><div class="stage-label done">Eval</div><div class="stage-label done">Contact</div><div class="stage-label">Camp</div><div class="stage-label">Visit</div><div class="stage-label">Interest</div></div>
+    </div>
+
+    <div class="card-rule"></div>
+    <div class="card-actions">
+      <a class="action-btn quest" href="https://www.google.com/search?q=TCU%20football%20recruiting%20questionnaire" target="_blank" onclick="event.stopPropagation()">📝 Quest.</a><a class="action-btn dir" href="https://www.google.com/search?q=TCU%20ATHLETICS%20DIRECTORY" target="_blank" onclick="event.stopPropagation()">🏛 Dir.</a><a class="action-btn teamx" href="https://twitter.com/TCUFootball" target="_blank" onclick="event.stopPropagation()">𝕏 @TCUFootball</a>
+      <button class="action-btn edit-btn" onclick="event.stopPropagation();openModal(36)">✏ Edit</button>
+    </div>
+  </div>
+  
+  <button class="card-expand-toggle" onclick="event.stopPropagation();toggleExpand(this)">
+    Program Contacts &amp; Staff
+    <span class="expand-arrow">▾</span>
+  </button>
+  <div class="card-expanded">
+    <div class="expand-section-label">Recruiting Staff</div><div class="rc-grid"><div class="rc-person"><span class="rc-name">Tyler Olker</span><a class="rc-xlink" href="https://twitter.com/TylerOlker" target="_blank" onclick="event.stopPropagation()">@TylerOlker</a></div><div class="rc-person"><span class="rc-name">Brett Cumnock</span><a class="rc-xlink" href="https://twitter.com/_BRETTCUMNOCK" target="_blank" onclick="event.stopPropagation()">@_BRETTCUMNOCK</a></div><div class="rc-person"><span class="rc-name">Joshua Drayden</span><a class="rc-xlink" href="https://twitter.com/CoachDrayden" target="_blank" onclick="event.stopPropagation()">@CoachDrayden</a></div><div class="rc-person"><span class="rc-name">Chris Owens</span><a class="rc-xlink" href="https://twitter.com/BGChrisOwens" target="_blank" onclick="event.stopPropagation()">@BGChrisOwens</a></div></div><div class="expand-section-label" style="margin-top:12px">Program Contacts</div><div class="emails-row"><a class="email-chip" href="mailto:tyler.olker@tcu.edu" onclick="event.stopPropagation()">✉ tyler.olker@tcu.edu</a><a class="email-chip" href="mailto:andrea.roberts@tcu.edu" onclick="event.stopPropagation()">✉ andrea.roberts@tcu.edu</a><a class="email-chip" href="mailto:kyle.neaves@tcu.edu" onclick="event.stopPropagation()">✉ kyle.neaves@tcu.edu</a><a class="email-chip" href="mailto:m.l.sumner@tcu.edu" onclick="event.stopPropagation()">✉ m.l.sumner@tcu.edu</a></div><div class="notes-expand">📎 Currently live in Austin</div>
+  </div>
+</div>
+<div class="school-card" onclick="openModal(37)">
+  <div class="card-inner">
+    <div class="card-head">
+      <div class="card-logo card-logo-img" data-init="TS"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/326.png" alt="Texas State" onerror="logoFallback(this)"></div>
+      <div class="card-title-block">
+        <div class="card-school">Texas State</div>
+        <div class="card-subtitle">HC: GJ Kinne</div>
+      </div>
+      <span class="card-tier-pill">T4 Early</span>
+    </div>
+
+    <div class="card-coaches">
+    <div class="coach-block">
+      <div class="coach-role">WR</div>
+      <div class="coach-name">Randy Martinez</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/CoachMart1nez" target="_blank" onclick="event.stopPropagation()" title="@CoachMart1nez">𝕏</a></div>
+    </div>
+    <div class="coach-block">
+      <div class="coach-role">OC</div>
+      <div class="coach-name">Landon Keopple</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/LDKep" target="_blank" onclick="event.stopPropagation()" title="@LDKep">𝕏</a></div>
+    </div></div>
+
+    <div class="card-status"><span class="chip chip-film-yes">📹 Film Sent</span><span class="chip chip-film-yes">📞 Contacted</span></div>
+
+    <div class="card-pipeline">
+      <div class="pipeline-label-row">
+        <span class="pipeline-title">Recruiting Pipeline</span>
+        <span class="pipeline-pct">55%</span>
+      </div>
+      <div class="pipeline-track"><div class="pipeline-step done"></div><div class="pipeline-step done"></div><div class="pipeline-step"></div><div class="pipeline-step"></div><div class="pipeline-step"></div></div>
+      <div class="pipeline-stages"><div class="stage-label done">Eval</div><div class="stage-label done">Contact</div><div class="stage-label">Camp</div><div class="stage-label">Visit</div><div class="stage-label">Interest</div></div>
+    </div>
+
+    <div class="card-rule"></div>
+    <div class="card-actions">
+      <a class="action-btn quest" href="https://www.google.com/search?q=Texas%20State%20football%20recruiting%20questionnaire" target="_blank" onclick="event.stopPropagation()">📝 Quest.</a><a class="action-btn dir" href="https://www.google.com/search?q=TEXAS%20STATE%20ATHLETICS%20DIRECTORY" target="_blank" onclick="event.stopPropagation()">🏛 Dir.</a><a class="action-btn teamx" href="https://twitter.com/TXSTATEFOOTBALL" target="_blank" onclick="event.stopPropagation()">𝕏 @TXSTATEFOOTBALL</a>
+      <button class="action-btn edit-btn" onclick="event.stopPropagation();openModal(37)">✏ Edit</button>
+    </div>
+  </div>
+  
+  <button class="card-expand-toggle" onclick="event.stopPropagation();toggleExpand(this)">
+    Program Contacts &amp; Staff
+    <span class="expand-arrow">▾</span>
+  </button>
+  <div class="card-expanded">
+    <div class="expand-section-label">Recruiting Staff</div><div class="rc-grid"><div class="rc-person"><span class="rc-name">Justin Owens</span><a class="rc-xlink" href="https://twitter.com/TrustMyEyesO" target="_blank" onclick="event.stopPropagation()">@TrustMyEyesO</a></div><div class="rc-person"><span class="rc-name">Albert Boone</span><a class="rc-xlink" href="https://twitter.com/ABOONE_TXST" target="_blank" onclick="event.stopPropagation()">@ABOONE_TXST</a></div><div class="rc-person"><span class="rc-name">Mike Wagner</span><a class="rc-xlink" href="https://twitter.com/mikewags9" target="_blank" onclick="event.stopPropagation()">@mikewags9</a></div><div class="rc-person"><span class="rc-name">Matthew Gregg</span><a class="rc-xlink" href="https://twitter.com/_CoachGregg" target="_blank" onclick="event.stopPropagation()">@_CoachGregg</a></div></div><div class="expand-section-label" style="margin-top:12px">Program Contacts</div><div class="emails-row"><a class="email-chip" href="mailto:mbw67@txstate.edu" onclick="event.stopPropagation()">✉ mbw67@txstate.edu</a><a class="email-chip" href="mailto:evan.king@txstate.edu" onclick="event.stopPropagation()">✉ evan.king@txstate.edu</a><a class="email-chip" href="mailto:lolsen@txstate.edu" onclick="event.stopPropagation()">✉ lolsen@txstate.edu</a><a class="email-chip" href="mailto:athletics@txstate.edu" onclick="event.stopPropagation()">✉ athletics@txstate.edu</a></div><div class="notes-expand">📎 Currently live in Austin</div>
+  </div>
+</div>
+<div class="school-card" onclick="openModal(38)">
+  <div class="card-inner">
+    <div class="card-head">
+      <div class="card-logo card-logo-img" data-init="U"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/2707.png" alt="UTSA" onerror="logoFallback(this)"></div>
+      <div class="card-title-block">
+        <div class="card-school">UTSA</div>
+        <div class="card-subtitle">HC: Jeff Traylor</div>
+      </div>
+      <span class="card-tier-pill">T4 Early</span>
+    </div>
+
+    <div class="card-coaches">
+    <div class="coach-block">
+      <div class="coach-role">WR</div>
+      <div class="coach-name">DeNarius McGhee</div>
+      <div class="coach-contact-row"></div>
+    </div>
+    <div class="coach-block">
+      <div class="coach-role">OC</div>
+      <div class="coach-name">Rick Bowie</div>
+      <div class="coach-contact-row"><a class="contact-icon xbird" href="https://twitter.com/RickBowie2" target="_blank" onclick="event.stopPropagation()" title="@RickBowie2">𝕏</a></div>
+    </div></div>
+
+    <div class="card-status"><span class="chip chip-film-yes">📹 Film Sent</span><span class="chip chip-film-yes">📞 Contacted</span></div>
+
+    <div class="card-pipeline">
+      <div class="pipeline-label-row">
+        <span class="pipeline-title">Recruiting Pipeline</span>
+        <span class="pipeline-pct">55%</span>
+      </div>
+      <div class="pipeline-track"><div class="pipeline-step done"></div><div class="pipeline-step done"></div><div class="pipeline-step"></div><div class="pipeline-step"></div><div class="pipeline-step"></div></div>
+      <div class="pipeline-stages"><div class="stage-label done">Eval</div><div class="stage-label done">Contact</div><div class="stage-label">Camp</div><div class="stage-label">Visit</div><div class="stage-label">Interest</div></div>
+    </div>
+
+    <div class="card-rule"></div>
+    <div class="card-actions">
+      <a class="action-btn quest" href="https://www.google.com/search?q=UTSA%20football%20recruiting%20questionnaire" target="_blank" onclick="event.stopPropagation()">📝 Quest.</a><a class="action-btn dir" href="https://www.google.com/search?q=UTSA%20ATHLETICS%20DIRECTORY" target="_blank" onclick="event.stopPropagation()">🏛 Dir.</a><a class="action-btn teamx" href="https://twitter.com/UTSAFTBL" target="_blank" onclick="event.stopPropagation()">𝕏 @UTSAFTBL</a>
+      <button class="action-btn edit-btn" onclick="event.stopPropagation();openModal(38)">✏ Edit</button>
+    </div>
+  </div>
+  
+  <button class="card-expand-toggle" onclick="event.stopPropagation();toggleExpand(this)">
+    Program Contacts &amp; Staff
+    <span class="expand-arrow">▾</span>
+  </button>
+  <div class="card-expanded">
+    <div class="expand-section-label">Recruiting Staff</div><div class="rc-grid"><div class="rc-person"><span class="rc-name">Parker Cundiff</span><a class="rc-xlink" href="https://twitter.com/parkercundiff2" target="_blank" onclick="event.stopPropagation()">@parkercundiff2</a></div><div class="rc-person"><span class="rc-name">Mia Rincon</span><a class="rc-xlink" href="https://twitter.com/rincon_mia13" target="_blank" onclick="event.stopPropagation()">@rincon_mia13</a></div><div class="rc-person"><span class="rc-name">Mike Giglio</span><a class="rc-xlink" href="https://twitter.com/MikeMGiglio" target="_blank" onclick="event.stopPropagation()">@MikeMGiglio</a></div><div class="rc-person"><span class="rc-name">Andrew Acosta</span><a class="rc-xlink" href="https://twitter.com/AndrewAcosta210" target="_blank" onclick="event.stopPropagation()">@AndrewAcosta210</a></div></div><div class="expand-section-label" style="margin-top:12px">Program Contacts</div><div class="emails-row"><a class="email-chip" href="mailto:football.recruiting@utsa.edu" onclick="event.stopPropagation()">✉ football.recruiting@utsa.edu</a><a class="email-chip" href="mailto:andrew.acosta@utsa.edu" onclick="event.stopPropagation()">✉ andrew.acosta@utsa.edu</a><a class="email-chip" href="mailto:alexis.dawson@utsa.edu" onclick="event.stopPropagation()">✉ alexis.dawson@utsa.edu</a><a class="email-chip" href="mailto:stephen.jauregui@utsa.edu" onclick="event.stopPropagation()">✉ stephen.jauregui@utsa.edu</a></div><div class="notes-expand">📎 Currently live in Austin</div>
+  </div>
+</div>
+<div class="school-card" onclick="openModal(39)">
+  <div class="card-inner">
+    <div class="card-head">
+      <div class="card-logo card-logo-img" data-init="SJS"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/23.png" alt="San Jose State" onerror="logoFallback(this)"></div>
+      <div class="card-title-block">
+        <div class="card-school">San Jose State</div>
+        <div class="card-subtitle">HC: Ken Niumatalolo</div>
+      </div>
+      <span class="card-tier-pill">T4 Early</span>
+    </div>
+
+    <div class="card-coaches">
+    <div class="coach-block">
+      <div class="coach-role">WR</div>
+      <div class="coach-name">Billy Ray Stutzmann</div>
+      <div class="coach-contact-row"><a class="contact-icon email" href="mailto:billyray.stutzmann@sjsu.edu" onclick="event.stopPropagation()" title="billyray.stutzmann@sjsu.edu">✉</a><a class="contact-icon xbird" href="https://twitter.com/BRayStutzmann" target="_blank" onclick="event.stopPropagation()" title="@BRayStutzmann">𝕏</a></div>
+    </div>
+    <div class="coach-block">
+      <div class="coach-role">OC</div>
+      <div class="coach-name">Craig Stutzmann</div>
+      <div class="coach-contact-row"><a class="contact-icon email" href="mailto:craig.stutzmann@sjsu.edu" onclick="event.stopPropagation()" title="craig.stutzmann@sjsu.edu">✉</a><a class="contact-icon xbird" href="https://twitter.com/CoachStutzmann" target="_blank" onclick="event.stopPropagation()" title="@CoachStutzmann">𝕏</a></div>
+    </div></div>
+
+    <div class="card-status"><span class="chip chip-film-yes">📹 Film Sent</span><span class="chip chip-film-yes">📞 Contacted</span></div>
+
+    <div class="card-pipeline">
+      <div class="pipeline-label-row">
+        <span class="pipeline-title">Recruiting Pipeline</span>
+        <span class="pipeline-pct">55%</span>
+      </div>
+      <div class="pipeline-track"><div class="pipeline-step done"></div><div class="pipeline-step done"></div><div class="pipeline-step"></div><div class="pipeline-step"></div><div class="pipeline-step"></div></div>
+      <div class="pipeline-stages"><div class="stage-label done">Eval</div><div class="stage-label done">Contact</div><div class="stage-label">Camp</div><div class="stage-label">Visit</div><div class="stage-label">Interest</div></div>
+    </div>
+
+    <div class="card-rule"></div>
+    <div class="card-actions">
+      <a class="action-btn quest" href="https://www.google.com/search?q=San%20Jose%20State%20football%20recruiting%20questionnaire" target="_blank" onclick="event.stopPropagation()">📝 Quest.</a><a class="action-btn dir" href="https://www.google.com/search?q=SAN%20JOSE%20STATE%20ATHLETICS%20DIRECTORY" target="_blank" onclick="event.stopPropagation()">🏛 Dir.</a><a class="action-btn teamx" href="https://twitter.com/SanJoseStateFB" target="_blank" onclick="event.stopPropagation()">𝕏 @SanJoseStateFB</a>
+      <button class="action-btn edit-btn" onclick="event.stopPropagation();openModal(39)">✏ Edit</button>
+    </div>
+  </div>
+  
+  <button class="card-expand-toggle" onclick="event.stopPropagation();toggleExpand(this)">
+    Program Contacts &amp; Staff
+    <span class="expand-arrow">▾</span>
+  </button>
+  <div class="card-expanded">
+    <div class="expand-section-label">Recruiting Staff</div><div class="rc-grid"><div class="rc-person"><span class="rc-name">Beca Perez</span><a class="rc-xlink" href="https://twitter.com/TheBecaPerez" target="_blank" onclick="event.stopPropagation()">@TheBecaPerez</a></div><div class="rc-person"><span class="rc-name">Garrett Wolfe</span><a class="rc-xlink" href="https://twitter.com/GarrettWolfe11" target="_blank" onclick="event.stopPropagation()">@GarrettWolfe11</a></div><div class="rc-person"><span class="rc-name">Will Turpin</span><a class="rc-xlink" href="https://twitter.com/WillTurpin5" target="_blank" onclick="event.stopPropagation()">@WillTurpin5</a></div><div class="rc-person"><span class="rc-name">Michael Smith</span><a class="rc-xlink" href="https://twitter.com/coach_smith20" target="_blank" onclick="event.stopPropagation()">@coach_smith20</a></div></div><div class="expand-section-label" style="margin-top:12px">Program Contacts</div><div class="emails-row"><a class="email-chip" href="mailto:rebeca.perez@sjsu.edu" onclick="event.stopPropagation()">✉ rebeca.perez@sjsu.edu</a><a class="email-chip" href="mailto:garrett.wolfe@sjsu.edu" onclick="event.stopPropagation()">✉ garrett.wolfe@sjsu.edu</a><a class="email-chip" href="mailto:clesi.crochet@sjsu.edu" onclick="event.stopPropagation()">✉ clesi.crochet@sjsu.edu</a><a class="email-chip" href="mailto:will.turpin@sjsu.edu" onclick="event.stopPropagation()">✉ will.turpin@sjsu.edu</a></div>
+  </div>
+</div></div>
+</div></div>
 <div class="toast" id="exportToast"></div>
 
 <!-- EDIT MODAL -->
 <div class="modal-overlay" id="editModal">
   <div class="modal-box">
     <div class="modal-head">
-      <div class="modal-title" id="modalTitle">Edit School</div>
+      <div class="modal-title" id="modalTitle">San Jose State</div>
       <button class="modal-close" onclick="closeModal()">✕</button>
     </div>
     <div class="modal-body">
@@ -818,46 +2793,46 @@ const SCHOOL_DB = {
 
 /* ─── RAW DATA ─── */
 const rawData = [
-  ["Alabama","Tier 1 – Dream","Derrick Nix",null,"@DerrickDnix","Ryan Grubb",null,null,null,null,null,null,null,null,null,null,"Attended camp last 3 years"],
-  ["Ohio State","Tier 1 – Dream","Cortez Hankton","hankton.3@osu.edu","@Coach_Hankton","Matt Guerrieri",null,"@MattGuerrieri",null,null,null,null,null,null,null,null,"Attended camp last 3 years"],
-  ["Auburn","Tier 1 – Dream","Kodi Burns",null,"@KodiBurns","Joel Gordon",null,null,null,null,null,null,null,null,null,null,"Former LT Grad, Caleb Burton attended"],
-  ["Michigan","Tier 1 – Dream","Marques Hagans",null,"@coachmhagans","Jason Beck",null,"@Coach_Beck7",null,null,null,null,null,null,null,null,"Grandparents are alumns and live in the area"],
-  ["USC","Tier 1 – Dream","Dennis Simmons",null,"@CoachSimmonsSC","Luke Huard",null,"@CoachLukeHuard",null,null,null,null,null,null,null,null,"Lake McRee is LT alumn"],
-  ["Georgia","Tier 1 – Dream","James Coley",null,"@CoachColey","Mike Bobo",null,"@CoachMikeBobo",null,null,null,null,null,null,null,null,null],
-  ["Texas","Tier 2 – Reach","Chris Jackson",null,"@ciege81","Kyle Flood",null,"@KJJFlood",null,null,null,null,null,null,null,null,"Vaccaro connection with Blake Gideon"],
-  ["Florida","Tier 2 – Reach","Marcus Davis",null,"@CoachDavisWR","Buster Faulkner",null,"@Buster_Faulkner",null,null,null,null,null,null,null,null,null],
-  ["LSU","Tier 2 – Reach","George McDonald",null,"@CoachGMcDonald","Charlie Weis, Jr.",null,"@WeisJr_M",null,null,null,null,null,null,null,null,null],
-  ["Miami","Tier 2 – Reach","Kevin Beard",null,"@Kevin_Beard9","Shannon Dawson",null,"@CoachDawson_UM",null,null,null,null,null,null,null,null,null],
-  ["Oklahoma","Tier 2 – Reach","Emmett Jones",null,"@CoachEmmett","Ben Arbuckle",null,"@arbuckle_ben",null,null,null,null,null,null,null,null,null],
-  ["Oregon","Tier 2 – Reach","Ross Douglas",null,"@RossDoug21","Drew Mehringer",null,"@DrewMehringer",null,null,null,null,null,null,null,null,null],
-  ["Penn State","Tier 2 – Reach","Kashif Moore",null,"@KashifMoore","Taylor Mouser",null,"@T_Mouser",null,null,null,null,null,null,null,null,null],
-  ["Tennessee","Tier 2 – Reach","Kelsey Pope",null,"@CoachKelseyPope","Joey Halzle",null,"@CoachHalzle",null,null,null,null,null,null,null,null,null],
-  ["Texas A&M","Tier 2 – Reach","John Perry",null,"@CoachJohn_Perry","Holmon Wiggins",null,"@HolmonWiggins",null,null,null,null,null,null,null,null,"Currently live in Austin"],
-  ["Clemson","Tier 2 – Reach","Tyler Grisham",null,"@Coach_Grisham","Chad Morris",null,"@coachchadmorris",null,null,null,null,null,null,null,null,null],
-  ["Missouri","Tier 3 – Target","Jacob Peeler",null,"@NastyWideOuts","Chip Lindsey",null,"@ChipLindsey11",null,null,null,null,null,null,null,null,"Coach Peeler's TX roots"],
-  ["Texas Tech","Tier 3 – Target","Justin Johnson",null,"@COACHJUICE_","Mack Leftwich",null,"@Coach_Leftwich",null,null,null,null,null,null,null,null,"Mom's alma mater"],
-  ["Kentucky","Tier 3 – Target","Joe Price III",null,"@CoachJP3","Joe Sloan",null,"@CoachJoeSloan",null,null,null,null,null,null,null,null,"Will Stein former LT OC"],
-  ["Arizona","Tier 3 – Target","Bobby Wade",null,"@CoachBobbyWade","Seth Doege",null,"@CoachDoege",null,null,null,null,null,null,null,null,"Yogi contact, Doege Texas connection"],
-  ["Baylor","Tier 3 – Target","Dallas Baker","Dallas_Baker@Baylor.edu","@CoachDBaker81","Jake Spavital","Jake_Spavital@Baylor.edu",null,null,null,null,null,null,null,null,null,"Currently live in Austin"],
-  ["Indiana","Tier 3 – Target",null,null,null,"Mike Shanahan",null,"@CoachShanahan_",null,null,null,null,null,null,null,null,null],
-  ["Kansas","Tier 3 – Target","Terrence Samuel",null,"@CoachTSamuel","Matt Lubick",null,"@CoachLubick",null,null,null,null,null,null,null,null,null],
-  ["USF","Tier 3 – Target","Myles White",null,"@M_White03","Tim Beck",null,"@Coachtimbeck",null,null,null,null,null,null,null,null,null],
-  ["Vanderbilt","Tier 3 – Target","Alex Bailey",null,"@CoachAlexBailey","Tim Beck",null,"@TimBeckFB",null,null,null,null,null,null,null,null,null],
-  ["Michigan State","Tier 3 – Target","Courtney Hawkins",null,"@CoachHawk_5","Nick Sheridan",null,null,null,null,null,null,null,null,null,null,null],
-  ["Notre Dame","Tier 3 – Target","Mike Brown",null,null,"Mike Denbrock",null,"@MikeDenbrock",null,null,null,null,null,null,null,null,null],
-  ["Eastern Michigan","Tier 4 – Early Opportunity","Erik Campbell",null,"@ErikCampbell","Mike Piatkowski","mpiatkow@emich.edu","@M__Piatkowski",null,null,null,null,null,null,null,null,"Former Hoban QB currently attends"],
-  ["Akron","Tier 4 – Early Opportunity","JD Brookhart","jbrookha@uakron.edu","@CoachJDBrook",null,null,null,null,null,null,null,null,null,null,null,"Lived in Akron. Former LT Grad, Markus Boswell attended"],
-  ["Kent State","Tier 4 – Early Opportunity","Isaac Vance",null,"@CoachIsaacVance","Clay Patterson",null,"@CoachCPatt",null,null,null,null,null,null,null,null,"Lived in Akron"],
-  ["Toledo","Tier 4 – Early Opportunity","Devin Figaro","devin.figaro@utoledo.edu","@CoachFigaro","Cris Reisert","christopher.reisert@utoledo.edu","@CoachReisert",null,null,null,null,null,null,null,null,"Lived in Akron"],
-  ["Central Michigan","Tier 4 – Early Opportunity","Brandon Johnson-Farrell",null,"@Coach_BJFarrell","Jim Chapin",null,"@CoachChapin",null,null,null,null,null,null,null,null,null],
-  ["Houston","Tier 4 – Early Opportunity","Brian Bell",null,"@Bell_Brian_","Slade Nagle",null,"@Coach_Nagle",null,null,null,null,null,null,null,null,null],
-  ["Iowa","Tier 4 – Early Opportunity","Jon Budmayr","jon-budmayr@hawkeyefootball.com","@CoachBudmayr","Tim Lester","timothy-lester@hawkeyefootball.com","@CoachTimLester",null,null,null,null,null,null,null,null,null],
-  ["North Texas","Tier 4 – Early Opportunity","Kishawn McClain",null,null,null,null,null,null,null,null,null,null,null,null,null,"Currently live in Austin"],
-  ["SMU","Tier 4 – Early Opportunity","Rob Likens",null,"@CoachRobLikens","D'Eriq King",null,null,null,null,null,null,null,null,null,null,"Currently live in Austin"],
-  ["TCU","Tier 4 – Early Opportunity","Malcolm Kelly",null,"@CoachMXKelly","Gordon Sammis",null,"@CoachSammis",null,null,null,null,null,null,null,null,"Currently live in Austin"],
-  ["Texas State","Tier 4 – Early Opportunity","Randy Martinez",null,"@CoachMart1nez","Landon Keopple",null,"@LDKep",null,null,null,null,null,null,null,null,"Currently live in Austin"],
-  ["UTSA","Tier 4 – Early Opportunity","DeNarius McGhee",null,null,"Rick Bowie",null,"@RickBowie2",null,null,null,null,null,null,null,null,"Currently live in Austin"],
-  ["San Jose State","Tier 4 – Early Opportunity","Billy Ray Stutzmann","billyray.stutzmann@sjsu.edu","@BRayStutzmann","Craig Stutzmann","craig.stutzmann@sjsu.edu","@CoachStutzmann",null,null,null,null,null,null,null,null,null]
+  ["Alabama","Tier 1 – Dream","Derrick Nix",null,"@DerrickDnix","Ryan Grubb",null,null,null,null,"Y","Dad","Y",null,null,null,"Attended camp last 3 years",null,null,null],
+  ["Ohio State","Tier 1 – Dream","Cortez Hankton","hankton.3@osu.edu","@Coach_Hankton","Matt Guerrieri",null,"@MattGuerrieri",null,null,"Y","Dad","Y",null,null,null,"Attended camp last 3 years","Garret Wilson - LT Grad",null,null],
+  ["Auburn","Tier 1 – Dream","Kodi Burns",null,"@KodiBurns","Joel Gordon",null,null,null,null,"Y","Dad","Y",null,null,null,"Former LT Grad, Caleb Burton attended",null,null,null],
+  ["Michigan","Tier 1 – Dream","Marques Hagans",null,"@coachmhagans","Jason Beck",null,"@Coach_Beck7",null,null,"Y","Dad","Y",null,null,null,"Grandparents are alumns and live in the area",null,null,null],
+  ["USC","Tier 1 – Dream","Dennis Simmons",null,"@CoachSimmonsSC","Luke Huard",null,"@CoachLukeHuard",null,null,"Y","Dad","Y",null,null,null,"Lake McRee is LT alumn",null,null,null],
+  ["Georgia","Tier 1 – Dream","James Coley",null,"@CoachColey","Mike Bobo",null,"@CoachMikeBobo",null,null,"Y","Dad","Y",null,null,null,null,null,null,null],
+  ["Texas","Tier 2 – Reach","Chris Jackson",null,"@ciege81","Kyle Flood",null,"@KJJFlood",null,null,"Y","Dad","Y",null,null,null,"Vaccaro connection with Blake Gideon",null,null,null],
+  ["Florida","Tier 2 – Reach","Marcus Davis",null,"@CoachDavisWR","Buster Faulkner",null,"@Buster_Faulkner",null,null,"Y","Dad","Y",null,null,null,null,null,null,null],
+  ["LSU","Tier 2 – Reach","George McDonald",null,"@CoachGMcDonald","Charlie Weis, Jr.",null,"@WeisJr_M",null,null,"Y","Dad","Y",null,null,null,null,null,null,null],
+  ["Miami","Tier 2 – Reach","Kevin Beard",null,"@Kevin_Beard9","Shannon Dawson",null,"@CoachDawson_UM",null,null,"Y","Dad","Y",null,null,null,null,null,null,null],
+  ["Oklahoma","Tier 2 – Reach","Emmett Jones",null,"@CoachEmmett","Ben Arbuckle",null,"@arbuckle_ben",null,null,"Y","Dad","Y",null,null,null,null,null,null,null],
+  ["Oregon","Tier 2 – Reach","Ross Douglas",null,"@RossDoug21","Drew Mehringer",null,"@DrewMehringer",null,null,"Y","Dad","Y",null,null,null,null,null,null,null],
+  ["Penn State","Tier 2 – Reach","Kashif Moore",null,"@KashifMoore","Taylor Mouser",null,"@T_Mouser",null,null,"Y","Dad","Y",null,null,null,null,null,null,null],
+  ["Tennessee","Tier 2 – Reach","Kelsey Pope",null,"@CoachKelseyPope","Joey Halzle",null,"@CoachHalzle",null,null,"Y","Dad","Y",null,null,null,null,null,null,null],
+  ["Texas A&M","Tier 2 – Reach","John Perry",null,"@CoachJohn_Perry","Holmon Wiggins",null,"@HolmonWiggins",null,null,"Y","Dad","Y",null,null,null,"Currently live in Austin",null,null,null],
+  ["Clemson","Tier 2 – Reach","Tyler Grisham",null,"@Coach_Grisham","Chad Morris",null,"@coachchadmorris",null,null,"Y","Dad","Y",null,null,null,null,null,null,null],
+  ["Missouri","Tier 3 – Target","Jacob Peeler",null,"@NastyWideOuts","Chip Lindsey",null,"@ChipLindsey11",null,null,"Y","Dad","Y",null,null,null,"Coach Peeler's TX roots",null,null,null],
+  ["Texas Tech","Tier 3 – Target","Justin Johnson",null,"@COACHJUICE_","Mack Leftwich",null,"@Coach_Leftwich",null,null,"Y","Dad","Y",null,null,null,"Mom's alma mater",null,null,null],
+  ["Kentucky","Tier 3 – Target","Joe Price III",null,"@CoachJP3","Joe Sloan",null,"@CoachJoeSloan",null,null,"Y","Dad","Y",null,null,null,"Will Stein former LT OC",null,null,null],
+  ["Arizona","Tier 3 – Target","Bobby Wade",null,"@CoachBobbyWade","Seth Doege",null,"@CoachDoege",null,null,"Y","Dad","Y",null,null,null,"Yogi contact, Doege Texas connection",null,null,null],
+  ["Baylor","Tier 3 – Target","Dallas Baker","Dallas_Baker@Baylor.edu","@CoachDBaker81","Jake Spavital","Jake_Spavital@Baylor.edu",null,null,null,"Y","Dad","Y",null,null,null,"Currently live in Austin",null,null,null],
+  ["Indiana","Tier 3 – Target",null,null,null,"Mike Shanahan",null,"@CoachShanahan_",null,null,"Y","Dad","Y",null,null,null,null,null,null,null],
+  ["Kansas","Tier 3 – Target","Terrence Samuel",null,"@CoachTSamuel","Matt Lubick",null,"@CoachLubick",null,null,"Y","Dad","Y",null,null,null,null,null,null,null],
+  ["USF","Tier 3 – Target","Myles White",null,"@M_White03","Tim Beck",null,"@Coachtimbeck",null,null,"Y","Dad","Y",null,null,null,null,null,null,null],
+  ["Vanderbilt","Tier 3 – Target","Alex Bailey",null,"@CoachAlexBailey","Tim Beck",null,"@TimBeckFB",null,null,"Y","Dad","Y",null,null,null,null,null,null,null],
+  ["Michigan State","Tier 3 – Target","Courtney Hawkins",null,"@CoachHawk_5","Nick Sheridan",null,null,null,null,"Y","Dad","Y",null,null,null,null,null,null,null],
+  ["Notre Dame","Tier 3 – Target","Mike Brown",null,null,"Mike Denbrock",null,"@MikeDenbrock",null,null,"Y","Dad","Y",null,null,null,null,null,null,null],
+  ["Eastern Michigan","Tier 4 – Early Opportunity","Erik Campbell",null,"@ErikCampbell","Mike Piatkowski","mpiatkow@emich.edu","@M__Piatkowski",null,null,"Y","Dad","Y",null,null,null,"Former Hoban QB currently attends",null,null,null],
+  ["Akron","Tier 4 – Early Opportunity","JD Brookhart","jbrookha@uakron.edu","@CoachJDBrook",null,null,null,null,null,"Y","Dad","Y",null,null,null,"Lived in Akron. Former LT Grad, Markus Boswell attended",null,null,null],
+  ["Kent State","Tier 4 – Early Opportunity","Isaac Vance",null,"@CoachIsaacVance","Clay Patterson",null,"@CoachCPatt",null,null,"Y","Dad","Y",null,null,null,"Lived in Akron",null,null,null],
+  ["Toledo","Tier 4 – Early Opportunity","Devin Figaro","devin.figaro@utoledo.edu","@CoachFigaro","Cris Reisert","christopher.reisert@utoledo.edu","@CoachReisert",null,null,"Y","Dad","Y",null,null,null,"Lived in Akron",null,null,null],
+  ["Central Michigan","Tier 4 – Early Opportunity","Brandon Johnson-Farrell",null,"@Coach_BJFarrell","Jim Chapin",null,"@CoachChapin",null,null,"Y","Dad","Y",null,null,null,null,null,null,null],
+  ["Houston","Tier 4 – Early Opportunity","Brian Bell",null,"@Bell_Brian_","Slade Nagle",null,"@Coach_Nagle",null,null,"Y","Dad","Y",null,null,null,null,null,null,null],
+  ["Iowa","Tier 4 – Early Opportunity","Jon Budmayr","jon-budmayr@hawkeyefootball.com","@CoachBudmayr","Tim Lester","timothy-lester@hawkeyefootball.com","@CoachTimLester",null,null,"Y","Dad","Y",null,null,null,null,null,null,null],
+  ["North Texas","Tier 4 – Early Opportunity","Kishawn McClain",null,null,null,null,null,null,null,"Y","Dad","Y",null,null,null,"Currently live in Austin",null,null,null],
+  ["SMU","Tier 4 – Early Opportunity","Rob Likens",null,"@CoachRobLikens","D'Eriq King",null,null,null,null,"Y","Dad","Y",null,null,null,"Currently live in Austin",null,null,null],
+  ["TCU","Tier 4 – Early Opportunity","Malcolm Kelly",null,"@CoachMXKelly","Gordon Sammis",null,"@CoachSammis",null,null,"Y","Dad","Y",null,null,null,"Currently live in Austin",null,null,null],
+  ["Texas State","Tier 4 – Early Opportunity","Randy Martinez",null,"@CoachMart1nez","Landon Keopple",null,"@LDKep",null,null,"Y","Dad","Y",null,null,null,"Currently live in Austin",null,null,null],
+  ["UTSA","Tier 4 – Early Opportunity","DeNarius McGhee",null,null,"Rick Bowie",null,"@RickBowie2",null,null,"Y","Dad","Y",null,null,null,"Currently live in Austin",null,null,null],
+  ["San Jose State","Tier 4 – Early Opportunity","Billy Ray Stutzmann","billyray.stutzmann@sjsu.edu","@BRayStutzmann","Craig Stutzmann","craig.stutzmann@sjsu.edu","@CoachStutzmann",null,null,"Y","Dad","Y",null,null,null,null,null,null,null]
 ];
 
 let schools = rawData.map((r,i)=>({
@@ -1222,5 +3197,6 @@ document.addEventListener('DOMContentLoaded',()=>{
   renderBoard();
 });
 </script>
-</body>
-</html>
+
+
+</body></html>

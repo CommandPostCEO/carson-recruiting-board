@@ -687,26 +687,30 @@ function renderCard(s){
   const nextB=s.nextAction?`<span class="status-chip" style="background:rgba(88,86,214,0.12);color:#8482E8;border:1px solid rgba(88,86,214,0.25)">▶ ${s.nextAction}</span>`:'';
   const notesH=s.notes?`<div class="notes-box">📎 ${s.notes}</div>`:'';
   const hasBadges=filmB||contB||intB||campB||visitB||nextB||connB||rostB;
-  return (function(){
+
+  // Recruiting staff from SCHOOL_DB
   const db = SCHOOL_DB[s.school] || {};
-  const rcHtml = (db.rc && db.rc.length) ? (() => {
-    const items = db.rc.map((name,i) => {
+  const rcHtml = (db.rc && db.rc.length) ? (()=>{
+    const items = db.rc.map((name,i)=>{
       const xh = db.rcX && db.rcX[i] ? db.rcX[i] : '';
       const xLink = xh ? `<a class="rec-x" href="https://twitter.com/${xh.replace('@','')}" target="_blank" onclick="event.stopPropagation()">${xh}</a>` : '';
-      return `<span class="rec-person"><span class="rec-name">${name}</span>${xLink ? ' · '+xLink : ''}</span>`;
+      return `<span class="rec-person"><span class="rec-name">${name}</span>${xLink?' · '+xLink:''}</span>`;
     }).join('');
     return `<div class="card-rec-section"><div class="card-rec-header">📋 Recruiting Staff</div><div class="card-rec-grid">${items}</div></div>`;
   })() : '';
-  const emailsHtml = (db.emails && db.emails.length) ? (() => {
-    const chips = db.emails.map(e => `<a class="office-email-chip" href="mailto:${e}" onclick="event.stopPropagation()">✉ ${e}</a>`).join('');
+
+  const emailsHtml = (db.emails && db.emails.length) ? (()=>{
+    const chips = db.emails.map(e=>`<a class="office-email-chip" href="mailto:${e}" onclick="event.stopPropagation()">✉ ${e}</a>`).join('');
     return `<div class="office-emails">${chips}</div>`;
   })() : '';
+
   const questUrl = s.questURL || '';
   const questBtn = questUrl
     ? `<a class="action-btn questionnaire" href="${questUrl}" target="_blank" onclick="event.stopPropagation()">📝 Questionnaire</a>`
     : `<a class="action-btn questionnaire" href="https://www.google.com/search?q=${encodeURIComponent(s.school+' football recruiting questionnaire 2025')}" target="_blank" onclick="event.stopPropagation()">📝 Questionnaire</a>`;
   const dirBtn = db.dir ? `<a class="action-btn dir" href="https://www.google.com/search?q=${encodeURIComponent(db.dir)}" target="_blank" onclick="event.stopPropagation()">🏛 Directory</a>` : '';
   const teamXBtn = db.teamX ? `<a class="action-btn team-x" href="https://twitter.com/${db.teamX.replace('@','')}" target="_blank" onclick="event.stopPropagation()">${db.teamX}</a>` : '';
+
   return `<div class="school-card ${tc}" onclick="openModal(${s.id})">
     <div class="card-top"><div class="card-school-name">${s.school}</div><span class="card-tier-badge">${tl}</span></div>
     <div class="card-coaches">
@@ -718,6 +722,9 @@ function renderCard(s){
       <div class="progress-label-row"><span>Recruiting Progress</span><span>${score}%</span></div>
       <div class="progress-track"><div class="progress-fill" style="width:${score}%"></div></div>
     </div>
+    ${rcHtml}${emailsHtml}
+    <div class="card-divider"></div>
+    <div class="card-action-row">${questBtn}${dirBtn}${teamXBtn}</div>
     ${notesH}
   </div>`;
 }
